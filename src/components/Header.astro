@@ -1,0 +1,88 @@
+---
+/**
+ * Encabezado de la tienda.
+ *
+ * El buscador manda: es lo primero que usa quien entra buscando un
+ * medicamento concreto, que es la mayoria. Por eso ocupa el centro y es lo
+ * mas ancho de la barra.
+ *
+ * Ningun texto se escribe aqui: sale de src/datos/config.json.
+ */
+import config from "../datos/config.json";
+import Logo from "./Logo.astro";
+import Icono from "./Icono.astro";
+
+const base = import.meta.env.BASE_URL;
+const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
+---
+
+<div class="franja-superior">
+  <div class="container franja-inner">
+    <span class="franja-item">
+      <Icono nombre="camion" tamano={15} />
+      Domicilio gratis desde <strong>${config.envio.gratis_desde.toLocaleString("es-CO")}</strong>
+    </span>
+    <span class="franja-item franja-oculta-movil">
+      <Icono nombre="reloj" tamano={15} />
+      Entrega en {config.envio.minutos_min}–{config.envio.minutos_max} min
+    </span>
+    <span class="franja-espacio"></span>
+    <a class="franja-item" href={`https://wa.me/${config.whatsapp}`} target="_blank" rel="noopener">
+      <Icono nombre="whatsapp" tamano={15} />
+      {config.whatsapp_visible}
+    </a>
+  </div>
+</div>
+
+<header class="cabecera" id="cabecera">
+  <div class="container cabecera-inner">
+    <a href={enlace("")} class="cabecera-logo" aria-label="Ir al inicio de Droguería Xivica">
+      <Logo alto={42} />
+    </a>
+
+    <button class="pastilla-sede" type="button" aria-label="Elegir sede de atención">
+      <Icono nombre="ubicacion" tamano={16} />
+      <span>{config.ciudad}</span>
+      <Icono nombre="chevronAbajo" tamano={14} />
+    </button>
+
+    <form class="buscador" role="search" action={enlace("catalogo")} method="get" id="formBuscador">
+      <label class="visualmente-oculto" for="campoBuscar">Buscar productos</label>
+      <input
+        type="search"
+        id="campoBuscar"
+        name="q"
+        class="buscador-campo"
+        placeholder="Buscar acetaminofén, pañales, vitaminas…"
+        autocomplete="off"
+        aria-expanded="false"
+        aria-controls="resultadosBuscador"
+      />
+      <button class="buscador-boton" type="submit" aria-label="Buscar">
+        <Icono nombre="buscar" tamano={18} grosor={2.3} />
+      </button>
+      <div class="buscador-resultados" id="resultadosBuscador" role="listbox" hidden></div>
+    </form>
+
+    <nav class="cabecera-acciones" aria-label="Accesos rápidos">
+      <a href={enlace("favoritos")} class="accion" data-contador="favoritos">
+        <Icono nombre="corazon" />
+        <span class="accion-texto">Favoritos</span>
+        <span class="accion-globo" hidden></span>
+      </a>
+      <a href={enlace("volver-a-comprar")} class="accion accion-oculta-movil">
+        <Icono nombre="historial" />
+        <span class="accion-texto">Volver a comprar</span>
+      </a>
+      <button class="accion accion-carrito" type="button" id="abrirCarrito" data-contador="carrito">
+        <Icono nombre="carrito" />
+        <span class="accion-texto">Carrito</span>
+        <span class="accion-globo" hidden></span>
+      </button>
+    </nav>
+
+    <button class="boton-menu" type="button" id="abrirMenu" aria-label="Abrir menú" aria-expanded="false">
+      <Icono nombre="menu" tamano={22} />
+    </button>
+  </div>
+</header>

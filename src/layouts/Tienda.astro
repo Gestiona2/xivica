@@ -1,0 +1,127 @@
+---
+/**
+ * Layout de la tienda: lo que se repite en todas las paginas.
+ *
+ * Encabezado, barra de categorias, pie y panel del carrito. El contenido de
+ * cada pagina entra por el <slot />, y su texto vive en src/datos/.
+ */
+import "../styles/global.css";
+import "../styles/tienda.css";
+import config from "../datos/config.json";
+import Header from "../components/Header.astro";
+import SubnavCategorias from "../components/SubnavCategorias.astro";
+import Footer from "../components/Footer.astro";
+import Icono from "../components/Icono.astro";
+
+interface Props {
+  titulo: string;
+  descripcion?: string;
+  activa?: string;
+  imagen?: string;
+  sinSubnav?: boolean;
+}
+
+const {
+  titulo,
+  descripcion = config.descripcion_corta,
+  activa = "",
+  imagen,
+  sinSubnav = false,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const tituloCompleto = titulo.includes(config.negocio) ? titulo : `${titulo} | ${config.negocio}`;
+const urlCanonica = new URL(Astro.url.pathname, Astro.site ?? "https://example.com");
+const imagenSocial = new URL(imagen ?? `${base}img/logo-xivica.png`, urlCanonica);
+
+// Ficha del negocio para Google. Las sedes van como sucursales.
+const datosEstructurados = {
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  name: config.negocio,
+  description: config.descripcion_corta,
+  telephone: `+${config.whatsapp}`,
+  address: config.sedes.map((sede) => ({
+    "@type": "PostalAddress",
+    streetAddress: sede.direccion,
+    addressLocality: config.ciudad,
+    addressCountry: "CO",
+  })),
+  geo: config.sedes.map((sede) => ({
+    "@type": "GeoCoordinates",
+    latitude: sede.lat,
+    longitude: sede.lng,
+  })),
+};
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="theme-color" content="#0b4da2" />
+    <link rel="canonical" href={urlCanonica.href} />
+    <link rel="icon" href={`${base}img/logo-xivica.png`} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={config.negocio} />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:image" content={imagenSocial.href} />
+    <meta property="og:url" content={urlCanonica.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(datosEstructurados)} />
+  </head>
+
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <Header />
+    {!sinSubnav && <SubnavCategorias activa={activa} />}
+
+    <main id="contenido">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <!-- Panel del carrito. Vive en el layout para que este disponible en toda pagina. -->
+    <div class="carrito-fondo" id="carritoFondo" hidden></div>
+    <aside class="carrito" id="carrito" aria-label="Carrito de compras" aria-hidden="true" hidden>
+      <header class="carrito-cabeza">
+        <h2>Tu pedido</h2>
+        <button type="button" id="cerrarCarrito" class="carrito-cerrar" aria-label="Cerrar carrito">
+          <Icono nombre="cerrar" tamano={20} />
+        </button>
+      </header>
+      <div class="carrito-cuerpo" id="carritoCuerpo"></div>
+    </aside>
+
+    <!-- Barra de pago, solo aparece con el carrito lleno -->
+    <div class="barra-pago" id="barraPago" hidden>
+      <span class="barra-pago-texto">
+        <strong id="barraPagoTotal">$0</strong>
+        <small id="barraPagoItems">0 productos</small>
+      </span>
+      <button type="button" class="boton boton-lima" id="barraPagoBoton">Finalizar pedido</button>
+    </div>
+
+    <a
+      class="flota-wa"
+      href={`https://wa.me/${config.whatsapp}`}
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribir por WhatsApp"
+    >
+      <Icono nombre="whatsapp" tamano={26} />
+    </a>
+
+    <script>
+      import "../scripts/tienda.js";
+    </script>
+  </body>
+</html>

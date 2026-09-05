@@ -1,0 +1,88 @@
+---
+/**
+ * Pie del sitio.
+ *
+ * Los datos legales que faltan se muestran marcados como PENDIENTE a
+ * proposito: es preferible que se vean a que se publiquen inventados. Ver
+ * PENDIENTES.md.
+ */
+import config from "../datos/config.json";
+import categorias from "../datos/categorias.json";
+import Icono from "./Icono.astro";
+import Logo from "./Logo.astro";
+
+const base = import.meta.env.BASE_URL;
+const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
+const anio = new Date().getFullYear();
+const falta = (valor: string) => valor === "PENDIENTE";
+---
+
+<footer class="pie">
+  <div class="container pie-grid">
+    <div class="pie-col pie-marca">
+      <Logo alto={46} />
+      <p class="pie-descripcion">{config.descripcion_corta}</p>
+      <a class="pie-wa" href={`https://wa.me/${config.whatsapp}`} target="_blank" rel="noopener">
+        <Icono nombre="whatsapp" tamano={18} />
+        {config.whatsapp_visible}
+      </a>
+    </div>
+
+    <div class="pie-col">
+      <h3 class="pie-titulo">Categorías</h3>
+      <ul class="pie-lista">
+        {categorias.map((c) => (
+          <li><a href={enlace(`categoria/${c.id}`)}>{c.nombre}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="pie-col">
+      <h3 class="pie-titulo">La droguería</h3>
+      <ul class="pie-lista">
+        <li><a href={enlace("nosotros")}>Nosotros</a></li>
+        <li><a href={enlace("servicios")}>Servicios</a></li>
+        <li><a href={enlace("sedes")}>Sedes</a></li>
+        <li><a href={enlace("contacto")}>Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="pie-col">
+      <h3 class="pie-titulo">Nuestras sedes</h3>
+      <ul class="pie-lista pie-sedes">
+        {config.sedes.map((sede) => (
+          <li>
+            <strong>{sede.nombre}</strong>
+            <span>{sede.direccion}</span>
+            <a href={`tel:${sede.telefono}`}>{sede.telefono_visible}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <div class="pie-legal">
+    <div class="container pie-legal-inner">
+      <p>
+        © {anio} {config.negocio}.
+        {falta(config.legal.habilitacion)
+          ? <mark class="falta">Falta el número de habilitación sanitaria</mark>
+          : <span>Habilitación sanitaria {config.legal.habilitacion}.</span>}
+        {falta(config.legal.regente)
+          ? <mark class="falta">Falta el regente de farmacia responsable</mark>
+          : <span>Regente: {config.legal.regente}.</span>}
+      </p>
+      <nav class="pie-legales" aria-label="Enlaces legales">
+        <a href={enlace("legal/privacidad")}>Privacidad</a>
+        <a href={enlace("legal/datos")}>Tratamiento de datos</a>
+        <a href={enlace("legal/terminos")}>Términos</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="pie-aviso">
+        Los medicamentos de control especial requieren fórmula médica vigente. Este sitio no
+        reemplaza la consulta con un profesional de la salud.
+      </p>
+    </div>
+  </div>
+</footer>

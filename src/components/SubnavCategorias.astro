@@ -1,0 +1,34 @@
+---
+/**
+ * Barra azul de categorias, pegada bajo el encabezado.
+ *
+ * Las categorias salen de src/datos/categorias.json. Para agregar una nueva se
+ * anade ahi y aparece sola en todas las paginas.
+ */
+import categorias from "../datos/categorias.json";
+
+interface Props { activa?: string }
+const { activa = "" } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
+const ordenadas = [...categorias].sort((a, b) => a.orden - b.orden);
+---
+
+<nav class="subnav" aria-label="Categorías de productos">
+  <div class="container subnav-inner">
+    <a href={enlace("ofertas")} class:list={["subnav-enlace", "subnav-ofertas", { activo: activa === "ofertas" }]}>
+      Mundo Ofertas
+    </a>
+    {ordenadas.map((categoria) => (
+      <a
+        href={enlace(`categoria/${categoria.id}`)}
+        class:list={["subnav-enlace", { activo: activa === categoria.id }]}
+      >
+        {categoria.nombre}
+      </a>
+    ))}
+    <a href={enlace("sedes")} class:list={["subnav-enlace", { activo: activa === "sedes" }]}>Sedes</a>
+    <a href={enlace("servicios")} class:list={["subnav-enlace", { activo: activa === "servicios" }]}>Servicios</a>
+  </div>
+</nav>

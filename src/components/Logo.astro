@@ -1,0 +1,28 @@
+---
+/**
+ * El logo, en un solo sitio.
+ *
+ * Todas las paginas lo usan desde aqui. El dia que llegue el logo nuevo se
+ * cambia el archivo y esta linea, y queda corregido en todo el sitio a la vez.
+ *
+ * El archivo actual es un PNG de 160x74 que viene del sitio anterior. Se ve
+ * borroso en pantallas de alta densidad: reemplazarlo por un SVG esta anotado
+ * en PENDIENTES.md.
+ */
+interface Props {
+  alto?: number;
+  clase?: string;
+}
+const { alto = 40, clase = "" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const PROPORCION = 160 / 74;
+---
+
+<img
+  src={`${base}img/logo-xivica.png`}
+  alt="Droguería Xivica"
+  height={alto}
+  width={Math.round(alto * PROPORCION)}
+  class={clase}
+  style={`height:${alto}px;width:auto`}
+/>
