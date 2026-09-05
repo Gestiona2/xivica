@@ -71,12 +71,14 @@ export function montarBuscador() {
   if (!campo || !caja) return;
 
   const base = document.documentElement.dataset.base || "/";
+  // aria-expanded vive en el envoltorio con role="combobox", no en el input.
+  const combo = document.getElementById("cajaBuscador");
   let temporizador = null;
   let posicion = -1;
 
   const cerrar = () => {
     caja.hidden = true;
-    campo.setAttribute("aria-expanded", "false");
+    combo?.setAttribute("aria-expanded", "false");
     posicion = -1;
   };
 
@@ -98,7 +100,7 @@ export function montarBuscador() {
       const idx = await obtenerIndice();
       pintarResultados(caja, buscar(idx, consulta, { limite: RESULTADOS }), consulta, base);
       caja.hidden = false;
-      campo.setAttribute("aria-expanded", "true");
+      combo?.setAttribute("aria-expanded", "true");
       posicion = -1;
     }, ESPERA);
   });

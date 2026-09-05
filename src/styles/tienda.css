@@ -119,7 +119,17 @@ mark.falta {
 .subnav-enlace:hover { background: var(--azul-hondo); }
 .subnav-enlace.activo { background: var(--azul-hondo); }
 .subnav-ofertas { background: var(--lima); color: var(--lima-tinta); font-weight: 800; }
-.subnav-ofertas:hover { background: var(--lima-hondo); color: #fff; }
+.subnav-ofertas:hover { background: var(--lima-hondo); color: var(--lima-tinta); }
+/* Estando en Ofertas, la regla general le ponia fondo azul y dejaba el texto
+   oscuro del lima encima: 1.19:1, ilegible. Conserva su fondo lima con la
+   tinta oscura, que da 8.9:1, y el estado activo se marca con un subrayado
+   en vez de cambiando el color. */
+.subnav-ofertas.activo {
+  background: var(--lima);
+  color: var(--lima-tinta);
+  box-shadow: inset 0 -3px 0 var(--lima-tinta);
+}
+.subnav-ofertas.activo:hover { background: var(--lima); color: var(--lima-tinta); }
 
 /* ---------- botones ---------- */
 .boton {
@@ -225,11 +235,16 @@ mark.falta {
 
 @media (max-width: 860px) {
   .franja-oculta-movil, .accion-oculta-movil { display: none; }
+  /* El texto se oculta a la vista, no a los lectores de pantalla: con
+     display:none el boton se anunciaria solo como "boton". */
+  .accion-texto {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+  }
   .cabecera-inner { height: auto; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; gap: 12px; }
   .pastilla-sede { display: none; }
   .buscador { order: 3; flex-basis: 100%; }
   .cabecera-acciones { margin-left: auto; }
-  .accion-texto { display: none; }
   .subnav { top: 0; position: static; }
   .flota-wa { bottom: 76px; }
 }
@@ -264,8 +279,10 @@ mark.falta {
 
 .tarjeta-descuento {
   position: absolute; top: 8px; left: 8px; z-index: 2;
-  background: var(--rojo); color: #fff;
-  font-size: .68rem; font-weight: 800; letter-spacing: .02em;
+  /* Rojo mas oscuro que el de marca: con el original, el blanco encima se
+     quedaba en 4.28:1 y el minimo accesible es 4.5:1. */
+  background: var(--rojo-hondo); color: #fff;
+  font-size: .7rem; font-weight: 800; letter-spacing: .02em;
   padding: 4px 8px; border-radius: 6px;
 }
 .tarjeta-favorito {
@@ -297,8 +314,8 @@ mark.falta {
 
 .tarjeta-cuerpo { display: flex; flex-direction: column; flex: 1; gap: 4px; padding-top: 8px; }
 .tarjeta-marca {
-  font-size: .64rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
-  color: var(--cian);
+  font-size: .66rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--cian-texto);
 }
 .tarjeta-titulo { font-size: .8rem; font-weight: 500; line-height: 1.32; margin: 0; }
 .tarjeta-titulo a {
@@ -363,12 +380,20 @@ mark.falta {
 .carrusel-pieza p { font-size: .95rem; color: #d5ecff; margin-bottom: 18px; max-width: 44ch; }
 .carrusel-foto { height: 100%; width: auto; object-fit: cover; flex: none; }
 .carrusel-puntos { position: absolute; left: 48px; bottom: 16px; display: flex; gap: 7px; z-index: 3; }
+.carrusel-puntos { gap: 0; }
+/* El punto se ve de 9px pero se puede tocar en 26x26: en un celular, un
+   objetivo de 9px es imposible de acertar. */
 .carrusel-punto {
-  width: 9px; height: 9px; border: 0; border-radius: 99px; padding: 0;
-  background: rgba(255, 255, 255, .45); cursor: pointer;
+  width: 26px; height: 26px; border: 0; padding: 0; background: none;
+  cursor: pointer; display: grid; place-items: center;
+}
+.carrusel-punto::before {
+  content: ""; display: block;
+  width: 9px; height: 9px; border-radius: 99px;
+  background: rgba(255, 255, 255, .45);
   transition: width .25s ease, background .25s ease;
 }
-.carrusel-punto.activo { width: 26px; background: var(--lima); }
+.carrusel-punto.activo::before { width: 22px; background: var(--lima); }
 
 /* ---------- accesos rapidos ---------- */
 .rail {
@@ -398,7 +423,7 @@ mark.falta {
 .barra-ofertas-lima { color: var(--lima); }
 .barra-ofertas-cuenta {
   margin-left: auto; display: flex; align-items: center; gap: 8px;
-  font-size: .78rem; color: #a7b7c6;
+  font-size: .78rem; color: #c9d6e2;
 }
 .barra-ofertas-cuenta b {
   background: var(--lima); color: var(--lima-tinta);
@@ -460,7 +485,7 @@ mark.falta {
 .ficha-foto img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 .ficha-descuento {
   position: absolute; top: 14px; left: 14px;
-  background: var(--rojo); color: #fff;
+  background: var(--rojo-hondo); color: #fff;
   font-size: .8rem; font-weight: 800; padding: 6px 11px; border-radius: 7px;
 }
 .ficha-miniaturas { display: flex; gap: 9px; margin-top: 12px; flex-wrap: wrap; }
@@ -474,7 +499,7 @@ mark.falta {
 
 .ficha-marca {
   font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--cian);
+  color: var(--cian-texto);
 }
 .ficha-titulo {
   font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 800;

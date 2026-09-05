@@ -48,16 +48,21 @@ const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
 
     <form class="buscador" role="search" action={enlace("catalogo")} method="get" id="formBuscador">
       <label class="visualmente-oculto" for="campoBuscar">Buscar productos</label>
-      <input
-        type="search"
-        id="campoBuscar"
-        name="q"
-        class="buscador-campo"
-        placeholder="Buscar acetaminofén, pañales, vitaminas…"
-        autocomplete="off"
-        aria-expanded="false"
-        aria-controls="resultadosBuscador"
-      />
+      <!-- El envoltorio lleva el rol de combobox: aria-expanded no es valido
+           sobre un input de busqueda suelto. -->
+      <div role="combobox" aria-expanded="false" aria-haspopup="listbox"
+           aria-owns="resultadosBuscador" id="cajaBuscador">
+        <input
+          type="search"
+          id="campoBuscar"
+          name="q"
+          class="buscador-campo"
+          placeholder="Buscar acetaminofén, pañales, vitaminas…"
+          autocomplete="off"
+          aria-autocomplete="list"
+          aria-controls="resultadosBuscador"
+        />
+      </div>
       <button class="buscador-boton" type="submit" aria-label="Buscar">
         <Icono nombre="buscar" tamano={18} grosor={2.3} />
       </button>
@@ -65,16 +70,16 @@ const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
     </form>
 
     <nav class="cabecera-acciones" aria-label="Accesos rápidos">
-      <a href={enlace("favoritos")} class="accion" data-contador="favoritos">
+      <a href={enlace("favoritos")} class="accion" data-contador="favoritos" aria-label="Mis favoritos">
         <Icono nombre="corazon" />
         <span class="accion-texto">Favoritos</span>
         <span class="accion-globo" hidden></span>
       </a>
-      <a href={enlace("volver-a-comprar")} class="accion accion-oculta-movil">
+      <a href={enlace("volver-a-comprar")} class="accion accion-oculta-movil" aria-label="Volver a comprar">
         <Icono nombre="historial" />
         <span class="accion-texto">Volver a comprar</span>
       </a>
-      <button class="accion accion-carrito" type="button" id="abrirCarrito" data-contador="carrito">
+      <button class="accion accion-carrito" type="button" id="abrirCarrito" data-contador="carrito" aria-label="Abrir el carrito">
         <Icono nombre="carrito" />
         <span class="accion-texto">Carrito</span>
         <span class="accion-globo" hidden></span>

@@ -34,6 +34,10 @@
   --azul-hondo: #08356f;
   --azul-claro: #e8f1fb;
   --cian: #00a0e0;
+  /* El cian de marca da 2.96:1 sobre blanco y el minimo para texto es 4.5:1.
+     Este es el mismo tono, oscurecido hasta 4.68:1. El cian original se sigue
+     usando en fondos y degradados, donde el contraste no aplica. */
+  --cian-texto: #007cad;
   --lima: #a0c030;
   --lima-hondo: #87a821;
   --lima-suave: #f2f8e6;
@@ -41,13 +45,19 @@
      como texto sobre fondo claro: va de fondo, con tinta encima. */
   --lima-tinta: #16300a;
   --rojo: #e23b2e;          /* exclusivo de descuentos */
+  --rojo-hondo: #c62a1e;    /* el mismo rojo, con contraste AA para texto blanco */
+
+  /* Nombres en espanol, que son los que usa el CSS de la tienda. */
+  --tinta: #16202b;
+  --borde: #e6ebef;
+  --borde-fuerte: #d3dbe2;
 
   /* --- semanticos de la plantilla, mapeados a Xivica --- */
   --marca: #0b4da2;
   --acento: #00a0e0;
   --oscuro: #16202b;
   --claro: #ffffff;
-  --medio: #66788a;
+  --medio: #5c6d7e;
 
   /* --- superficies --- */
   --bg: #ffffff;
@@ -63,7 +73,10 @@
   /* --- texto --- */
   --text: #16202b;
   --text-soft: #43525f;
-  --text-muted: #66788a;
+  /* 4.9:1 sobre el gris del pie y 5.3:1 sobre blanco: cumple en los dos
+     fondos donde se usa. El anterior (#66788a) se quedaba en 4.18 sobre
+     el pie, por debajo del minimo de 4.5. */
+  --text-muted: #5c6d7e;
 
   /* --- profundidad y medidas --- */
   --shadow: rgba(11, 77, 162, 0.10);
