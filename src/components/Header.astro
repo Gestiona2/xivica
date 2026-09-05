@@ -61,7 +61,7 @@ const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
       <button class="buscador-boton" type="submit" aria-label="Buscar">
         <Icono nombre="buscar" tamano={18} grosor={2.3} />
       </button>
-      <div class="buscador-resultados" id="resultadosBuscador" role="listbox" hidden></div>
+      <div class="buscador-resultados" id="resultadosBuscador" role="listbox" data-whatsapp={config.whatsapp} hidden></div>
     </form>
 
     <nav class="cabecera-acciones" aria-label="Accesos rápidos">

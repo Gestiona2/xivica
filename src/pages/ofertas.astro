@@ -1,0 +1,34 @@
+---
+/**
+ * Mundo Ofertas: todo lo que tiene descuento real, ordenado por cuanto se
+ * ahorra en pesos, no por porcentaje.
+ */
+import Tienda from "../layouts/Tienda.astro";
+import GrillaProductos from "../components/GrillaProductos.astro";
+import BarraOfertas from "../components/BarraOfertas.astro";
+import productos from "../datos/productos.json";
+import { pesos } from "../scripts/formato.js";
+
+const ofertas = productos
+  .filter((p) => p.descuento)
+  .sort((a, b) => (b.precio_antes - b.precio) - (a.precio_antes - a.precio));
+
+const ahorroTotal = ofertas.reduce((suma, p) => suma + (p.precio_antes - p.precio), 0);
+---
+
+<Tienda
+  titulo="Mundo Ofertas"
+  descripcion={`${ofertas.length} productos con descuento real en Droguería Xivica. Entrega a domicilio en Bogotá en 45 a 90 minutos.`}
+  activa="ofertas"
+>
+  <div class="container">
+    <header class="catalogo-cabeza">
+      <h1>Mundo Ofertas</h1>
+      <p>{ofertas.length} productos con descuento · si te los llevas todos ahorras {pesos(ahorroTotal)}</p>
+    </header>
+    <BarraOfertas cantidad={ofertas.length} />
+    <div style="margin-top:22px">
+      <GrillaProductos productos={ofertas} prioritarias={5} vacio="No hay ofertas activas en este momento." />
+    </div>
+  </div>
+</Tienda>

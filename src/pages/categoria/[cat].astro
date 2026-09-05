@@ -1,0 +1,43 @@
+---
+/**
+ * Una pagina por categoria, con todos sus productos ya en el HTML.
+ * Son siete paginas mas que Google puede indexar, cada una compitiendo por
+ * busquedas como "medicamentos a domicilio bogota".
+ */
+import Tienda from "../../layouts/Tienda.astro";
+import GrillaProductos from "../../components/GrillaProductos.astro";
+import productos from "../../datos/productos.json";
+import categorias from "../../datos/categorias.json";
+
+export function getStaticPaths() {
+  return categorias.map((categoria) => ({
+    params: { cat: categoria.id },
+    props: {
+      categoria,
+      productos: productos.filter((p) => p.categoria === categoria.id),
+    },
+  }));
+}
+
+const { categoria, productos: lista } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const enOferta = lista.filter((p) => p.descuento).length;
+---
+
+<Tienda
+  titulo={`${categoria.nombre} — ${lista.length} productos`}
+  descripcion={`${lista.length} productos de ${categoria.nombre.toLowerCase()} con precio actualizado y entrega a domicilio en 45 a 90 minutos en Bogotá.`}
+  activa={categoria.id}
+>
+  <div class="container">
+    <header class="catalogo-cabeza">
+      <h1><span aria-hidden="true">{categoria.icono}</span> {categoria.nombre}</h1>
+      <p>
+        {lista.length} productos
+        {enOferta > 0 && <> · <strong>{enOferta} en oferta</strong></>}
+        · <a class="seccion-enlace" href={`${base}catalogo?cat=${categoria.id}`.replace(/\/{2,}/g, "/")}>Filtrar y ordenar →</a>
+      </p>
+    </header>
+    <GrillaProductos productos={lista} prioritarias={5} vacio="Todavía no hay productos en esta categoría." />
+  </div>
+</Tienda>

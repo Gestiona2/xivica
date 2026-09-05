@@ -8,6 +8,7 @@ import { montarCarrito } from "./carrito.js";
 import { montarBuscador } from "./buscador.js";
 import { montarFavoritos } from "./favoritos.js";
 import { montarCarrusel } from "./carrusel.js";
+import { montarCatalogo } from "./filtros.js";
 
 const listo = (fn) =>
   document.readyState === "loading"
@@ -19,6 +20,7 @@ listo(() => {
   montarBuscador();
   montarFavoritos();
   montarCarrusel();
+  montarCatalogo();
 
   // Menu en pantallas pequenas
   const boton = document.getElementById("abrirMenu");

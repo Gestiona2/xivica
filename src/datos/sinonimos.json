@@ -1,0 +1,192 @@
+{
+  "_comentario": "Palabras que la gente escribe y que no aparecen en el nombre de ningún producto. La clave es lo que escribe la persona; la lista es lo que debe buscar el sitio. Para agregar una, se añade una línea. Ver conocimiento_generado/REGLAS-DEL-CATALOGO.md.",
+  "panal": [
+    "winny",
+    "pañal",
+    "bebe"
+  ],
+  "panales": [
+    "winny",
+    "pañal",
+    "bebe"
+  ],
+  "toallas": [
+    "nosotras",
+    "kotex",
+    "toalla"
+  ],
+  "gripa": [
+    "antigripal",
+    "gripa",
+    "noxpirin",
+    "sinutab"
+  ],
+  "dolor": [
+    "analgesico",
+    "acetaminofen",
+    "ibuprofeno",
+    "dolex"
+  ],
+  "fiebre": [
+    "acetaminofen",
+    "dolex",
+    "ibuprofeno"
+  ],
+  "tos": [
+    "expectorante",
+    "jarabe",
+    "tukol",
+    "abrilar"
+  ],
+  "acidez": [
+    "antiacido",
+    "omeprazol",
+    "pepsamar",
+    "gaviscon"
+  ],
+  "diarrea": [
+    "floratil",
+    "enterogermina",
+    "suero",
+    "electrolit"
+  ],
+  "alergia": [
+    "loratadina",
+    "cetirizina",
+    "antialergico"
+  ],
+  "hongos": [
+    "antimicotico",
+    "unesia",
+    "canesten",
+    "lomecan"
+  ],
+  "cansancio": [
+    "vitamina",
+    "centrum",
+    "complejo b"
+  ],
+  "bloqueador": [
+    "sunstop",
+    "sunface",
+    "spf",
+    "solar"
+  ],
+  "protector solar": [
+    "sunstop",
+    "sunface",
+    "spf"
+  ],
+  "leche": [
+    "klim",
+    "nan",
+    "nestum",
+    "formula"
+  ],
+  "vitaminas": [
+    "vitamina",
+    "centrum",
+    "redoxon",
+    "complejo b"
+  ],
+  "anticonceptivo": [
+    "yael",
+    "slinda",
+    "qlaira",
+    "activa"
+  ],
+  "termometro": [
+    "termometro"
+  ],
+  "tapabocas": [
+    "tapaboca",
+    "mascarilla"
+  ],
+  "cabeza": [
+    "analgesico",
+    "acetaminofen",
+    "dolex",
+    "advil",
+    "migra"
+  ],
+  "duele": [
+    "analgesico",
+    "acetaminofen",
+    "ibuprofeno",
+    "dolex"
+  ],
+  "cara": [
+    "facial",
+    "rostro",
+    "crema",
+    "spf"
+  ],
+  "rostro": [
+    "facial",
+    "crema",
+    "spf"
+  ],
+  "garganta": [
+    "garganta",
+    "strepsils",
+    "antigripal"
+  ],
+  "estomago": [
+    "antiacido",
+    "omeprazol",
+    "buscapina",
+    "pepsamar"
+  ],
+  "gastritis": [
+    "omeprazol",
+    "pantoprazol",
+    "antiacido"
+  ],
+  "sueno": [
+    "dormir",
+    "melatonina"
+  ],
+  "gases": [
+    "antiacido",
+    "simeticona",
+    "gaviscon"
+  ],
+  "estrenimiento": [
+    "laxante",
+    "peg",
+    "polietilenglicol"
+  ],
+  "nauseas": [
+    "metoclopramida",
+    "antiemetico"
+  ],
+  "quemadura": [
+    "sunstop",
+    "crema",
+    "cicatrizante"
+  ],
+  "herida": [
+    "curita",
+    "gasa",
+    "isodine",
+    "antiseptico"
+  ],
+  "presion": [
+    "losartan",
+    "amlodipino",
+    "enalapril",
+    "cardiovascular"
+  ],
+  "azucar": [
+    "metformina",
+    "diabetes",
+    "glucometro"
+  ],
+  "colesterol": [
+    "atorvastatina"
+  ],
+  "tiroides": [
+    "eutirox",
+    "levotiroxina"
+  ]
+}
