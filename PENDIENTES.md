@@ -37,6 +37,15 @@ llegan los datos.
       520×300. Los textos ya están escritos en `src/datos/home.json`.
 - [ ] **Fotos de las sedes y del equipo**, para las páginas de sedes y nosotros.
 
+## Riesgos conocidos
+
+- [ ] **El mapa depende de OpenStreetMap.** Las imágenes del mapa las sirve un
+      proyecto sin ánimo de lucro cuya política de uso desaconseja el tráfico alto de
+      sitios comerciales. En pruebas automatizadas algunas ya se rechazaron. Si el sitio
+      crece, conviene pasar a un proveedor con plan gratuito generoso (MapTiler,
+      Protomaps) o a una imagen estática del mapa. Mientras tanto, si el mapa no carga,
+      las direcciones siguen escritas encima y los enlaces a Google Maps funcionan.
+
 ## Mejoras de datos
 
 - [ ] **Subcategorías del 48% restante.** Se clasificó el 52% por palabras clave; el resto
