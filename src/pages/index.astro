@@ -12,6 +12,7 @@ import RailCategorias from "../components/RailCategorias.astro";
 import BarraOfertas from "../components/BarraOfertas.astro";
 import GrillaProductos from "../components/GrillaProductos.astro";
 import FranjaGarantias from "../components/FranjaGarantias.astro";
+import { elegirDestacados } from "../scripts/destacados.js";
 import productos from "../datos/productos.json";
 import categorias from "../datos/categorias.json";
 
@@ -19,15 +20,26 @@ const base = import.meta.env.BASE_URL;
 const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
 
 const enOferta = productos.filter((p) => p.descuento);
-const destacadas = enOferta.slice(0, 10);
 
-// Una fila por categoria grande, para que se vea catalogo sin tener que filtrar.
+// El orden no es el del archivo: ver src/scripts/destacados.js. Los productos
+// que requieren formula medica quedan fuera del escaparate.
+const destacadas = elegirDestacados(enOferta, 10);
+
+// Lo ya mostrado no se repite mas abajo: ver el mismo producto dos veces en
+// una pantalla hace que el catalogo parezca mas pobre de lo que es.
+const yaMostrados = new Set(destacadas.map((p) => p.slug));
+
 const filas = categorias
   .filter((c) => ["medicamentos", "cuidado-personal", "bebe-maternidad"].includes(c.id))
-  .map((categoria) => ({
-    ...categoria,
-    productos: productos.filter((p) => p.categoria === categoria.id).slice(0, 5),
-  }));
+  .map((categoria) => {
+    const fila = elegirDestacados(
+      productos.filter((p) => p.categoria === categoria.id),
+      5,
+      { excluir: yaMostrados }
+    );
+    fila.forEach((p) => yaMostrados.add(p.slug));
+    return { ...categoria, productos: fila };
+  });
 ---
 
 <Tienda

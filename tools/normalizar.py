@@ -66,6 +66,9 @@ def normalizar_producto(crudo):
         # de farmacia. Ver tools/enriquecer.py y PENDIENTES.md.
         "rx": None,
         "stock": True,
+        # Ponlo en true para empujar un producto en la portada.
+        # Ver conocimiento_generado/COMO-EDITAR.md.
+        "destacado": False,
         "imagenes": imagenes,
         "descripcion": (crudo.get("d") or "").strip(),
         "origen": {"rx": "pendiente"},

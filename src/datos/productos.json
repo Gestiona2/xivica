@@ -11,6 +11,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100025268_10-600x600.webp",
    "7702605100132-1-300x300.webp",
@@ -35,6 +36,7 @@
   "presentacion": "30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "650240032158-1-600x600.webp",
    "650240032158-2-600x600.webp",
@@ -59,6 +61,7 @@
   "presentacion": "100 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100005302_1-600x600.webp",
    "100005302_2-600x585.webp",
@@ -84,6 +87,7 @@
   "presentacion": "50 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702031132844-1-600x600.webp",
    "7702031132844-4-600x600.webp",
@@ -108,6 +112,7 @@
   "presentacion": "100 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200007235_1-600x600.webp",
    "200007235_2-600x600.webp",
@@ -132,6 +137,7 @@
   "presentacion": "30 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705959884420-1-600x600.webp",
    "7705959884420-7-600x600.webp",
@@ -156,6 +162,7 @@
   "presentacion": "100 mg · 30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703038060970-1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -180,6 +187,7 @@
   "presentacion": "160 mg · 5 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057091071-1-600x600.webp",
    "7702057091071-2-600x600.webp",
@@ -204,6 +212,7 @@
   "presentacion": "8 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057708962-1-600x600.webp",
    "7702057708962-2-600x600.webp",
@@ -228,6 +237,7 @@
   "presentacion": "90 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100024015_2-600x600.webp",
    "100024015_1-600x600.webp",
@@ -252,6 +262,7 @@
   "presentacion": "100 mg · 30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705959885458-1-600x600.webp",
    "7705959885458-2-600x600.webp",
@@ -276,6 +287,7 @@
   "presentacion": "200 mg · 25 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100125-1-600x600.webp",
    "7702605100125-7-600x600.webp",
@@ -300,6 +312,7 @@
   "presentacion": "800 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100132-1-600x600.webp",
    "7702605100132-7-600x600.webp",
@@ -324,6 +337,7 @@
   "presentacion": "15 g · Ungüento",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100156-1-600x600.webp",
    "7702605100156-7-600x600.webp",
@@ -348,6 +362,7 @@
   "presentacion": "30 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026793_1-600x600.webp",
    "100026793_2-600x600.webp",
@@ -372,6 +387,7 @@
   "presentacion": "120 ml · 2 Loción",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123010999-1-600x600.webp",
    "7702123010999-4-600x600.webp",
@@ -396,6 +412,7 @@
   "presentacion": "1 mg · 100 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184010013-1-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -420,6 +437,7 @@
   "presentacion": "5 mg · 20 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184010020-7-600x600.webp",
    "7707232091600-7-300x300.webp",
@@ -444,6 +462,7 @@
   "presentacion": "15 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7709990089684-7-600x600.webp",
    "7709990089684-9-600x600.webp",
@@ -468,6 +487,7 @@
   "presentacion": "21 Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100022710_1-600x600.webp",
    "100022710_4-600x600.webp",
@@ -491,6 +511,7 @@
   "presentacion": "60 ml · 60 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100006091_1-600x600.webp",
    "100006091_2-600x600.webp",
@@ -516,6 +537,7 @@
   "presentacion": "10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019304_1-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -541,6 +563,7 @@
   "presentacion": "16 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100010062_1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -566,6 +589,7 @@
   "presentacion": "10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100016561_1-600x600.webp",
    "100016561_4-600x600.webp",
@@ -591,6 +615,7 @@
   "presentacion": "75 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057010201-1-600x600.webp",
    "7702057010201-2-600x600.webp",
@@ -615,6 +640,7 @@
   "presentacion": "15 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7709990613124-1-600x600.webp",
    "7709990613124-2-600x600.webp",
@@ -639,6 +665,7 @@
   "presentacion": "200 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003831_1-600x600.webp",
    "100003831_3-600x600.webp",
@@ -662,6 +689,7 @@
   "presentacion": "20 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057070243-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -685,6 +713,7 @@
   "presentacion": "60 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123006787-10-600x600.webp",
    "7702123006787-1-600x600.webp",
@@ -708,6 +737,7 @@
   "presentacion": "120 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100000317_7-600x600.webp",
    "100000317_1-600x600.webp",
@@ -731,6 +761,7 @@
   "presentacion": "150 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-600x600.webp",
    "150254330478622-600x600.webp",
@@ -755,6 +786,7 @@
   "presentacion": "25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702195076091-1-600x600.webp",
    "7702195076091-7-600x600.webp",
@@ -778,6 +810,7 @@
   "presentacion": "10 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100446-1-600x600.webp",
    "7702605100446-7-600x600.webp",
@@ -802,6 +835,7 @@
   "presentacion": "5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100027118_1-600x600.webp",
    "100027118_4-600x600.webp",
@@ -826,6 +860,7 @@
   "presentacion": "250 mg · 100 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100385-7-600x600.webp",
    "7702605100385-1-600x600.webp",
@@ -850,6 +885,7 @@
   "presentacion": "250 mg · 45 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100005741_1-600x600.webp",
    "100005741_4-600x600.webp",
@@ -874,6 +910,7 @@
   "presentacion": "550 mg · 60 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100022986_1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -897,6 +934,7 @@
   "presentacion": "275 mg · 50 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123006947-1-600x600.webp",
    "7702123006947-3-600x600.webp",
@@ -920,6 +958,7 @@
   "presentacion": "100 mg · 140 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123006817-1-600x600.webp",
    "7702123006817-2-600x600.webp",
@@ -945,6 +984,7 @@
   "presentacion": "500 mg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123006718-1-600x600.webp",
    "7702123006718-2-600x600.webp",
@@ -970,6 +1010,7 @@
   "presentacion": "500 mg · 100 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702123009535-1-600x600.webp",
    "7702123009535-2-600x600.webp",
@@ -995,6 +1036,7 @@
   "presentacion": "10 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891317196417-1-600x600.webp",
    "7891317196417-7-600x600.webp",
@@ -1019,6 +1061,7 @@
   "presentacion": "20 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891317196431-1-600x600.webp",
    "7891317196431-2-600x600.webp",
@@ -1043,6 +1086,7 @@
   "presentacion": "40 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891317196752-1-600x600.webp",
    "7891317196752-7-600x600.webp",
@@ -1067,6 +1111,7 @@
   "presentacion": "200 mg · 15 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100538-1-600x600.webp",
    "7702605100538-7-600x600.webp",
@@ -1091,6 +1136,7 @@
   "presentacion": "400 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501058631121-600x600.webp",
    "4054839084621-1-300x300.webp",
@@ -1114,6 +1160,7 @@
   "presentacion": "35 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501303458206-1-600x600.webp",
    "7501303458206-2-600x600.webp",
@@ -1138,6 +1185,7 @@
   "presentacion": "Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100002109_1-600x600.webp",
    "100002109_5-600x600.webp",
@@ -1161,6 +1209,7 @@
   "presentacion": "28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021360_1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -1184,6 +1233,7 @@
   "presentacion": "1.5 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100025685_1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -1207,6 +1257,7 @@
   "presentacion": "20 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100017970_1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -1231,6 +1282,7 @@
   "presentacion": "20 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057079253-1-600x600.webp",
    "7702057079253-2-600x600.webp",
@@ -1255,6 +1307,7 @@
   "presentacion": "20 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605103874-1-600x600.webp",
    "7702605103874-7-600x600.webp",
@@ -1278,6 +1331,7 @@
   "presentacion": "20 mg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019533_7-600x600.webp",
    "100019533_2-600x600.webp",
@@ -1301,6 +1355,7 @@
   "presentacion": "30 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057731892-1-600x600.webp",
    "7702057731892-2-600x600.webp",
@@ -1324,6 +1379,7 @@
   "presentacion": "60 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703234100968-1-600x600.webp",
    "7703234100968-7-600x600.webp",
@@ -1348,6 +1404,7 @@
   "presentacion": "60 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "4054839084621-1-600x600.webp",
    "4054839084621-7-600x600.webp",
@@ -1371,6 +1428,7 @@
   "presentacion": "5 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702195114052-1-600x600.webp",
    "7702195114052-7-600x600.webp",
@@ -1394,6 +1452,7 @@
   "presentacion": "262 mg · 48 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100015393_1-600x600.webp",
    "100015393_2-600x600.webp",
@@ -1417,6 +1476,7 @@
   "presentacion": "5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605109401-1-600x600.webp",
    "7702605109401-4-600x600.webp",
@@ -1440,6 +1500,7 @@
   "presentacion": "650 mg · 36 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "comprar-cafiaspirina-forte-caja-con-36-tabletas-precio.webp",
    "7702605100132-1-300x300.webp",
@@ -1464,6 +1525,7 @@
   "presentacion": "48 Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "Calmidol-compuesto-48-capsulas-Drogueria-Drogas-Exito-Tulua-600x600.webp",
    "100024015_2-300x300.webp",
@@ -1489,6 +1551,7 @@
   "presentacion": "Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "CALMIDOL-MAX_F-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -1514,6 +1577,7 @@
   "presentacion": "8 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605103720-1-600x600.webp",
    "7702605103720-2-600x600.webp",
@@ -1537,6 +1601,7 @@
   "presentacion": "25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057071370-600x600.webp",
    "7702057070243-300x300.webp",
@@ -1560,6 +1625,7 @@
   "presentacion": "50 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702195713507-1-600x600.webp",
    "7702195713507-3-600x600.webp",
@@ -1583,6 +1649,7 @@
   "presentacion": "100 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100000510_1-600x600.webp",
    "100000510_2-600x600.webp",
@@ -1608,6 +1675,7 @@
   "presentacion": "12.5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705959881221-1-600x600.webp",
    "7705959881221-7-600x600.webp",
@@ -1631,6 +1699,7 @@
   "presentacion": "25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057710262-1-600x600.webp",
    "7702057710262-7-600x600.webp",
@@ -1654,6 +1723,7 @@
   "presentacion": "6.25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057709068-1-600x600.webp",
    "7702057709068-4-600x600.webp",
@@ -1677,6 +1747,7 @@
   "presentacion": "100 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702418001640-1-600x600.webp",
    "7702418001640-2-600x600.webp",
@@ -1700,6 +1771,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100004123_1-600x600.webp",
    "100004123_2-600x600.webp",
@@ -1723,6 +1795,7 @@
   "presentacion": "250 mg · 60 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100682-1-600x600.webp",
    "7702605100682-7-600x600.webp",
@@ -1747,6 +1820,7 @@
   "presentacion": "50 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200038254_1-600x600.webp",
    "200038254_2-600x600.webp",
@@ -1770,6 +1844,7 @@
   "presentacion": "500 mg · 24 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003875_1-600x600.webp",
    "100003875_3-600x600.webp",
@@ -1793,6 +1868,7 @@
   "presentacion": "200 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702195057304-1-600x600.webp",
    "7702195057304-7-600x600.webp",
@@ -1816,6 +1892,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026246_1-600x600.webp",
    "100026246_4-600x600.webp",
@@ -1840,6 +1917,7 @@
   "presentacion": "30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026244_1-600x600.webp",
    "100026244_4-600x600.webp",
@@ -1865,6 +1943,7 @@
   "presentacion": "30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026246_1-600x600.webp",
    "100026246_4-600x600.webp",
@@ -1890,6 +1969,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200043540_1-600x600.webp",
    "200043540_2-600x600.webp",
@@ -1914,6 +1994,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200028747_1-600x600.webp",
    "200028747_10-600x600.webp",
@@ -1938,6 +2019,7 @@
   "presentacion": "330 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200041273_1-1-600x600.webp",
    "200041273_1-600x600.webp",
@@ -1963,6 +2045,7 @@
   "presentacion": "453 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200014917_1-600x600.webp",
    "200014917_4-600x600.webp",
@@ -1987,6 +2070,7 @@
   "presentacion": "10 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100010984_1-600x600.webp",
    "100010984_2-600x600.webp",
@@ -2011,6 +2095,7 @@
   "presentacion": "15 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100020875_1-600x600.webp",
    "100020875_2-600x600.webp",
@@ -2035,6 +2120,7 @@
   "presentacion": "600 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "8410412020305-1-600x600.webp",
    "7501001153182-1-300x300.webp",
@@ -2059,6 +2145,7 @@
   "presentacion": "400 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7500435020244-600x600.webp",
    "200038006_1-300x300.webp",
@@ -2083,6 +2170,7 @@
   "presentacion": "550 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702006202930-1-600x600.webp",
    "200035181_1-300x300.webp",
@@ -2107,6 +2195,7 @@
   "presentacion": "400 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200043064_1-600x600.webp",
    "200043064_4-600x600.webp",
@@ -2132,6 +2221,7 @@
   "presentacion": "415 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200038006_1-600x600.webp",
    "200038006_2-600x600.webp",
@@ -2157,6 +2247,7 @@
   "presentacion": "20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026042_1-600x600.webp",
    "100026042_3-600x600.webp",
@@ -2182,6 +2273,7 @@
   "presentacion": "415 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "CHAMPU-TIO-NACHO-HERBOLARIA-MILENARIA-415-mL-600x600.webp",
    "7702006202930-1-300x300.webp",
@@ -2207,6 +2299,7 @@
   "presentacion": "20 mg · 1 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "175583-800-800-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -2230,6 +2323,7 @@
   "presentacion": "30 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200038049_1-600x600.webp",
    "200038049_2-600x600.webp",
@@ -2253,6 +2347,7 @@
   "presentacion": "300 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7803510441010-1-600x600.webp",
    "7803510441010-2-600x600.webp",
@@ -2276,6 +2371,7 @@
   "presentacion": "40 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7803510002983-1-600x600.webp",
    "7803510002983-2-600x600.webp",
@@ -2299,6 +2395,7 @@
   "presentacion": "500 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100006949_1-600x600.webp",
    "100006949_2-600x600.webp",
@@ -2322,6 +2419,7 @@
   "presentacion": "500 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605102211-1-600x600.webp",
    "7702605102211-1-1-600x600.webp",
@@ -2345,6 +2443,7 @@
   "presentacion": "1 g · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707172688397-1-600x600.webp",
    "7707172688397-2-600x600.webp",
@@ -2370,6 +2469,7 @@
   "presentacion": "25 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703889019059-1-600x600.webp",
    "7703889019059-2-600x600.webp",
@@ -2394,6 +2494,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184020258-1-600x600.webp",
    "7702184020258-5-600x600.webp",
@@ -2417,6 +2518,7 @@
   "presentacion": "4 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184331699-1-600x600.webp",
    "7702184331699-4-600x600.webp",
@@ -2440,6 +2542,7 @@
   "presentacion": "100 mg · Óvulos",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153016050-1-600x600.webp",
    "7703153016050-7-600x600.webp",
@@ -2463,6 +2566,7 @@
   "presentacion": "40 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003880_1-600x600.webp",
    "100003880_2-600x600.webp",
@@ -2487,6 +2591,7 @@
   "presentacion": "0.5 mg · 40 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703432423425-1-600x600.webp",
    "7703432423425-7-600x600.webp",
@@ -2510,6 +2615,7 @@
   "presentacion": "40 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702195333323-1-600x600.webp",
    "7702195333323-3-600x600.webp",
@@ -2533,6 +2639,7 @@
   "presentacion": "10 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7861073963455-1-600x600.webp",
    "7861073963455-2-600x600.webp",
@@ -2556,6 +2663,7 @@
   "presentacion": "10 ml · Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184130193-7-600x600.webp",
    "7702184130193-8-600x600.webp",
@@ -2580,6 +2688,7 @@
   "presentacion": "250 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184010082-1-600x600.webp",
    "7702184010082-7-600x600.webp",
@@ -2604,6 +2713,7 @@
   "presentacion": "2.5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702418006263-1-600x600.webp",
    "7702418006263-7-600x600.webp",
@@ -2627,6 +2737,7 @@
   "presentacion": "10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703546031004-1-600x600.webp",
    "7703546031004-2-600x600.webp",
@@ -2650,6 +2761,7 @@
   "presentacion": "20 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7706309001191-1-600x600.webp",
    "7706309001191-3-600x600.webp",
@@ -2674,6 +2786,7 @@
   "presentacion": "2.5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7795345121611-7-600x600.webp",
    "100019304_1-300x300.webp",
@@ -2697,6 +2810,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "gotas-pediatricas-coricidin-bayer-frasco-x-30-ml-100005515_1-600x600.webp",
    "gotas-pediatricas-coricidin-bayer-frasco-x-30-ml-100005515_2-600x600.webp",
@@ -2722,6 +2836,7 @@
   "presentacion": "20 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200035181_1-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -2746,6 +2861,7 @@
   "presentacion": "50 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501056330255-1-600x600.webp",
    "7501056330255-10-600x600.webp",
@@ -2771,6 +2887,7 @@
   "presentacion": "200 ml · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200007373_2-2-600x600.webp",
    "200007373_4-600x600.webp",
@@ -2795,6 +2912,7 @@
   "presentacion": "200 ml · Loción",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200012453_2-600x600.webp",
    "200012453_1-600x600.webp",
@@ -2820,6 +2938,7 @@
   "presentacion": "120 ml · Loción",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200003821_1-600x600.webp",
    "200003821_2-600x600.webp",
@@ -2845,6 +2964,7 @@
   "presentacion": "125 ml · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200004719_1-600x600.webp",
    "CHA.SEDAL-KER.ANT_.-400MLACO-SED-340ML-UND-300x300.webp",
@@ -2870,6 +2990,7 @@
   "presentacion": "45 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200042622_1-600x600.webp",
    "200042622_2-600x600.webp",
@@ -2895,6 +3016,7 @@
   "presentacion": "200 ml · 200 Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702031878452-1-600x600.webp",
    "7702031878452-4-600x600.webp",
@@ -2919,6 +3041,7 @@
   "presentacion": "270 ml · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200034443_1-600x600.webp",
    "200034443_2-600x600.webp",
@@ -2943,6 +3066,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702277148081-1-600x600.webp",
    "ZOPICLONA-7.5-MG-TBS-COLMED-CJA-X-30-300x300.webp",
@@ -2965,6 +3089,7 @@
   "presentacion": "45 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200042621_1-600x600.webp",
    "200042621_2-600x600.webp",
@@ -2990,6 +3115,7 @@
   "presentacion": "45 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200042622_2-600x600.webp",
    "200038254_1-300x300.webp",
@@ -3015,6 +3141,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200036638_1-600x600.webp",
    "751273771707-1-300x300.webp",
@@ -3039,6 +3166,7 @@
   "presentacion": "7.5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019767_1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -3062,6 +3190,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7896116861733-1-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -3084,6 +3213,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153025618-1-600x600.webp",
    "100006091_1-300x300.webp",
@@ -3108,6 +3238,7 @@
   "presentacion": "30 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200042080_1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -3132,6 +3263,7 @@
   "presentacion": "48 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026838_1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -3155,6 +3287,7 @@
   "presentacion": "50 mg · 10 Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702635122029-1-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -3180,6 +3313,7 @@
   "presentacion": "100 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501124814090-600x600.webp",
    "100019304_1-300x300.webp",
@@ -3205,6 +3339,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "751273771707-1-600x600.webp",
    "100025268_10-300x300.webp",
@@ -3228,6 +3363,7 @@
   "presentacion": "180 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100018875_1-600x600.webp",
    "100000317_7-300x300.webp",
@@ -3251,6 +3387,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501001153182-1-600x600.webp",
    "100016561_1-300x300.webp",
@@ -3276,6 +3413,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153029142-7-600x600.webp",
    "100019304_1-300x300.webp",
@@ -3299,6 +3437,7 @@
   "presentacion": "80 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605104543-1-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -3323,6 +3462,7 @@
   "presentacion": "160 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026309_1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -3347,6 +3487,7 @@
   "presentacion": "60 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707232091600-7-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -3370,6 +3511,7 @@
   "presentacion": "125 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "650240029141-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -3394,6 +3536,7 @@
   "presentacion": "120 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100025173_4-600x600.webp",
    "100016561_1-300x300.webp",
@@ -3418,6 +3561,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "751273770397-1-600x600.webp",
    "100024015_2-300x300.webp",
@@ -3441,6 +3585,7 @@
   "presentacion": "120 mg · 30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153031251-7-600x600.webp",
    "7702605100156-1-300x300.webp",
@@ -3464,6 +3609,7 @@
   "presentacion": "200 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605102884-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -3487,6 +3633,7 @@
   "presentacion": "40 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100001338_1-600x600.webp",
    "100000317_7-300x300.webp",
@@ -3512,6 +3659,7 @@
   "presentacion": "5 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100013676_7-600x600.webp",
    "100019304_1-300x300.webp",
@@ -3535,6 +3683,7 @@
   "presentacion": "4 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026555_7-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -3558,6 +3707,7 @@
   "presentacion": "Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707336721748-1-600x600.webp",
    "7702057070243-300x300.webp",
@@ -3581,6 +3731,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200043586_1-600x600.webp",
    "200038006_1-300x300.webp",
@@ -3603,6 +3754,7 @@
   "presentacion": "50 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605102853-1-600x600.webp",
    "7702605100132-1-300x300.webp",
@@ -3626,6 +3778,7 @@
   "presentacion": "100 mg · 10 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021261_9-600x600.webp",
    "100010062_1-300x300.webp",
@@ -3649,6 +3802,7 @@
   "presentacion": "Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057077280-1-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -3672,6 +3826,7 @@
   "presentacion": "80 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7896261006249-600x600.webp",
    "100010062_1-300x300.webp",
@@ -3695,6 +3850,7 @@
   "presentacion": "500 mg · 200 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100001912_1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -3720,6 +3876,7 @@
   "presentacion": "10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021749_1-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -3745,6 +3902,7 @@
   "presentacion": "500 mg · 100 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026197_1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -3770,6 +3928,7 @@
   "presentacion": "16 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100016452_1-600x600.webp",
    "100024015_2-300x300.webp",
@@ -3795,6 +3954,7 @@
   "presentacion": "60 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100025351_1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -3820,6 +3980,7 @@
   "presentacion": "14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100022866_1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -3845,6 +4006,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "8437009433553-12-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -3868,6 +4030,7 @@
   "presentacion": "5 ml · Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100011580_7-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -3893,6 +4056,7 @@
   "presentacion": "Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "enterogermina-plus-5-ml-sanofi-caja-x-5-frascos-100022711_1-600x600.webp",
    "7702057708962-1-300x300.webp",
@@ -3918,6 +4082,7 @@
   "presentacion": "100 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200015224_1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -3941,6 +4106,7 @@
   "presentacion": "100 mg · Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100012816_1-600x600.webp",
    "100024015_2-300x300.webp",
@@ -3965,6 +4131,7 @@
   "presentacion": "50 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100004662_1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -3989,6 +4156,7 @@
   "presentacion": "20 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153022068-600x600.webp",
    "100006091_1-300x300.webp",
@@ -4013,6 +4181,7 @@
   "presentacion": "40 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100015289_1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -4037,6 +4206,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "woocommerce-placeholder-600x600.webp",
    "200038049_1-300x300.webp",
@@ -4059,6 +4229,7 @@
   "presentacion": "60 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605109388-1-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -4082,6 +4253,7 @@
   "presentacion": "120 mg · 7 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7706127001670-7-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -4105,6 +4277,7 @@
   "presentacion": "90 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7706127001496-1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -4128,6 +4301,7 @@
   "presentacion": "50 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200041783_1-600x600.webp",
    "100019304_1-300x300.webp",
@@ -4153,6 +4327,7 @@
   "presentacion": "20 mg · 14 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "650240003950-1-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -4176,6 +4351,7 @@
   "presentacion": "30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7709990384987-1-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -4200,6 +4376,7 @@
   "presentacion": "50 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605103133-2-600x600.webp",
    "100025268_10-300x300.webp",
@@ -4224,6 +4401,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7706310000138-7-600x600.webp",
    "100025268_10-300x300.webp",
@@ -4247,6 +4425,7 @@
   "presentacion": "12 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702035915566-1-600x600.webp",
    "100019304_1-300x300.webp",
@@ -4272,6 +4451,7 @@
   "presentacion": "4 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "8437019299583-12-600x600.webp",
    "100010062_1-300x300.webp",
@@ -4297,6 +4477,7 @@
   "presentacion": "20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703454122993-1-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -4320,6 +4501,7 @@
   "presentacion": "625 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026941_1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -4345,6 +4527,7 @@
   "presentacion": "400 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057010928-600x600.webp",
    "100016561_1-300x300.webp",
@@ -4369,6 +4552,7 @@
   "presentacion": "15 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "300650429092-1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -4392,6 +4576,7 @@
   "presentacion": "100 mcg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702418001558-600x600.webp",
    "7702057070243-300x300.webp",
@@ -4416,6 +4601,7 @@
   "presentacion": "112 mcg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501298221939-1-600x600.webp",
    "100010062_1-300x300.webp",
@@ -4440,6 +4626,7 @@
   "presentacion": "50 mcg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100007848_2-600x600.webp",
    "100016561_1-300x300.webp",
@@ -4464,6 +4651,7 @@
   "presentacion": "75 mcg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501298224244-1-600x600.webp",
    "100006091_1-300x300.webp",
@@ -4488,6 +4676,7 @@
   "presentacion": "0.75 mg · 4 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153028374-7-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -4511,6 +4700,7 @@
   "presentacion": "7 ml · 7 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153037536-7-600x600.webp",
    "100024015_2-300x300.webp",
@@ -4535,6 +4725,7 @@
   "presentacion": "28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021202_1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -4558,6 +4749,7 @@
   "presentacion": "10 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100020742_1-600x600.webp",
    "100010062_1-300x300.webp",
@@ -4581,6 +4773,7 @@
   "presentacion": "300 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100020743_1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -4604,6 +4797,7 @@
   "presentacion": "12 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026553_7-600x600.webp",
    "100024015_2-300x300.webp",
@@ -4627,6 +4821,7 @@
   "presentacion": "3 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100013682_9-600x600.webp",
    "100010062_1-300x300.webp",
@@ -4650,6 +4845,7 @@
   "presentacion": "0.5 ml · Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "20190722_170704-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -4673,6 +4869,7 @@
   "presentacion": "28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100014704_1-600x600.webp",
    "100010062_1-300x300.webp",
@@ -4696,6 +4893,7 @@
   "presentacion": "100 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057270148-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -4719,6 +4917,7 @@
   "presentacion": "30 mg · 5 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057062545-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -4742,6 +4941,7 @@
   "presentacion": "50 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703445117021-1-600x600.webp",
    "100005302_1-300x300.webp",
@@ -4766,6 +4966,7 @@
   "presentacion": "Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026048_1-600x600.webp",
    "7702605100156-1-300x300.webp",
@@ -4790,6 +4991,7 @@
   "presentacion": "15 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100015384_1-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -4814,6 +5016,7 @@
   "presentacion": "250 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019568_1-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -4839,6 +5042,7 @@
   "presentacion": "250 mg · 10 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019566_1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -4864,6 +5068,7 @@
   "presentacion": "200 mg · 4 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605102174-1-600x600.webp",
    "100000317_7-300x300.webp",
@@ -4887,6 +5092,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703445103109-1-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -4910,6 +5116,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703445130181-1-600x600.webp",
    "100024015_2-300x300.webp",
@@ -4933,6 +5140,7 @@
   "presentacion": "600 mg · 30 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703445030153-1-600x600.webp",
    "100019304_1-300x300.webp",
@@ -4956,6 +5164,7 @@
   "presentacion": "20 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003902_1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -4979,6 +5188,7 @@
   "presentacion": "110 ml · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702006298940-1-600x600.webp",
    "200034443_1-300x300.webp",
@@ -5002,6 +5212,7 @@
   "presentacion": "40 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7706324001091-1-600x600.webp",
    "100025268_10-300x300.webp",
@@ -5025,6 +5236,7 @@
   "presentacion": "6 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153013271-7-600x600.webp",
    "100000317_7-300x300.webp",
@@ -5049,6 +5261,7 @@
   "presentacion": "30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153022693-1-600x600.webp",
    "100025268_10-300x300.webp",
@@ -5072,6 +5285,7 @@
   "presentacion": "40 mg · 80 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707232092034-1-600x600.webp",
    "100016561_1-300x300.webp",
@@ -5095,6 +5309,7 @@
   "presentacion": "50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707336720789-1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -5118,6 +5333,7 @@
   "presentacion": "15 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057075002-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -5142,6 +5358,7 @@
   "presentacion": "10 mg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100027262_1-600x600.webp",
    "7702057708962-1-300x300.webp",
@@ -5165,6 +5382,7 @@
   "presentacion": "800 mg · 30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057863098-1-600x600.webp",
    "7702057070243-300x300.webp",
@@ -5189,6 +5407,7 @@
   "presentacion": "800 mg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "231-600x600.webp",
    "100000317_7-300x300.webp",
@@ -5213,6 +5432,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702045527827-1-600x600.webp",
    "AZITROMICINA-500-MG-3-TAB-AG-300x300.webp",
@@ -5235,6 +5455,7 @@
   "presentacion": "150 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "3838957043231-1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -5258,6 +5479,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153025571-7-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -5281,6 +5503,7 @@
   "presentacion": "6 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057160487-1-600x600.webp",
    "100006091_1-300x300.webp",
@@ -5305,6 +5528,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100023950_1-600x600.webp",
    "7702057070243-300x300.webp",
@@ -5327,6 +5551,7 @@
   "presentacion": "110 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200043114_1-600x600.webp",
    "8410412020305-1-300x300.webp",
@@ -5350,6 +5575,7 @@
   "presentacion": "100 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200038024_1-600x600.webp",
    "CHAMPU-TIO-NACHO-HERBOLARIA-MILENARIA-415-mL-300x300.webp",
@@ -5373,6 +5599,7 @@
   "presentacion": "75 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891150025998-7-600x600.webp",
    "200003821_1-300x300.webp",
@@ -5398,6 +5625,7 @@
   "presentacion": "90 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7898422746759-7-600x600.webp",
    "200042622_1-300x300.webp",
@@ -5423,6 +5651,7 @@
   "presentacion": "200 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "2-600x600.webp",
    "200003821_1-300x300.webp",
@@ -5448,6 +5677,7 @@
   "presentacion": "110 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200043058_10-600x600.webp",
    "200036638_1-300x300.webp",
@@ -5471,6 +5701,7 @@
   "presentacion": "50 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7709141546011-1-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -5494,6 +5725,7 @@
   "presentacion": "1 mg · 100 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605101610-7-600x600.webp",
    "100003831_1-300x300.webp",
@@ -5517,6 +5749,7 @@
   "presentacion": "500 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702024025733-1-600x600.webp",
    "751273770397-1-300x300.webp",
@@ -5540,6 +5773,7 @@
   "presentacion": "2000 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200037422_1-600x600.webp",
    "650240032158-1-300x300.webp",
@@ -5563,6 +5797,7 @@
   "presentacion": "500 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702024025719-1-600x600.webp",
    "7702184010020-7-300x300.webp",
@@ -5586,6 +5821,7 @@
   "presentacion": "380 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200030980_10-600x600.webp",
    "100011580_7-300x300.webp",
@@ -5609,6 +5845,7 @@
   "presentacion": "10 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153032883-7-600x600.webp",
    "100003831_1-300x300.webp",
@@ -5632,6 +5869,7 @@
   "presentacion": "5 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021914_7-600x602.webp",
    "7702057010201-1-300x300.webp",
@@ -5656,6 +5894,7 @@
   "presentacion": "750 mg · 5 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891317005108-12-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -5679,6 +5918,7 @@
   "presentacion": "100 mcg · 150 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100027360_1-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -5703,6 +5943,7 @@
   "presentacion": "10 Supositorios",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7704588000232-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -5726,6 +5967,7 @@
   "presentacion": "200 mg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100025007_2-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -5751,6 +5993,7 @@
   "presentacion": "20 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "200042826_1-600x530.webp",
    "100003831_1-300x300.webp",
@@ -5776,6 +6019,7 @@
   "presentacion": "10 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003932_1-600x600.webp",
    "100025268_10-300x300.webp",
@@ -5800,6 +6044,7 @@
   "presentacion": "50 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100014360_1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -5824,6 +6069,7 @@
   "presentacion": "12 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100024388_10-600x600.webp",
    "100006091_1-300x300.webp",
@@ -5847,6 +6093,7 @@
   "presentacion": "Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100021537_7-600x600.webp",
    "7702605100132-1-300x300.webp",
@@ -5870,6 +6117,7 @@
   "presentacion": "15 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100012193_1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -5893,6 +6141,7 @@
   "presentacion": "7.5 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100012194_1-600x600.webp",
    "100024015_2-300x300.webp",
@@ -5916,6 +6165,7 @@
   "presentacion": "40 g · Ungüento",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705713400019-1-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -5939,6 +6189,7 @@
   "presentacion": "850 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100012028_7-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -5963,6 +6214,7 @@
   "presentacion": "10 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100011779_1-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -5986,6 +6238,7 @@
   "presentacion": "50 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605107278-1-600x600.webp",
    "100000317_7-300x300.webp",
@@ -6010,6 +6263,7 @@
   "presentacion": "125 mg · 120 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702184020142-1-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -6033,6 +6287,7 @@
   "presentacion": "500 mg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100011043_1-600x600.webp",
    "7702057070243-300x300.webp",
@@ -6056,6 +6311,7 @@
   "presentacion": "15 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "300650429092-7-600x600.webp",
    "100022710_1-300x300.webp",
@@ -6079,6 +6335,7 @@
   "presentacion": "50 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605100866-7-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -6103,6 +6360,7 @@
   "presentacion": "75 mg · Ampollas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705959881092-1-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -6127,6 +6385,7 @@
   "presentacion": "100 mg · 20 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100014556_1-600x600.webp",
    "100006091_1-300x300.webp",
@@ -6151,6 +6410,7 @@
   "presentacion": "500 mg · 50 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057070052-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -6174,6 +6434,7 @@
   "presentacion": "2 mg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "8437009433584-1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -6197,6 +6458,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7705451023198-7-600x600.webp",
    "100005302_1-300x300.webp",
@@ -6220,6 +6482,7 @@
   "presentacion": "250 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153007225-1-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -6243,6 +6506,7 @@
   "presentacion": "12 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707232094236-1-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -6267,6 +6531,7 @@
   "presentacion": "6 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7709990568288-1-600x600.webp",
    "100019304_1-300x300.webp",
@@ -6290,6 +6555,7 @@
   "presentacion": "160 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7896261012257-1-600x600.webp",
    "100003831_1-300x300.webp",
@@ -6313,6 +6579,7 @@
   "presentacion": "500 mg · 40 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "foco-oai-top-lubriderm-f-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -6336,6 +6603,7 @@
   "presentacion": "80 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703381004195-1-600x600.webp",
    "100019304_1-300x300.webp",
@@ -6359,6 +6627,7 @@
   "presentacion": "28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7896116861061-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -6382,6 +6651,7 @@
   "presentacion": "120 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707232096803-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -6406,6 +6676,7 @@
   "presentacion": "180 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707232099354-9-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -6430,6 +6701,7 @@
   "presentacion": "60 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026819_1-600x600.webp",
    "100016561_1-300x300.webp",
@@ -6453,6 +6725,7 @@
   "presentacion": "3 g · Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703445040015-9-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -6477,6 +6750,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7704403005602-7-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -6501,6 +6775,7 @@
   "presentacion": "120 ml · Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100020771_1-600x600.webp",
    "7702605100132-1-300x300.webp",
@@ -6525,6 +6800,7 @@
   "presentacion": "240 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100017711_2-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -6548,6 +6824,7 @@
   "presentacion": "400 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501059227453-1-600x600.webp",
    "100011580_7-300x300.webp",
@@ -6573,6 +6850,7 @@
   "presentacion": "400 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501059227460-600x600.webp",
    "650240032158-1-300x300.webp",
@@ -6598,6 +6876,7 @@
   "presentacion": "250 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605101931-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -6622,6 +6901,7 @@
   "presentacion": "250 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100003942_1-600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -6646,6 +6926,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100000098_7-600x600.webp",
    "100000317_7-300x300.webp",
@@ -6671,6 +6952,7 @@
   "presentacion": "100 Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100000097_7-600x600.webp",
    "7702057070243-300x300.webp",
@@ -6696,6 +6978,7 @@
   "presentacion": "200 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7613033985584-600x600.webp",
    "7707232091600-7-300x300.webp",
@@ -6721,6 +7004,7 @@
   "presentacion": "350 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7613033972720-600x600.webp",
    "650240032158-1-300x300.webp",
@@ -6746,6 +7030,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501058630797-1-1-600x600.webp",
    "100026244_1-300x300.webp",
@@ -6768,6 +7053,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703546191807-9-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -6791,6 +7077,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707336722035-9-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -6814,6 +7101,7 @@
   "presentacion": "50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707336722028-7-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -6837,6 +7125,7 @@
   "presentacion": "30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702418004351-7-600x600.webp",
    "100025268_10-300x300.webp",
@@ -6860,6 +7149,7 @@
   "presentacion": "8 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "650240032592-7-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -6884,6 +7174,7 @@
   "presentacion": "100 mg · 30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703153036119-7-600x600.webp",
    "100016561_1-300x300.webp",
@@ -6907,6 +7198,7 @@
   "presentacion": "100 mg · 40 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057061302-7-600x600.webp",
    "7702605100132-1-300x300.webp",
@@ -6930,6 +7222,7 @@
   "presentacion": "20 g · Ungüento",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703086201035-1-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -6953,6 +7246,7 @@
   "presentacion": "120 ml · Spray",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702057167806-1-600x600.webp",
    "100022710_1-300x300.webp",
@@ -6976,6 +7270,7 @@
   "presentacion": "12 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100026632_7-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -6999,6 +7294,7 @@
   "presentacion": "120 ml · Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707355053363-9-600x600.webp",
    "100019304_1-300x300.webp",
@@ -7024,6 +7320,7 @@
   "presentacion": "20 mg · 10 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7702605102044-1-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -7048,6 +7345,7 @@
   "presentacion": "400 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "CHA.SEDAL-KER.ANT_.-400MLACO-SED-340ML-UND-600x600.webp",
    "7501056330255-1-300x300.webp",
@@ -7073,6 +7371,7 @@
   "presentacion": "375 ml · Shampoo",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "CHA.HS2-1-SUA.MAN_.375180-ML-P.E.-OFE-600x600.webp",
    "WINNY-ULTSEC-ET.5-XXG-PAQ-X-30-300x300.webp",
@@ -7097,6 +7396,7 @@
   "presentacion": "90 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "CITRATO-DE-MAGNESIO-X-90-CAPS-LAB-MEDICK.webp",
    "7702057070243-300x300.webp",
@@ -7121,6 +7421,7 @@
   "presentacion": "1200 mg · 60 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-600x1043.webp",
    "100020743_1-300x300.webp",
@@ -7145,6 +7446,7 @@
   "presentacion": "70 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SUNFACE-GEL-SPF50-X-70GR-600x778.webp",
    "AZITROMICINA-500-MG-3-TAB-AG-300x300.webp",
@@ -7169,6 +7471,7 @@
   "presentacion": "80 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SUNSTOP-TOTAL-CREM-SPF50-X-80GR.webp",
    "200004719_1-300x300.webp",
@@ -7194,6 +7497,7 @@
   "presentacion": "40 mg · 28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PANTOPRAZOL-40MG-X-28-TAB-MOMENTA.webp",
    "7705959884420-1-300x300.webp",
@@ -7218,6 +7522,7 @@
   "presentacion": "80 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SULZINC-SOL-ORAL-80-ML-HUMA-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -7242,6 +7547,7 @@
   "presentacion": "500 mg · 3 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "AZITROMICINA-500-MG-3-TAB-AG-600x490.webp",
    "7702123006787-10-300x300.webp",
@@ -7266,6 +7572,7 @@
   "presentacion": "500 mg · 3 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "AZITROMICINA-500-MG-3-TABLETAS-MK-CJA-X-3-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -7290,6 +7597,7 @@
   "presentacion": "7.5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "ZOPICLONA-7.5-MG-TBS-COLMED-CJA-X-30-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -7313,6 +7621,7 @@
   "presentacion": "Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "YASMIN-COMPRIMIDOS.webp",
    "7702123006787-10-300x300.webp",
@@ -7336,6 +7645,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "YAEL-TBS-CJA-X-21-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -7360,6 +7670,7 @@
   "presentacion": "30 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "X-RAY-GEL-30GR-600x600.webp",
    "100006091_1-300x300.webp",
@@ -7383,6 +7694,7 @@
   "presentacion": "48 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "X-RAY-DOL-TABLETAS-CJA-X-48-600x600.webp",
    "100005302_1-300x300.webp",
@@ -7406,6 +7718,7 @@
   "presentacion": "50 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "WINNY-ULTTRIM-ACT-SEC-ET.5-PAQ-X-50.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -7431,6 +7744,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "WINNY-ULTSEC-ET.5-XXG-PAQ-X-30-600x600.webp",
    "100026042_1-300x300.webp",
@@ -7456,6 +7770,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "WINNY-ULTSEC-ET.3-PAQ-X-30-600x600.webp",
    "7501001153182-1-300x300.webp",
@@ -7481,6 +7796,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "WINNY-ULTRIM-SEC-ET.2-M-PAQ-X-30-600x600.webp",
    "200007373_2-2-300x300.webp",
@@ -7506,6 +7822,7 @@
   "presentacion": "50 mg · 30 Grageas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VOLTAREN-50-MG-GRAGEAS-CJA-X-30-600x600.webp",
    "7702057708962-1-300x300.webp",
@@ -7531,6 +7848,7 @@
   "presentacion": "30 g · 30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VOLTAREN-1-EMULGEL-TBO-X-30-GR.webp",
    "7702605100156-1-300x300.webp",
@@ -7556,6 +7874,7 @@
   "presentacion": "8 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VIVERA-SACHETS-CJA-X-8-600x600.webp",
    "100026042_1-300x300.webp",
@@ -7579,6 +7898,7 @@
   "presentacion": "50 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VITAMINA-E-1000-IU-SOFTGELS-FCO-X-50-HEALTHY-AMERI-600x600.webp",
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-300x300.webp",
@@ -7603,6 +7923,7 @@
   "presentacion": "180 ml · 180 Jarabe",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VITACEREBRINA-FINLAY-JBE.CEREZA-FCO-X-180-ML.webp",
    "7501056330255-1-300x300.webp",
@@ -7628,6 +7949,7 @@
   "presentacion": "5 ml · 5 Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VIGADEXA-GOTAS-FCO-X-5-ML-600x600.webp",
    "100005302_1-300x300.webp",
@@ -7651,6 +7973,7 @@
   "presentacion": "50 g · 2 Ungüento",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VICK-VAPORUB-UNGUENTO-50-GR-X-2-UND-600x400.webp",
    "7709990613124-1-300x300.webp",
@@ -7676,6 +7999,7 @@
   "presentacion": "50 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VIAGRA-50-MG-TBS-PF-CJA-X-2-600x600.webp",
    "7709990613124-1-300x300.webp",
@@ -7700,6 +8024,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VENTILAN-OSP-AEROSOL-600x600.webp",
    "7702057070243-300x300.webp",
@@ -7722,6 +8047,7 @@
   "presentacion": "80 mg · 14 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VALSARTAN-80-MG-TBS-GF-CJA-X-14-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -7746,6 +8072,7 @@
   "presentacion": "160 mg · 30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "VALSARTAN-160-MG-CAPSULAS-MK-CJA-X-30-600x600.webp",
    "7702605100156-1-300x300.webp",
@@ -7770,6 +8097,7 @@
   "presentacion": "Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "UNESIA-CREMA-ANTIMICOTICO-1-600x600.webp",
    "7705959884420-1-300x300.webp",
@@ -7795,6 +8123,7 @@
   "presentacion": "125 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TUKOL-D-EXPECTORANTE-FCO-X-125ML-600x600.webp",
    "100024015_2-300x300.webp",
@@ -7820,6 +8149,7 @@
   "presentacion": "120 ml · 120 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TUKHELIX-PROPOLEO-ADULTO-EXPECT-FCO-X-120-ML-600x600.webp",
    "7702123006787-10-300x300.webp",
@@ -7843,6 +8173,7 @@
   "presentacion": "50 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "OMEGA-3-6-9-SOFTGELS-FCO-X-50-ICOM-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -7867,6 +8198,7 @@
   "presentacion": "120 mg · 30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRIMEBUTINA-SIMETICON-200-120MG-PC-CJA-X-30-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -7890,6 +8222,7 @@
   "presentacion": "200 mg · 20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRIMEBUTINA-200-MG-TBS-EXPOFARMA-X-20-1.webp",
    "100003831_1-300x300.webp",
@@ -7913,6 +8246,7 @@
   "presentacion": "20 g · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRIGENTAX-CREMA-20-GR-600x600.webp",
    "100024015_2-300x300.webp",
@@ -7938,6 +8272,7 @@
   "presentacion": "30 ml · 30 Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRAUMEEL-HEEL-GOTAS-FCO-X-30-ML-600x621.webp",
    "7702605100132-1-300x300.webp",
@@ -7961,6 +8296,7 @@
   "presentacion": "4 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRAVAD-COLONPEG-CEREZA-CJA-X-4-SOBRES.webp",
    "100010062_1-300x300.webp",
@@ -7984,6 +8320,7 @@
   "presentacion": "300 ml · 300 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRAT.NUTRIBELA-PRO-HIALURONICO-FCO-X-300-ML-600x600.webp",
    "TINTE-COLORIS-635-RUB-OSC-300x300.webp",
@@ -8007,6 +8344,7 @@
   "presentacion": "100 mg · 10 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRAMADOL-100-MG-GOTAS-GF-FCO-X-10ML.webp",
    "100024015_2-300x300.webp",
@@ -8030,6 +8368,7 @@
   "presentacion": "500 mg · 10 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRANEXAN-500-MG-TBS-CJA-X-10-600x400.webp",
    "100016561_1-300x300.webp",
@@ -8053,6 +8392,7 @@
   "presentacion": "60 ml · 60 Loción",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TRAT.MINOXIDIL-5-LOCION-GENFAR-FCO-X-60-ML-600x600.webp",
    "8410412020305-1-300x300.webp",
@@ -8077,6 +8417,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOBRAOFTAL-0.3-SOLU.OFTAL_.-1-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -8099,6 +8440,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOA.TENA-MUJER-MINI-ALAS-PAQ-X-30-UND-600x600.webp",
    "200038049_1-300x300.webp",
@@ -8124,6 +8466,7 @@
   "presentacion": "10 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOA.TENA-MUJER-MEDIUM-PAQ-X-10-UND-600x400.webp",
    "VITACEREBRINA-FINLAY-JBE.CEREZA-FCO-X-180-ML-300x300.webp",
@@ -8149,6 +8492,7 @@
   "presentacion": "10 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOA.TENA-MUJER-MAXI-X-10-UND-600x600.webp",
    "200038049_1-300x300.webp",
@@ -8174,6 +8518,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOA.NOSOTRAS-INV.RAPIGEL-PAQ-X-30-600x944.webp",
    "200038254_1-300x300.webp",
@@ -8199,6 +8544,7 @@
   "presentacion": "10 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TOA.NOSOTRAS-B.NOCHES-10UDS4-TOA.B.NOCH_.webp",
    "200003821_1-300x300.webp",
@@ -8224,6 +8570,7 @@
   "presentacion": "88 mcg · 50 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TIROXIN-88-MCG-TBS-SIE-CJA-X-50-1-600x400.webp",
    "7709990089684-7-300x300.webp",
@@ -8247,6 +8594,7 @@
   "presentacion": "400 mg · 15 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TIOCOLFEN-400-MG-TBS-CJA-X-15-600x338.webp",
    "7702057091071-1-300x300.webp",
@@ -8270,6 +8618,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TINTE-COLORIS-635-RUB-OSC-600x600.webp",
    "TRAT.MINOXIDIL-5-LOCION-GENFAR-FCO-X-60-ML-300x300.webp",
@@ -8293,6 +8642,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TINTE-BIGEN-N.58-NEGR-INT-600x600.webp",
    "200041273_1-1-300x300.webp",
@@ -8316,6 +8666,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TENSIOMETRO-DIGITAL-MUNECA-ALFASAFE-HK-6.webp",
    "7702184010013-1-300x300.webp",
@@ -8338,6 +8689,7 @@
   "presentacion": "8 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TENA-PANTS-CLASICO-MEDIUM-PAQ-X-8-1-600x600.webp",
    "CHAMPU-TIO-NACHO-HERBOLARIA-MILENARIA-415-mL-300x300.webp",
@@ -8363,6 +8715,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TENA-MUJER-SUPER-PAQ-X-30.webp",
    "200042622_1-300x300.webp",
@@ -8388,6 +8741,7 @@
   "presentacion": "20 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TENA-F-MEN-NOCHE-PROTEC.-CJA-X-20-OFERT-600x600.webp",
    "200012453_2-300x300.webp",
@@ -8413,6 +8767,7 @@
   "presentacion": "330 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TARRITO-ROJO-TRADICIO-330-GR-FRESA-80GR-600x600.webp",
    "100026042_1-300x300.webp",
@@ -8436,6 +8791,7 @@
   "presentacion": "16 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TAMPON-OB-SIEMPRE-LIBRE-ORIG-SUPER-CJA-X-16-600x600.webp",
    "200012453_2-300x300.webp",
@@ -8460,6 +8816,7 @@
   "presentacion": "12 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TAMP.KOTEX-EV.DIG_.SUPER-20-12-UDS-OFE-600x600.webp",
    "VITACEREBRINA-FINLAY-JBE.CEREZA-FCO-X-180-ML-300x300.webp",
@@ -8485,6 +8842,7 @@
   "presentacion": "12 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TAMP.KOTEX-EV.DIG_.MEDIO-20-12-UDS-OFE-600x600.webp",
    "7500435020244-300x300.webp",
@@ -8510,6 +8868,7 @@
   "presentacion": "12 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TAMP.KOTEX-DIG.SUP_.-PAQ-X-12-600x600.webp",
    "CHAMPU-TIO-NACHO-HERBOLARIA-MILENARIA-415-mL-300x300.webp",
@@ -8535,6 +8894,7 @@
   "presentacion": "300 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TALCO.MEXSANA-LADY-300-GR-FCO-85-GRS-OFERTA-600x600.webp",
    "100026042_1-300x300.webp",
@@ -8560,6 +8920,7 @@
   "presentacion": "300 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TALC.MEXSANA-300GR-TALC-85-GR-OFERTA-600x600.webp",
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-300x300.webp",
@@ -8585,6 +8946,7 @@
   "presentacion": "200 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "TALCO-JJ-BABY-ORIGINAL-200GR-600x719.webp",
    "200007235_1-300x300.webp",
@@ -8609,6 +8971,7 @@
   "presentacion": "15 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SYSTAME-GOTAS-15ML--600x600.webp",
    "7702057010201-1-300x300.webp",
@@ -8632,6 +8995,7 @@
   "presentacion": "625 ml",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7501125184277_1_ELECTROLIT-SOLUCION-ORAL-MORA-AZUL-X-625ML-1-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -8657,6 +9021,7 @@
   "presentacion": "20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703454920841_1_STAMYL-CAJA-X-20-GRAGEAS-600x600.webp",
    "100024015_2-300x300.webp",
@@ -8680,6 +9045,7 @@
   "presentacion": "20 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7703454122993_1_STAMYL-FORTE-CAJA-X-20-TABLETAS-RECUBIERTAS-600x532.webp",
    "100019304_1-300x300.webp",
@@ -8703,6 +9069,7 @@
   "presentacion": "3 g · 10 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100005665-600x600.webp",
    "100010062_1-300x300.webp",
@@ -8726,6 +9093,7 @@
   "presentacion": "4 mg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SLINDA-4-MG_F-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -8751,6 +9119,7 @@
   "presentacion": "12 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "comprar-en-cafam-analgesico-sinutab-plus-ns-con-12-tabletas-precio-600x400.webp",
    "100016561_1-300x300.webp",
@@ -8776,6 +9145,7 @@
   "presentacion": "21 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SINOVUL_F-600x600.webp",
    "100024015_2-300x300.webp",
@@ -8799,6 +9169,7 @@
   "presentacion": "360 g · 360 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "8427030006307-600x600.webp",
    "100018875_1-300x300.webp",
@@ -8822,6 +9193,7 @@
   "presentacion": "30 ml · Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "SILIGAS-GOTAS_F-600x600.webp",
    "100019304_1-300x300.webp",
@@ -8845,6 +9217,7 @@
   "presentacion": "50 mg · 4 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "1574-Sildenafil-50-mg-x-4-tab-MK-mispastillas-tienda-pastillas-medellin-colombia-600x600.webp",
    "100022710_1-300x300.webp",
@@ -8869,6 +9242,7 @@
   "presentacion": "50 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "unnamed.webp",
    "100024015_2-300x300.webp",
@@ -8893,6 +9267,7 @@
   "presentacion": "30 Cápsulas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "650240032158_1_OFERTA-SHOT-B-MULTIVITAMINICO-X-2-CAJAS-X-30-CAPSULAS-600x600.webp",
    "7702605100156-1-300x300.webp",
@@ -8917,6 +9292,7 @@
   "presentacion": "60 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "100019601-600x600.webp",
    "7703038060970-1-300x300.webp",
@@ -8940,6 +9316,7 @@
   "presentacion": "25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "comprar-seroquel-25-mg-caja-con-30-comprimidos-recubiertos-rx4-rx1-precio.webp",
    "100005302_1-300x300.webp",
@@ -8963,6 +9340,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7891010038908-1-600x600.webp",
    "200042622_2-300x300.webp",
@@ -8985,6 +9363,7 @@
   "presentacion": "100 mcg",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7707274721206-600x600.webp",
    "100005302_1-300x300.webp",
@@ -9009,6 +9388,7 @@
   "presentacion": "83 ml · Spray",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "ROXICAINA-SPRAY-TOPICO-80G-83ML-1-600x600.webp",
    "7702057091071-1-300x300.webp",
@@ -9032,6 +9412,7 @@
   "presentacion": "10 g · Ungüento",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "7704588000430-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -9055,6 +9436,7 @@
   "presentacion": "30 g",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "Roxicaina-Jalea-Al-2-Ropsohn-2.webp",
    "7702057091071-1-300x300.webp",
@@ -9078,6 +9460,7 @@
   "presentacion": "120 ml · 120 Suspensión",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "327598-800-800-600x600.webp",
    "100016561_1-300x300.webp",
@@ -9101,6 +9484,7 @@
   "presentacion": "2 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "repuesto-maquina-x-2-und-gillette-mach3-turbo-2-600x600.webp",
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-300x300.webp",
@@ -9124,6 +9508,7 @@
   "presentacion": "30 g · Gel",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "Reparil-Gel-N-600x600.webp",
    "7705959885458-1-300x300.webp",
@@ -9147,6 +9532,7 @@
   "presentacion": "25 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "quetiapina-25-mg-30-tbs-gf-m13950-600x600.webp",
    "100024015_2-300x300.webp",
@@ -9170,6 +9556,7 @@
   "presentacion": "28 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "descarga.webp",
    "100016561_1-300x300.webp",
@@ -9193,6 +9580,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "images.webp",
    "7702057091071-1-300x300.webp",
@@ -9215,6 +9603,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "049-600x450.webp",
    "7702057091071-1-300x300.webp",
@@ -9237,6 +9626,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "imagE.webp",
    "7702057010201-1-300x300.webp",
@@ -9259,6 +9649,7 @@
   "presentacion": "50 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "unnamed-1.webp",
    "200041273_1-1-300x300.webp",
@@ -9284,6 +9675,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PROT.LABIAL-CHAPSTICK-MEDICADO-600x600.webp",
    "100003831_1-300x300.webp",
@@ -9306,6 +9698,7 @@
   "presentacion": "60 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PROT.CAREFREE-REGU.-CJA-X-60-600x600.webp",
    "200038254_1-300x300.webp",
@@ -9329,6 +9722,7 @@
   "presentacion": "5 Supositorios",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PROCTO-GLYVENOL-SUPOSITORIOS-CJA-X-5.webp",
    "PILA-DURACELL-ALKALINA-AAA-DIS-X-2-300x300.webp",
@@ -9353,6 +9747,7 @@
   "presentacion": "60 ml · Crema",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PROCICAR-NF-CREMA-60-ML-600x600.webp",
    "7795312100090_0bc95625-e702-4db0-afb7-e217161afdf3_1200x1200-300x300.webp",
@@ -9377,6 +9772,7 @@
   "presentacion": "3 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PRESERV.TODAY-TRIPLE-PLEASURE-CJA-X-3-600x600.webp",
    "PRESERV.-DUREX-REAL-FEEL-CJA-X-3-300x300.webp",
@@ -9401,6 +9797,7 @@
   "presentacion": "3 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PRESERV.TODAY-PUNTO-G-CJA-X-3-600x600.webp",
    "CHAMPU-TIO-NACHO-HERBOLARIA-MILENARIA-415-mL-300x300.webp",
@@ -9424,6 +9821,7 @@
   "presentacion": "3 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PRESERV.-DUREX-REAL-FEEL-CJA-X-3-600x600.webp",
    "PRESERV.TODAY-TRIPLE-PLEASURE-CJA-X-3-300x300.webp",
@@ -9449,6 +9847,7 @@
   "presentacion": "5 mg · 30 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PREDNISOLONA-5-MG-TBS-GF-CJA-X-30-600x600.webp",
    "7709990089684-7-300x300.webp",
@@ -9472,6 +9871,7 @@
   "presentacion": "0.75 mg · 2 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "POSTDAY-0.75-MG-TBS-X-2-UND-600x600.webp",
    "100006091_1-300x300.webp",
@@ -9495,6 +9895,7 @@
   "presentacion": "20 mg · 10 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PIROXICAM-20-MG-CPS-MK-CJA-X-10-600x600.webp",
    "7702605100125-1-300x300.webp",
@@ -9519,6 +9920,7 @@
   "presentacion": "2 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PILA-DURACELL-ALKALINA-AAA-DIS-X-2.webp",
    "PILA-DURACELL-ALKALINA-AA-DIS-X-2-300x300.webp",
@@ -9543,6 +9945,7 @@
   "presentacion": "2 unidades",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PILA-DURACELL-ALKALINA-AA-DIS-X-2.webp",
    "PILA-DURACELL-ALKALINA-AAA-DIS-X-2-300x300.webp",
@@ -9567,6 +9970,7 @@
   "presentacion": "100 Tabletas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PEPSAMAR-TABLETAS-CJA-X-100-600x394.webp",
    "100024015_2-300x300.webp",
@@ -9590,6 +9994,7 @@
   "presentacion": "12 Sobres",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PEG-POLIETILENGLICOL-SOBRES-CJA-X-12.webp",
    "100024015_2-300x300.webp",
@@ -9613,6 +10018,7 @@
   "presentacion": "Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PEDIAVIT-ZINC-GOTAS-600x600.webp",
    "100024015_2-300x300.webp",
@@ -9637,6 +10043,7 @@
   "presentacion": "Gotas",
   "rx": null,
   "stock": true,
+  "destacado": false,
   "imagenes": [
    "PEDIAVIT-GOTAS-600x600.webp",
    "7702057708962-1-300x300.webp",
