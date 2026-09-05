@@ -1,0 +1,52 @@
+{
+  "_comentario": "Datos del negocio. Todo lo que diga PENDIENTE se muestra marcado en el sitio para que no se publique por descuido. Ver PENDIENTES.md.",
+
+  "negocio": "Droguería Xivica",
+  "descripcion_corta": "Droguería en el norte de Bogotá con domicilio en 45 a 90 minutos.",
+  "whatsapp": "573013665076",
+  "whatsapp_visible": "301 366 5076",
+  "correo": "PENDIENTE",
+  "ciudad": "Bogotá",
+
+  "envio": {
+    "gratis_desde": 60000,
+    "minutos_min": 45,
+    "minutos_max": 90,
+    "cobertura": "Bogotá y alrededores"
+  },
+
+  "sedes": [
+    {
+      "id": "villa-del-prado",
+      "nombre": "Villa del Prado",
+      "direccion": "Cra 49B #171a-92",
+      "telefono": "6013747807",
+      "telefono_visible": "601 374 7807",
+      "lat": 4.765,
+      "lng": -74.045,
+      "horario": "PENDIENTE"
+    },
+    {
+      "id": "tejares-del-norte",
+      "nombre": "Tejares del Norte",
+      "direccion": "Cra 49 #185-26 Local 1",
+      "telefono": "3013665076",
+      "telefono_visible": "301 366 5076",
+      "lat": 4.772,
+      "lng": -74.042,
+      "horario": "PENDIENTE"
+    }
+  ],
+
+  "legal": {
+    "habilitacion": "PENDIENTE",
+    "regente": "PENDIENTE",
+    "tarjeta_profesional": "PENDIENTE",
+    "nit": "PENDIENTE"
+  },
+
+  "redes": {
+    "facebook": "",
+    "instagram": ""
+  }
+}

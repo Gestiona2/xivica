@@ -1,0 +1,9 @@
+[
+  { "id": "medicamentos",        "nombre": "Medicamentos",          "icono": "💊", "orden": 1 },
+  { "id": "cuidado-personal",    "nombre": "Cuidado personal",      "icono": "🧴", "orden": 2 },
+  { "id": "bebe-maternidad",     "nombre": "Bebé y maternidad",     "icono": "🍼", "orden": 3 },
+  { "id": "bienestar-nutricion", "nombre": "Bienestar y nutrición", "icono": "🌿", "orden": 4 },
+  { "id": "dermocosmeticos",     "nombre": "Dermocosméticos",       "icono": "✨", "orden": 5 },
+  { "id": "belleza",             "nombre": "Belleza",               "icono": "💄", "orden": 6 },
+  { "id": "varios",              "nombre": "Varios",                "icono": "🧺", "orden": 7 }
+]
