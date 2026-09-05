@@ -1,0 +1,49 @@
+# Revisa el sitio en cada cambio.
+#
+# Existe porque quien edita el catálogo es un asistente conversando con el
+# dueño de la droguería: una coma mal puesta en el JSON dejaría la tienda en
+# blanco para todos los visitantes. Si algo está mal, este trabajo falla, el
+# despliegue no ocurre, y el sitio publicado sigue funcionando como estaba.
+name: Revisar
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Revisar el catálogo
+        run: python3 tools/validar.py src/datos/productos.json public/img
+
+      - name: Revisar que las variables de CSS existan
+        run: python3 tools/revisar-css.py
+
+      - name: Pruebas
+        run: npm test
+
+      - name: Compilar
+        run: npm run build
+
+      - name: Comprobar que se generaron las 407 fichas
+        run: |
+          fichas=$(ls dist/producto | wc -l)
+          echo "Fichas generadas: $fichas"
+          if [ "$fichas" -lt 400 ]; then
+            echo "Se esperaban ~407 páginas de producto y solo hay $fichas."
+            echo "Suele significar que dos productos comparten el mismo slug."
+            exit 1
+          fi

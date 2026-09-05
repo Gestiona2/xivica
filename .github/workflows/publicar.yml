@@ -1,0 +1,54 @@
+# Publica el sitio en GitHub Pages cuando la revisión pasa.
+#
+# El build ocurre aquí, en la nube. Nadie compila en su computador para
+# publicar: el asistente edita el JSON, hace push, y el sitio se actualiza solo.
+name: Publicar
+
+on:
+  workflow_run:
+    workflows: [Revisar]
+    branches: [main]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  compilar:
+    # Solo publica si la revisión pasó.
+    if: github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Compilar para el demo
+        # El demo vive en una subcarpeta; en el dominio propio esto se quita.
+        env:
+          PUBLIC_BASE: /xivica/
+          PUBLIC_SITE: https://gestiona2.github.io
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publicar:
+    needs: compilar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

@@ -1,66 +1,57 @@
-# Punto de partida — Astro + Tailwind
+# Droguería Xivica
 
-Base para todo sitio nuevo. Se copia entera a la carpeta del cliente y se llena; **no se
-empieza desde una página en blanco.**
+Sitio de comercio de Droguería Xivica: 407 productos con precio actualizado,
+catálogo filtrable y pedido que se cierra por WhatsApp.
 
-## Qué trae resuelto
+## Empezar
 
-- **Tokens de marca** con tema claro y oscuro, sin parpadeo al cargar
-- **Botones, tarjetas, superficies de vidrio** y tipografía utilitaria
-- **Apariciones al bajar** con GSAP y con CSS puro, respetando a quien pidió menos
-  movimiento
-- **Menú, pie, botón de tema, WhatsApp flotante, volver arriba**
-- **Contadores animados** de cifras
-- La estructura de `src/datos/` con el contenido separado del diseño
-
-Todo probado en producción en emp2web.com. Los valores de marca vienen vacíos a propósito.
-
-## La regla que sostiene todo esto
-
-> **En los `.astro` no se escribe texto. Todo el contenido va en `src/datos/`.**
-
-Los `.astro` definen **cómo se ve**; los JSON definen **qué dice**. Esto es lo que permite
-que el cliente edite su sitio sin poder romper el diseño, y lo que hace que
-`SECCIONES.md` se escriba casi solo.
-
-Cuesta un paso más al construir. Se acepta: quien edita después no es quien construyó.
-
-## Estructura
-
-```
-src/
-  datos/
-    sitio.json        → lo que se repite en todas las páginas (menú, pie, contacto)
-    inicio.json       → contenido de la página de inicio
-    <pagina>.json     → un archivo por página
-  styles/global.css   → tokens, base y estilos del sitio
-  layouts/Layout.astro→ lo común a todas las páginas
-  pages/              → una página por ruta, leyendo de datos/
-public/
-  brand/              → logo, favicon
-  img/                → fotos del negocio
-  fonts/              → tipografías (.woff2)
-  vendor/             → gsap/ y lucide/
+```bash
+npm install
+npm run dev      # http://localhost:4321
 ```
 
-## Pasos para arrancar un sitio
+## Comandos
 
-1. Copiar esta carpeta al proyecto del cliente.
-2. Llenar `docs/MARCA.md` **antes** de tocar código.
-3. Poner los cinco colores y las dos tipografías en el bloque `@theme` de `global.css`.
-   Verificar el contraste en tema claro **y** oscuro.
-4. Descargar las tipografías (variables, subset latin) a `public/fonts/` y GSAP + Lucide a
-   `public/vendor/`. **No enlazar a servidores ajenos** — ver
-   `conocimiento/politicas.md`.
-5. Llenar `src/datos/sitio.json` con los datos del negocio.
-6. Llenar `src/datos/inicio.json` sección por sección.
-7. Escribir los estilos propios de cada sección al final de `global.css`, siempre con las
-   variables semánticas (`var(--text)`, `var(--bg)`), nunca con colores a mano.
-8. Ir escribiendo `conocimiento_generado/` **a medida que se construye**, no al final.
+| Comando | Qué hace |
+|---|---|
+| `npm run dev` | Levanta el sitio en tu computador, con recarga automática |
+| `npm run build` | Compila el sitio en `dist/` |
+| `npm run preview` | Sirve lo compilado, como se verá publicado |
+| `npm test` | Corre las pruebas de JavaScript y de Python |
 
-## Cosas que se rompen fácil
+## Antes de subir un cambio al catálogo
 
-- **Colores escritos a mano** en vez de variables → el tema oscuro se ve mal.
-- **Texto dentro del `.astro`** → el agente del cliente no lo encuentra y lo duplica.
-- **Quitar `prefers-reduced-motion`** → problema de accesibilidad, no de estética.
-- **Probar solo en el editor** → hay que abrirlo en 320px y 375px reales.
+```bash
+python3 tools/validar.py src/datos/productos.json public/img
+```
+
+Si algo está mal, dice exactamente qué producto y por qué. La misma revisión
+corre sola en GitHub: si falla, el sitio no se publica y sigue funcionando la
+versión anterior.
+
+## Dónde está cada cosa
+
+| Qué quieres cambiar | Archivo |
+|---|---|
+| Precios, productos, ofertas | `src/datos/productos.json` |
+| WhatsApp, sedes, horarios | `src/datos/config.json` |
+| Textos y banners de la portada | `src/datos/home.json` |
+| Servicios | `src/datos/servicios.json` |
+| Textos legales | `src/datos/legal.json` |
+| Colores y tipografía | `src/styles/global.css` |
+| Palabras que la gente busca | `src/datos/sinonimos.json` |
+
+**Ningún texto se escribe dentro del código.** Todo el contenido editable vive
+en `src/datos/`.
+
+## Documentación
+
+- `conocimiento_generado/REGLAS-DEL-CATALOGO.md` — por qué el sitio muestra lo
+  que muestra, escrito para leerlo con el dueño del negocio.
+- `PENDIENTES.md` — lo que falta para publicar en el dominio definitivo.
+- `docs/` — la especificación y el plan con que se construyó.
+
+## Herramientas
+
+Las de `tools/` se ejecutan **en tu computador**, no en el servidor. El sitio
+publicado no necesita Python para nada.
