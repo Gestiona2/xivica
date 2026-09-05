@@ -1,0 +1,16 @@
+---
+/**
+ * Favoritos. La lista vive en el navegador de cada persona, asi que esta
+ * pagina llega vacia y se llena con JavaScript.
+ */
+import Tienda from "../layouts/Tienda.astro";
+---
+<Tienda titulo="Mis favoritos" descripcion="Los productos que guardaste en Droguería Xivica." activa="favoritos">
+  <div class="container">
+    <header class="catalogo-cabeza">
+      <h1>Mis favoritos</h1>
+      <p>Se guardan en este navegador. No necesitas crear una cuenta.</p>
+    </header>
+    <div id="listaFavoritos"><p class="grilla-vacia">Cargando…</p></div>
+  </div>
+</Tienda>

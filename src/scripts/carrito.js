@@ -283,6 +283,13 @@ export function montarCarrito() {
     temporizadorAviso = setTimeout(() => aviso.classList.remove("visible"), 2600);
   }
 
+  // "Repetir pedido" desde la pagina de volver a comprar
+  document.addEventListener("pedido:agregar", (evento) => {
+    const { producto, cantidad } = evento.detail;
+    pedido.agregar(producto, cantidad || 1);
+    avisar("Productos agregados a tu pedido");
+  });
+
   pedido.importar(recuperar());
   pintarContadores(pedido);
 }

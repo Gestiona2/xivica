@@ -1,0 +1,54 @@
+{
+  "_comentario": "Los cuatro servicios de la droguería. Para agregar uno se añade un objeto a la lista y aparece solo en la página y en la portada.",
+
+  "servicios": [
+    {
+      "id": "domicilio",
+      "icono": "camion",
+      "titulo": "Domicilio en 45 a 90 minutos",
+      "resumen": "Cubrimos Bogotá y alrededores desde nuestras dos sedes en el norte.",
+      "detalle": "Haces el pedido por la página o por WhatsApp, confirmamos disponibilidad y sale el domiciliario. El envío es gratis a partir de $60.000; por debajo de ese monto se cobra según la zona y te lo decimos antes de despachar.",
+      "puntos": [
+        "Gratis desde $60.000",
+        "Pago en efectivo, transferencia o datáfono en la entrega",
+        "Te confirmamos por WhatsApp antes de salir"
+      ]
+    },
+    {
+      "id": "formula",
+      "icono": "receta",
+      "titulo": "Cotizamos tu fórmula médica",
+      "resumen": "Envía la foto de la fórmula y te decimos qué hay, cuánto vale y en cuánto llega.",
+      "detalle": "No hace falta que sepas los nombres ni que busques producto por producto. Mandas la foto de la fórmula por WhatsApp y un regente de farmacia revisa el listado completo, te dice qué tenemos disponible, qué alternativas hay si algo falta, y el total.",
+      "puntos": [
+        "Un regente revisa la fórmula, no un robot",
+        "Te decimos qué hay y qué no antes de que pagues",
+        "Los medicamentos de control requieren la fórmula original al recibir"
+      ]
+    },
+    {
+      "id": "asesoria",
+      "icono": "escudo",
+      "titulo": "Asesoría de un regente de farmacia",
+      "resumen": "Pregunta antes de comprar. Responde una persona que sabe.",
+      "detalle": "Si no sabes si un medicamento sirve para lo que tienes, si se puede tomar con otro, o cuál es la diferencia entre dos presentaciones, pregunta por WhatsApp. Esto no reemplaza la consulta médica, pero evita comprar algo equivocado.",
+      "puntos": [
+        "Disponible en horario de atención",
+        "Sin costo y sin compromiso de compra",
+        "No reemplaza la consulta con tu médico"
+      ]
+    },
+    {
+      "id": "recoger",
+      "icono": "tienda",
+      "titulo": "Aparta y recoge en la sede",
+      "resumen": "Si prefieres pasar, te lo dejamos listo y separado.",
+      "detalle": "Haces el pedido, nos dices en qué sede lo recoges y a qué hora pasas. Lo dejamos separado y pagas al recibir. Útil para medicamentos de control, donde hay que presentar la fórmula original.",
+      "puntos": [
+        "Dos sedes en el norte de Bogotá",
+        "Sin costo de envío",
+        "Ideal para medicamentos que requieren fórmula"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+---
+import Tienda from "../layouts/Tienda.astro";
+import Icono from "../components/Icono.astro";
+import config from "../datos/config.json";
+---
+<Tienda titulo="Contacto" descripcion="Escríbenos por WhatsApp o llámanos a cualquiera de nuestras sedes." activa="contacto">
+  <div class="container texto">
+    <h1>Contacto</h1>
+    <p class="texto-entrada">
+      La forma más rápida es WhatsApp: ahí atendemos pedidos, cotizamos fórmulas y respondemos dudas.
+    </p>
+
+    <a class="boton boton-lima" href={`https://wa.me/${config.whatsapp}`} target="_blank" rel="noopener">
+      <Icono nombre="whatsapp" tamano={20} /> Escribir por WhatsApp ({config.whatsapp_visible})
+    </a>
+
+    <section>
+      <h2>Por teléfono</h2>
+      <ul class="texto-lista">
+        {config.sedes.map((sede) => (
+          <li>{sede.nombre}: <a href={`tel:${sede.telefono}`}>{sede.telefono_visible}</a> — {sede.direccion}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Correo</h2>
+      <p>
+        {config.correo === "PENDIENTE"
+          ? <mark class="falta">Falta el correo de contacto</mark>
+          : <a href={`mailto:${config.correo}`}>{config.correo}</a>}
+      </p>
+    </section>
+  </div>
+</Tienda>

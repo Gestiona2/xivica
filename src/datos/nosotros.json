@@ -1,0 +1,21 @@
+{
+  "_comentario": "Textos de la página Nosotros. Se pueden reescribir enteros sin tocar código.",
+
+  "titulo": "Una droguería de barrio, no una cadena",
+  "entrada": "Droguería Xivica atiende el norte de Bogotá desde dos sedes en Villa del Prado y Tejares del Norte. Vendemos medicamentos, cuidado personal, productos de bebé y suplementos, con entrega a domicilio en 45 a 90 minutos.",
+
+  "bloques": [
+    {
+      "titulo": "Atiende una persona, no un formulario",
+      "texto": "Cada pedido lo revisa alguien antes de despacharlo. Si algo no hay, te ofrecemos una alternativa; si la fórmula tiene algo que no cuadra, te lo decimos antes de cobrar. Esa es la diferencia con comprar en una aplicación."
+    },
+    {
+      "titulo": "Producto original y sellado",
+      "texto": "Todo lo que vendemos viene de distribuidores autorizados, con su registro sanitario y en su empaque original. Nunca vendemos medicamentos sueltos ni fuera de su empaque."
+    },
+    {
+      "titulo": "Precios que se pueden ver",
+      "texto": "Los 407 productos del catálogo tienen su precio publicado. No hay que escribir para preguntar cuánto vale algo, ni el precio cambia según quién pregunte."
+    }
+  ]
+}

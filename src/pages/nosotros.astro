@@ -1,0 +1,30 @@
+---
+import Tienda from "../layouts/Tienda.astro";
+import datos from "../datos/nosotros.json";
+import config from "../datos/config.json";
+
+const falta = (v: string) => v === "PENDIENTE";
+---
+<Tienda titulo="Nosotros" descripcion={datos.entrada} activa="nosotros">
+  <div class="container texto">
+    <h1>{datos.titulo}</h1>
+    <p class="texto-entrada">{datos.entrada}</p>
+
+    {datos.bloques.map((bloque) => (
+      <section>
+        <h2>{bloque.titulo}</h2>
+        <p>{bloque.texto}</p>
+      </section>
+    ))}
+
+    <section>
+      <h2>Datos legales</h2>
+      <ul class="texto-lista">
+        <li>Razón social: {config.negocio}</li>
+        <li>NIT: {falta(config.legal.nit) ? <mark class="falta">Falta el NIT</mark> : config.legal.nit}</li>
+        <li>Habilitación sanitaria: {falta(config.legal.habilitacion) ? <mark class="falta">Falta el número de habilitación</mark> : config.legal.habilitacion}</li>
+        <li>Regente de farmacia: {falta(config.legal.regente) ? <mark class="falta">Falta el regente responsable</mark> : config.legal.regente}</li>
+      </ul>
+    </section>
+  </div>
+</Tienda>

@@ -1,0 +1,56 @@
+{
+  "_comentario": "Textos legales. IMPORTANTE: son un punto de partida redactado según la Ley 1581 de 2012 y el Decreto 1074 de 2015, NO son asesoría jurídica. Antes de publicar en el dominio definitivo deberían ser revisados por un abogado. Está anotado en PENDIENTES.md.",
+
+  "actualizado": "2026-09-05",
+
+  "privacidad": {
+    "titulo": "Política de privacidad",
+    "secciones": [
+      { "titulo": "Qué información recogemos",
+        "texto": "Cuando haces un pedido nos entregas tu nombre, teléfono y dirección de entrega. Esa información viaja por WhatsApp directamente a la droguería: este sitio web no la guarda en ningún servidor ni la envía a terceros." },
+      { "titulo": "Qué se guarda en tu navegador",
+        "texto": "El carrito, tus favoritos y tus pedidos anteriores se guardan únicamente en el navegador del dispositivo que estás usando. No salen de ahí, no los podemos ver, y desaparecen si borras los datos del navegador." },
+      { "titulo": "Para qué usamos tus datos",
+        "texto": "Únicamente para preparar y entregar tu pedido, y para comunicarnos contigo sobre él. No hacemos publicidad con tus datos ni los compartimos con nadie más." },
+      { "titulo": "Cuánto tiempo los conservamos",
+        "texto": "La conversación de WhatsApp queda en el historial del teléfono de la droguería. Puedes pedir que se elimine escribiendo al mismo número." },
+      { "titulo": "Servicios de terceros",
+        "texto": "El mapa de la página de sedes usa OpenStreetMap, que puede registrar tu dirección IP al cargar las imágenes del mapa. Solo se carga si llegas a esa sección de la página." }
+    ]
+  },
+
+  "datos": {
+    "titulo": "Tratamiento de datos personales",
+    "entrada": "En cumplimiento de la Ley 1581 de 2012 y el Decreto 1074 de 2015, informamos cómo se tratan los datos personales de quienes compran en Droguería Xivica.",
+    "secciones": [
+      { "titulo": "Responsable del tratamiento",
+        "texto": "Droguería Xivica, ubicada en el norte de Bogotá, es responsable del tratamiento de los datos personales que recibe a través de este sitio y de WhatsApp." },
+      { "titulo": "Datos que se tratan",
+        "texto": "Nombre, número de teléfono y dirección de entrega. Cuando el pedido incluye medicamentos que requieren fórmula médica, también la fórmula que el cliente envía voluntariamente." },
+      { "titulo": "Finalidad",
+        "texto": "Preparar, cotizar y entregar el pedido, y comunicarse con el cliente sobre él. Los datos de salud contenidos en una fórmula médica se usan exclusivamente para dispensar los medicamentos y no se comparten con terceros." },
+      { "titulo": "Tus derechos",
+        "texto": "Puedes conocer, actualizar, rectificar y suprimir tus datos, y revocar la autorización para tratarlos. Para ejercer cualquiera de estos derechos, escribe al WhatsApp de la droguería." },
+      { "titulo": "Datos sensibles",
+        "texto": "Una fórmula médica contiene datos de salud, que la ley considera sensibles. Entregarla es voluntario: si prefieres no enviarla por WhatsApp, puedes presentarla en cualquiera de nuestras sedes al recoger el pedido." }
+    ]
+  },
+
+  "terminos": {
+    "titulo": "Términos y condiciones",
+    "secciones": [
+      { "titulo": "Qué es este sitio",
+        "texto": "Este sitio muestra el catálogo de Droguería Xivica y permite armar un pedido que se envía por WhatsApp. No es una pasarela de pago: no se cobra nada en línea." },
+      { "titulo": "Precios y disponibilidad",
+        "texto": "Los precios publicados están en pesos colombianos e incluyen impuestos. Pueden cambiar sin aviso previo. Que un producto aparezca en el catálogo no garantiza que haya existencias: la droguería confirma disponibilidad antes de despachar." },
+      { "titulo": "Cómo se cierra un pedido",
+        "texto": "El pedido se confirma cuando la droguería responde por WhatsApp indicando disponibilidad, total y tiempo de entrega. Hasta ese momento no hay compraventa." },
+      { "titulo": "Medicamentos que requieren fórmula",
+        "texto": "Los medicamentos de control especial solo se dispensan contra presentación de fórmula médica vigente, en original, al momento de la entrega. Sin ella no se entrega el producto, aunque se haya solicitado." },
+      { "titulo": "Devoluciones",
+        "texto": "Por tratarse de productos para la salud, no se aceptan devoluciones de medicamentos una vez entregados, salvo defecto de fábrica, error en el despacho o producto vencido. En esos casos se cambia o se devuelve el dinero." },
+      { "titulo": "Advertencia de salud",
+        "texto": "La información de este sitio es orientativa y no reemplaza la consulta con un médico. El uso de medicamentos sin prescripción es responsabilidad de quien los consume." }
+    ]
+  }
+}
