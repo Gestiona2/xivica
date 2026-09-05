@@ -91,7 +91,15 @@ const datosEstructurados = {
 
     <!-- Panel del carrito. Vive en el layout para que este disponible en toda pagina. -->
     <div class="carrito-fondo" id="carritoFondo" hidden></div>
-    <aside class="carrito" id="carrito" aria-label="Carrito de compras" aria-hidden="true" hidden>
+    <aside
+      class="carrito"
+      id="carrito"
+      aria-label="Carrito de compras"
+      aria-hidden="true"
+      data-whatsapp={config.whatsapp}
+      data-envio={config.envio.gratis_desde}
+      hidden
+    >
       <header class="carrito-cabeza">
         <h2>Tu pedido</h2>
         <button type="button" id="cerrarCarrito" class="carrito-cerrar" aria-label="Cerrar carrito">
