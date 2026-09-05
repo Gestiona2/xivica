@@ -1,0 +1,18 @@
+---
+/**
+ * Accesos rapidos en circulos, bajo el carrusel. Es el atajo de quien ya sabe
+ * a que seccion va y no quiere usar el buscador.
+ */
+import home from "../datos/home.json";
+const base = import.meta.env.BASE_URL;
+const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
+---
+
+<nav class="rail" aria-label="Accesos rápidos">
+  {home.accesos.map((acceso) => (
+    <a class="rail-item" href={enlace(acceso.enlace)}>
+      <span class="rail-circulo" aria-hidden="true">{acceso.icono}</span>
+      <span class="rail-texto">{acceso.texto}</span>
+    </a>
+  ))}
+</nav>

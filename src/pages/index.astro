@@ -1,9 +1,63 @@
 ---
+/**
+ * Portada.
+ *
+ * El orden responde a como compra la gente: primero la promocion, luego el
+ * atajo a su seccion, y enseguida producto con precio. Nada de presentacion
+ * corporativa antes de mostrar algo que se pueda comprar.
+ */
 import Tienda from "../layouts/Tienda.astro";
+import BannerCarrusel from "../components/BannerCarrusel.astro";
+import RailCategorias from "../components/RailCategorias.astro";
+import BarraOfertas from "../components/BarraOfertas.astro";
+import GrillaProductos from "../components/GrillaProductos.astro";
+import FranjaGarantias from "../components/FranjaGarantias.astro";
+import productos from "../datos/productos.json";
+import categorias from "../datos/categorias.json";
+
+const base = import.meta.env.BASE_URL;
+const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
+
+const enOferta = productos.filter((p) => p.descuento);
+const destacadas = enOferta.slice(0, 10);
+
+// Una fila por categoria grande, para que se vea catalogo sin tener que filtrar.
+const filas = categorias
+  .filter((c) => ["medicamentos", "cuidado-personal", "bebe-maternidad"].includes(c.id))
+  .map((categoria) => ({
+    ...categoria,
+    productos: productos.filter((p) => p.categoria === categoria.id).slice(0, 5),
+  }));
 ---
-<Tienda titulo="Droguería Xivica" activa="inicio">
-  <div class="container" style="padding:60px 20px">
-    <h1>Estructura montada</h1>
-    <p>La portada se construye en la tarea 8.</p>
+
+<Tienda
+  titulo="Droguería Xivica — Medicamentos a domicilio en Bogotá"
+  descripcion="407 productos con precio actualizado. Domicilio en 45 a 90 minutos en Bogotá. Pedido por WhatsApp atendido por un regente de farmacia."
+  activa="inicio"
+>
+  <div class="container">
+    <BannerCarrusel />
+    <RailCategorias />
+    <BarraOfertas cantidad={enOferta.length} />
+
+    <section class="seccion">
+      <header class="seccion-cabeza">
+        <h2>Más vendidos en oferta</h2>
+        <a class="seccion-enlace" href={enlace("ofertas")}>Ver las {enOferta.length} ofertas →</a>
+      </header>
+      <GrillaProductos productos={destacadas} prioritarias={5} />
+    </section>
+
+    {filas.map((fila) => (
+      <section class="seccion">
+        <header class="seccion-cabeza">
+          <h2>{fila.nombre}</h2>
+          <a class="seccion-enlace" href={enlace(`categoria/${fila.id}`)}>Ver todo →</a>
+        </header>
+        <GrillaProductos productos={fila.productos} />
+      </section>
+    ))}
+
+    <FranjaGarantias />
   </div>
 </Tienda>

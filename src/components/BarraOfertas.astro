@@ -1,0 +1,43 @@
+---
+/**
+ * Barra oscura con cuenta regresiva al cierre del dia.
+ *
+ * La cuenta la calcula el navegador, no el servidor: si se generara en el
+ * build, marcaria una hora equivocada en cuanto pasara un rato.
+ */
+import Icono from "../components/Icono.astro";
+interface Props { cantidad: number }
+const { cantidad } = Astro.props;
+---
+
+<div class="barra-ofertas">
+  <Icono nombre="rayo" tamano={20} />
+  <h2>Ofertas del día <span class="barra-ofertas-lima">— hasta 25% de descuento</span></h2>
+  <p class="barra-ofertas-cuenta">
+    <span class="barra-ofertas-etiqueta">Termina en</span>
+    <time id="cuentaRegresiva" datetime="PT0S">
+      <b>00</b>:<b>00</b>:<b>00</b>
+    </time>
+  </p>
+</div>
+
+<script>
+  // Cuenta hasta la medianoche de hoy, hora del visitante.
+  const reloj = document.getElementById("cuentaRegresiva");
+  if (reloj) {
+    const dosDigitos = (n) => String(n).padStart(2, "0");
+    const pintar = () => {
+      const ahora = new Date();
+      const medianoche = new Date(ahora);
+      medianoche.setHours(24, 0, 0, 0);
+      const faltan = Math.max(0, Math.floor((medianoche - ahora) / 1000));
+      const h = Math.floor(faltan / 3600);
+      const m = Math.floor((faltan % 3600) / 60);
+      const s = faltan % 60;
+      reloj.innerHTML = `<b>${dosDigitos(h)}</b>:<b>${dosDigitos(m)}</b>:<b>${dosDigitos(s)}</b>`;
+      reloj.setAttribute("datetime", `PT${h}H${m}M${s}S`);
+    };
+    pintar();
+    setInterval(pintar, 1000);
+  }
+</script>

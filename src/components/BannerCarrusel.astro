@@ -1,0 +1,60 @@
+---
+/**
+ * Carrusel de la portada. Tres piezas que rotan solas cada seis segundos.
+ *
+ * Se detiene cuando el raton esta encima y cuando alguien enfoca un boton con
+ * el teclado: nada peor que un carrusel que cambia mientras lees.
+ *
+ * Las imagenes salen de placehold.co porque las definitivas estan pendientes
+ * de diseno. Ver PENDIENTES.md.
+ */
+import home from "../datos/home.json";
+
+const base = import.meta.env.BASE_URL;
+const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
+const marcador = (texto: string) =>
+  `https://placehold.co/520x300/0b4da2/ffffff/webp?text=${encodeURIComponent(texto)}`;
+---
+
+<section class="carrusel" id="carrusel" aria-roledescription="carrusel" aria-label="Promociones">
+  <div class="carrusel-pista" id="carruselPista">
+    {home.banners.map((banner, indice) => (
+      <article
+        class:list={["carrusel-pieza", { activa: indice === 0 }]}
+        role="group"
+        aria-roledescription="diapositiva"
+        aria-label={`${indice + 1} de ${home.banners.length}`}
+        aria-hidden={indice !== 0}
+      >
+        <div class="carrusel-texto">
+          <span class="carrusel-etiqueta">{banner.etiqueta}</span>
+          <h2>{banner.titulo}</h2>
+          <p>{banner.texto}</p>
+          <a class="boton boton-lima" href={enlace(banner.enlace)}>{banner.boton}</a>
+        </div>
+        <img
+          class="carrusel-foto"
+          src={marcador(banner.etiqueta)}
+          alt=""
+          width="520"
+          height="300"
+          loading={indice === 0 ? "eager" : "lazy"}
+          fetchpriority={indice === 0 ? "high" : "auto"}
+        />
+      </article>
+    ))}
+  </div>
+
+  <div class="carrusel-puntos" role="tablist" aria-label="Elegir promoción">
+    {home.banners.map((banner, indice) => (
+      <button
+        type="button"
+        role="tab"
+        class:list={["carrusel-punto", { activo: indice === 0 }]}
+        data-ir={indice}
+        aria-selected={indice === 0}
+        aria-label={banner.etiqueta}
+      ></button>
+    ))}
+  </div>
+</section>

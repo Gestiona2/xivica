@@ -1,0 +1,27 @@
+---
+/**
+ * Grilla de tarjetas. Cinco columnas en escritorio, que es la densidad de una
+ * tienda de barrio con catalogo grande: cuantos mas productos vea la persona
+ * sin bajar, menos pasos hasta el pedido.
+ *
+ * Las primeras `prioritarias` tarjetas cargan su imagen con prioridad alta.
+ */
+import TarjetaProducto from "./TarjetaProducto.astro";
+
+interface Props {
+  productos: any[];
+  prioritarias?: number;
+  vacio?: string;
+}
+const { productos, prioritarias = 0, vacio = "No hay productos para mostrar." } = Astro.props;
+---
+
+{productos.length === 0 ? (
+  <p class="grilla-vacia">{vacio}</p>
+) : (
+  <div class="grilla">
+    {productos.map((producto, indice) => (
+      <TarjetaProducto producto={producto} prioridad={indice < prioritarias} />
+    ))}
+  </div>
+)}

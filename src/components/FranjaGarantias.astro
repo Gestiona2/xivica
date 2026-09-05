@@ -1,0 +1,20 @@
+---
+/**
+ * Franja de garantias del pie de la portada: las cuatro razones para pedir
+ * aqui y no en la droguería de al lado.
+ */
+import home from "../datos/home.json";
+import Icono from "./Icono.astro";
+---
+
+<ul class="garantias">
+  {home.garantias.map((garantia) => (
+    <li class="garantia">
+      <span class="garantia-icono"><Icono nombre={garantia.icono} tamano={22} /></span>
+      <span>
+        <strong>{garantia.titulo}</strong>
+        <small>{garantia.texto}</small>
+      </span>
+    </li>
+  ))}
+</ul>

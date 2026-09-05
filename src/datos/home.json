@@ -1,0 +1,48 @@
+{
+  "_comentario": "Contenido de la portada. Para cambiar un banner se edita aquí, sin tocar código. Las imágenes de banner que digan placehold.co están pendientes de diseño: ver PENDIENTES.md.",
+
+  "banners": [
+    {
+      "etiqueta": "MUNDO OFERTAS",
+      "titulo": "Hasta 25% de descuento en cuidado personal",
+      "texto": "49 productos seleccionados esta semana. Domicilio gratis desde $60.000.",
+      "boton": "Ver ofertas",
+      "enlace": "ofertas",
+      "imagen": "banner-ofertas.webp"
+    },
+    {
+      "etiqueta": "DOMICILIO",
+      "titulo": "Tu pedido llega en 45 a 90 minutos",
+      "texto": "Cubrimos Bogotá y alrededores desde nuestras dos sedes en el norte.",
+      "boton": "Cómo funciona",
+      "enlace": "servicios",
+      "imagen": "banner-domicilio.webp"
+    },
+    {
+      "etiqueta": "FÓRMULA MÉDICA",
+      "titulo": "Envía la foto de tu fórmula y te cotizamos",
+      "texto": "Un regente de farmacia revisa el listado completo y te responde por WhatsApp.",
+      "boton": "Enviar fórmula",
+      "enlace": "servicios#formula",
+      "imagen": "banner-formula.webp"
+    }
+  ],
+
+  "accesos": [
+    { "icono": "💊", "texto": "Medicamentos", "enlace": "categoria/medicamentos" },
+    { "icono": "🧴", "texto": "Cuidado personal", "enlace": "categoria/cuidado-personal" },
+    { "icono": "🍼", "texto": "Bebé", "enlace": "categoria/bebe-maternidad" },
+    { "icono": "🌿", "texto": "Bienestar", "enlace": "categoria/bienestar-nutricion" },
+    { "icono": "✨", "texto": "Dermocosméticos", "enlace": "categoria/dermocosmeticos" },
+    { "icono": "💄", "texto": "Belleza", "enlace": "categoria/belleza" },
+    { "icono": "📄", "texto": "Fórmula médica", "enlace": "servicios#formula" },
+    { "icono": "🏪", "texto": "Nuestras sedes", "enlace": "sedes" }
+  ],
+
+  "garantias": [
+    { "icono": "camion", "titulo": "Domicilio 45–90 min", "texto": "Gratis desde $60.000" },
+    { "icono": "receta", "titulo": "Fórmula médica", "texto": "Cotiza por WhatsApp" },
+    { "icono": "tienda", "titulo": "Recoge en sede", "texto": "Dos puntos en Bogotá" },
+    { "icono": "escudo", "titulo": "100% original", "texto": "Sellado y con registro" }
+  ]
+}
