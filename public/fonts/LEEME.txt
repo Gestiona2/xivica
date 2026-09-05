@@ -1,0 +1,3 @@
+Tipografias en .woff2, VARIABLES y subset latin (U+0000-00FF).
+Descargarlas aqui; nunca enlazar a fonts.googleapis.com.
+Nombres esperados por global.css: titulos-variable.woff2 y cuerpo-variable.woff2

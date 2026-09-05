@@ -1,0 +1,83 @@
+{
+  "_comentario": "Todo el contenido de la página de inicio. Una entrada por sección, en el orden en que aparecen. Los textos se editan aquí; el diseño no se toca.",
+
+  "meta": {
+    "titulo": "NOMBRE DEL NEGOCIO · Frase corta de qué hace",
+    "descripcion": "Descripción para Google, 120 a 160 caracteres."
+  },
+
+  "portada": {
+    "encabezado": "Frase corta de arriba",
+    "titulo": "Primera línea del titular",
+    "tituloAcento": "Segunda línea, en color",
+    "texto": "Un párrafo que explique qué hace el negocio y por qué importa. Dos o tres líneas.",
+    "botones": [
+      { "texto": "Llamado principal", "href": "#contacto", "estilo": "btn-accent" },
+      { "texto": "Llamado secundario", "href": "#servicios", "estilo": "btn-ghost" }
+    ],
+    "imagen": "https://placehold.co/1200x1000?text=Portada",
+    "imagenAlt": "Describir qué se ve en la imagen, para quien no puede verla"
+  },
+
+  "servicios": {
+    "encabezado": "Servicios",
+    "titulo": "Título de la sección",
+    "texto": "Frase de entrada de la sección.",
+    "_limite": "De 3 a 6. Con más, la grilla se ve apretada en pantallas medianas.",
+    "items": [
+      {
+        "titulo": "Nombre del servicio",
+        "texto": "Qué resuelve, en una o dos frases. Hablar del problema del cliente, no de la técnica.",
+        "icono": "check",
+        "imagen": "https://placehold.co/640x360?text=Servicio"
+      }
+    ]
+  },
+
+  "nosotros": {
+    "encabezado": "Nosotros",
+    "titulo": "Título de la sección",
+    "texto": "Quiénes son, hace cuánto, qué los diferencia.",
+    "imagen": "https://placehold.co/900x680?text=Nosotros",
+    "imagenAlt": "Foto del equipo o del local"
+  },
+
+  "cifras": {
+    "_limite": "Exactamente 4. Con 3 o 5 la fila queda descompensada. Solo números enteros: se animan contando desde cero.",
+    "_advertencia": "Solo cifras reales y verificables. Nunca inventarlas.",
+    "items": [
+      { "numero": 0, "sufijo": "+", "texto": "Qué cuenta esta cifra", "icono": "award" }
+    ]
+  },
+
+  "testimonios": {
+    "encabezado": "Testimonios",
+    "titulo": "Título de la sección",
+    "_limite": "De 3 a 6. La frase no debe pasar de 180 caracteres o desborda en celular.",
+    "_advertencia": "Nunca inventar testimonios. Si no hay reales, quitar la sección.",
+    "items": [
+      {
+        "nombre": "Nombre y apellido",
+        "cargo": "Cargo · Empresa",
+        "foto": "https://placehold.co/328x328?text=Foto",
+        "texto": "Lo que dijo el cliente, en sus palabras."
+      }
+    ]
+  },
+
+  "faq": {
+    "encabezado": "Preguntas frecuentes",
+    "titulo": "Título de la sección",
+    "_limite": "De 6 a 10 preguntas.",
+    "items": [
+      { "pregunta": "¿…?", "respuesta": "Respuesta directa, sin rodeos." }
+    ]
+  },
+
+  "contacto": {
+    "encabezado": "Contacto",
+    "titulo": "Título de la sección",
+    "texto": "Invitación a escribir. Decir qué pasa después de enviar el mensaje.",
+    "_nota": "Los datos de contacto (WhatsApp, correo, dirección) salen de sitio.json, no se repiten aquí."
+  }
+}

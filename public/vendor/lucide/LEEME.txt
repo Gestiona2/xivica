@@ -1,0 +1,4 @@
+lucide.min.js
+Descargar de unpkg.com/lucide@<version>/dist/umd/lucide.min.js y guardar aqui.
+OJO: los iconos de marcas (facebook, instagram...) fueron removidos de Lucide.
+Usar iconos genericos seguros o SVG propios.

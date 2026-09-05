@@ -1,0 +1,2 @@
+Logo y favicon del negocio.
+logo.png (~800x200, fondo transparente) y favicon.png (512x512).

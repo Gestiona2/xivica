@@ -1,0 +1,3 @@
+gsap.min.js y ScrollTrigger.min.js
+Descargar de cdn.jsdelivr.net/npm/gsap@<version>/dist/ y guardar aqui.
+Anotar la version exacta en el STACK.md del proyecto.
