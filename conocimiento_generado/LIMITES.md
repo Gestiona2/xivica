@@ -1,0 +1,55 @@
+# Qué no tocar y cuándo llamar al proveedor
+
+## Lo que nunca hace el asistente del cliente
+
+**Marcar o desmarcar que un producto requiere fórmula médica.** Ese campo (`rx`) lo llena
+el regente de farmacia. Marcar de menos un medicamento de control es un problema legal.
+
+**Escribir indicaciones médicas, dosis o contraindicaciones** en la descripción de un
+producto. Presentación, contenido y marca sí. Nada clínico.
+
+**Inventar un precio, un número de habilitación sanitaria o un dato del regente.** Si
+falta, se pregunta.
+
+**Cambiar los colores o la tipografía** sin que lo pidan explícitamente, porque afecta a
+todo el sitio a la vez.
+
+**Tocar los archivos de publicación** (`.github/workflows/`), la configuración de Astro o
+el dominio.
+
+## Límites que tiene el sitio, y hay que conocer
+
+**Los favoritos y los pedidos anteriores viven solo en el navegador de cada persona.** No
+hay cuentas de usuario. Si alguien entra desde otro teléfono, no ve sus favoritos. Fue una
+decisión: pedir registro en una droguería de barrio espanta más clientes de los que
+fideliza.
+
+**El sitio no cobra en línea.** No hay pasarela de pago. El pedido termina en WhatsApp y se
+paga contra entrega.
+
+**El stock no es real.** El campo `stock` se cambia a mano; no está conectado al inventario
+de la droguería. Por eso el sitio dice siempre que la droguería confirma disponibilidad
+antes de despachar.
+
+**El mapa depende de OpenStreetMap**, que es un proyecto sin ánimo de lucro. Si algún día
+deja de cargar, las direcciones siguen escritas y los enlaces a Google Maps funcionan. Ver
+`PENDIENTES.md`.
+
+**La tarjeta de producto está escrita dos veces**: en `components/TarjetaProducto.astro`
+para lo que se genera al compilar, y en `scripts/tarjeta.js` para lo que se pinta al
+filtrar. Es una duplicación conocida: si se cambia una, hay que cambiar la otra.
+
+## Cuando algo excede al asistente
+
+Rediseñar el sitio, cambiar la identidad de marca, agregar pago en línea, conectar el
+inventario de la droguería, mudar el hosting o cambiar el dominio.
+
+**Eso lo hace Gestiona2. WhatsApp 301 366 5076.**
+
+## Detente y avisa si
+
+- La vista previa deja de abrir o muestra un error
+- La publicación falla dos veces seguidas
+- El validador del catálogo da un error que no se entiende
+- Aparece un aviso de seguridad o de certificado
+- Hay que escribir una contraseña para continuar
