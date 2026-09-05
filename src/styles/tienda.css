@@ -436,3 +436,90 @@ mark.falta {
   .garantia:nth-child(2) { border-right: 0; }
   .garantia:nth-child(-n+2) { border-bottom: 1px solid var(--borde); }
 }
+
+/* ============================================================
+   FICHA DE PRODUCTO
+   ============================================================ */
+.migas {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-size: .78rem; color: var(--text-muted); padding: 18px 0;
+}
+.migas a:hover { color: var(--azul); text-decoration: underline; }
+.migas-actual { color: var(--text); font-weight: 600; }
+
+.ficha {
+  display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr);
+  gap: 44px; align-items: start; padding-bottom: 20px;
+}
+.ficha-galeria { position: sticky; top: 130px; }
+.ficha-foto {
+  position: relative; aspect-ratio: 1;
+  background: var(--bg-soft); border: 1px solid var(--borde); border-radius: var(--radio-lg);
+  display: grid; place-items: center; padding: 26px; overflow: hidden;
+}
+.ficha-foto img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.ficha-descuento {
+  position: absolute; top: 14px; left: 14px;
+  background: var(--rojo); color: #fff;
+  font-size: .8rem; font-weight: 800; padding: 6px 11px; border-radius: 7px;
+}
+.ficha-miniaturas { display: flex; gap: 9px; margin-top: 12px; flex-wrap: wrap; }
+.ficha-miniatura {
+  width: 68px; height: 68px; padding: 5px; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--borde); border-radius: 8px;
+  display: grid; place-items: center; transition: border-color .16s ease;
+}
+.ficha-miniatura:hover, .ficha-miniatura.activa { border-color: var(--azul); }
+.ficha-miniatura img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.ficha-marca {
+  font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cian);
+}
+.ficha-titulo {
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 800;
+  letter-spacing: -.03em; line-height: 1.15; margin: 8px 0 6px;
+}
+.ficha-presentacion { color: var(--text-muted); font-size: .95rem; }
+
+.ficha-precio { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 20px 0; }
+.ficha-precio s { font-size: 1rem; color: var(--text-muted); }
+.ficha-precio strong { font-size: 2.1rem; font-weight: 800; letter-spacing: -.03em; color: var(--azul); }
+.ficha-ahorro {
+  font-size: .82rem; font-weight: 800;
+  background: var(--lima-suave); color: var(--lima-tinta);
+  padding: 5px 11px; border-radius: 6px;
+}
+
+.ficha-aviso {
+  display: flex; gap: 11px; align-items: flex-start;
+  padding: 13px 16px; border-radius: var(--radio); font-size: .86rem; line-height: 1.5;
+  margin-bottom: 18px;
+}
+.ficha-aviso-rx { background: #fff4d6; color: #7a5200; }
+.ficha-aviso-rx svg { flex: none; margin-top: 2px; }
+
+.ficha-acciones { display: flex; gap: 11px; flex-wrap: wrap; margin-bottom: 22px; }
+.ficha-agregar { flex: 1; min-width: 220px; padding: 15px 26px; font-size: .95rem; }
+
+.ficha-ventajas { list-style: none; display: grid; gap: 11px; padding: 20px 0; border-top: 1px solid var(--borde); }
+.ficha-ventajas li {
+  display: flex; align-items: center; gap: 11px;
+  font-size: .88rem; color: var(--text-soft);
+}
+.ficha-ventajas svg { color: var(--azul); flex: none; }
+
+.ficha-descripcion { border-top: 1px solid var(--borde); padding-top: 20px; }
+.ficha-descripcion h2 { font-size: 1rem; font-weight: 800; margin-bottom: 9px; }
+.ficha-descripcion p { font-size: .92rem; color: var(--text-soft); line-height: 1.65; }
+
+.ficha-legal {
+  font-size: .76rem; color: var(--text-muted); line-height: 1.55;
+  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--borde);
+}
+
+@media (max-width: 900px) {
+  .ficha { grid-template-columns: 1fr; gap: 26px; }
+  .ficha-galeria { position: static; }
+  .ficha-agregar { min-width: 100%; }
+}

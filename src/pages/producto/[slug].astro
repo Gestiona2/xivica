@@ -1,0 +1,223 @@
+---
+/**
+ * Ficha de producto. Genera una pagina HTML por cada producto del catalogo.
+ *
+ * Es la razon de que el sitio use Astro. La web anterior mostraba las fichas
+ * cambiando el fragmento de la URL (#p-oscillococcinum), asi que Google veia
+ * una sola pagina para los cuatrocientos productos. Aqui cada producto tiene
+ * su propia direccion, su propio titulo y su precio dentro del HTML, que es
+ * lo que permite que aparezca al buscar "oscillococcinum precio bogota".
+ */
+import Tienda from "../../layouts/Tienda.astro";
+import GrillaProductos from "../../components/GrillaProductos.astro";
+import Icono from "../../components/Icono.astro";
+import { pesos } from "../../scripts/formato.js";
+import productos from "../../datos/productos.json";
+import categorias from "../../datos/categorias.json";
+import config from "../../datos/config.json";
+
+export function getStaticPaths() {
+  return productos.map((producto) => ({
+    params: { slug: producto.slug },
+    props: { producto },
+  }));
+}
+
+const { producto } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
+
+const categoria = categorias.find((c) => c.id === producto.categoria);
+const ahorro = producto.precio_antes ? producto.precio_antes - producto.precio : null;
+
+// Cuatro productos de la misma categoria, sin repetir el que se esta viendo.
+const relacionados = productos
+  .filter((p) => p.categoria === producto.categoria && p.slug !== producto.slug)
+  .slice(0, 5);
+
+const imagenPrincipal = `${base}img/${producto.imagenes[0]}`.replace(/\/{2,}/g, "/");
+
+// Ficha del producto para Google: es lo que hace que el precio salga en el
+// resultado de busqueda en vez de solo el titulo.
+const fichaGoogle = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: producto.titulo,
+  image: new URL(imagenPrincipal, Astro.site ?? "https://example.com").href,
+  description: producto.descripcion,
+  ...(producto.marca && { brand: { "@type": "Brand", name: producto.marca } }),
+  offers: {
+    "@type": "Offer",
+    price: producto.precio,
+    priceCurrency: "COP",
+    availability: producto.stock
+      ? "https://schema.org/InStock"
+      : "https://schema.org/OutOfStock",
+    seller: { "@type": "Organization", name: config.negocio },
+  },
+};
+
+const migas = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: enlace("") },
+    ...(categoria
+      ? [{ "@type": "ListItem", position: 2, name: categoria.nombre,
+           item: enlace(`categoria/${categoria.id}`) }]
+      : []),
+    { "@type": "ListItem", position: categoria ? 3 : 2, name: producto.titulo },
+  ],
+};
+---
+
+<Tienda
+  titulo={`${producto.titulo} — ${pesos(producto.precio)}`}
+  descripcion={`${producto.titulo}${producto.presentacion ? `, ${producto.presentacion}` : ""}. ${pesos(producto.precio)} con entrega en ${config.envio.minutos_min} a ${config.envio.minutos_max} minutos en Bogotá.`}
+  activa={producto.categoria}
+  imagen={imagenPrincipal}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(fichaGoogle)} />
+  <script type="application/ld+json" set:html={JSON.stringify(migas)} />
+
+  <div class="container">
+    <nav class="migas" aria-label="Ruta de navegación">
+      <a href={enlace("")}>Inicio</a>
+      <span aria-hidden="true">›</span>
+      {categoria && (
+        <>
+          <a href={enlace(`categoria/${categoria.id}`)}>{categoria.nombre}</a>
+          <span aria-hidden="true">›</span>
+        </>
+      )}
+      <span class="migas-actual">{producto.titulo}</span>
+    </nav>
+
+    <div class="ficha">
+      <div class="ficha-galeria">
+        <div class="ficha-foto">
+          <img
+            id="fichaFoto"
+            src={imagenPrincipal}
+            alt={producto.titulo}
+            width="440"
+            height="440"
+            fetchpriority="high"
+            decoding="async"
+          />
+          {producto.descuento && <span class="ficha-descuento">-{producto.descuento}%</span>}
+        </div>
+
+        {producto.imagenes.length > 1 && (
+          <div class="ficha-miniaturas" role="group" aria-label="Más fotos del producto">
+            {producto.imagenes.map((imagen, indice) => (
+              <button
+                type="button"
+                class:list={["ficha-miniatura", { activa: indice === 0 }]}
+                data-foto={`${base}img/${imagen}`.replace(/\/{2,}/g, "/")}
+                aria-label={`Ver foto ${indice + 1}`}
+              >
+                <img
+                  src={`${base}img/${imagen}`.replace(/\/{2,}/g, "/")}
+                  alt=""
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div class="ficha-datos">
+        {producto.marca && <span class="ficha-marca">{producto.marca}</span>}
+        <h1 class="ficha-titulo">{producto.titulo}</h1>
+        {producto.presentacion && <p class="ficha-presentacion">{producto.presentacion}</p>}
+
+        <div class="ficha-precio">
+          {producto.precio_antes && <s>{pesos(producto.precio_antes)}</s>}
+          <strong>{pesos(producto.precio)}</strong>
+          {ahorro && <span class="ficha-ahorro">Ahorras {pesos(ahorro)}</span>}
+        </div>
+
+        {producto.rx === true && (
+          <p class="ficha-aviso ficha-aviso-rx">
+            <Icono nombre="receta" tamano={17} />
+            <span>
+              <strong>Requiere fórmula médica.</strong>
+              Envíanos la foto por WhatsApp y la revisamos antes de despachar.
+            </span>
+          </p>
+        )}
+
+        <div class="ficha-acciones">
+          <button
+            type="button"
+            class="boton boton-lima ficha-agregar"
+            data-agregar={producto.slug}
+            data-titulo={producto.titulo}
+            data-precio={producto.precio}
+            data-imagen={producto.imagenes[0]}
+          >
+            <Icono nombre="carrito" tamano={18} /> Agregar al carrito
+          </button>
+          <button
+            type="button"
+            class="boton boton-borde"
+            data-favorito={producto.slug}
+            aria-pressed="false"
+          >
+            <Icono nombre="corazon" tamano={18} /> Guardar
+          </button>
+        </div>
+
+        <ul class="ficha-ventajas">
+          <li><Icono nombre="camion" tamano={17} /> Entrega en {config.envio.minutos_min}–{config.envio.minutos_max} min en {config.ciudad}</li>
+          <li><Icono nombre="escudo" tamano={17} /> Producto original y sellado</li>
+          <li><Icono nombre="tienda" tamano={17} /> También puedes recogerlo en sede</li>
+        </ul>
+
+        {producto.descripcion && (
+          <section class="ficha-descripcion">
+            <h2>Descripción</h2>
+            <p>{producto.descripcion}</p>
+          </section>
+        )}
+
+        <p class="ficha-legal">
+          La información de este sitio no reemplaza la consulta con un profesional de la
+          salud. Consulta a tu médico o al regente de farmacia antes de usar cualquier
+          medicamento.
+        </p>
+      </div>
+    </div>
+
+    {relacionados.length > 0 && (
+      <section class="seccion">
+        <header class="seccion-cabeza">
+          <h2>También te puede servir</h2>
+          {categoria && (
+            <a class="seccion-enlace" href={enlace(`categoria/${categoria.id}`)}>
+              Ver {categoria.nombre} →
+            </a>
+          )}
+        </header>
+        <GrillaProductos productos={relacionados} />
+      </section>
+    )}
+  </div>
+
+  <script>
+    // Cambiar la foto grande al tocar una miniatura.
+    const foto = document.getElementById("fichaFoto");
+    document.querySelectorAll(".ficha-miniatura").forEach((boton) => {
+      boton.addEventListener("click", () => {
+        foto.src = boton.dataset.foto;
+        document
+          .querySelectorAll(".ficha-miniatura")
+          .forEach((otro) => otro.classList.toggle("activa", otro === boton));
+      });
+    });
+  </script>
+</Tienda>
