@@ -2,9 +2,9 @@
 /**
  * Portada.
  *
- * El orden responde a como compra la gente: primero la promocion, luego el
- * atajo a su seccion, y enseguida producto con precio. Nada de presentacion
- * corporativa antes de mostrar algo que se pueda comprar.
+ * El orden sigue el Manual de Marca v2.0 (cap. 50): que es Xivica y que
+ * beneficio da, acceso rapido a categorias, producto con precio, que puede
+ * resolver (servicios), donde encontrarla (sedes) y un cierre hacia WhatsApp.
  */
 import Tienda from "../layouts/Tienda.astro";
 import BannerCarrusel from "../components/BannerCarrusel.astro";
@@ -12,9 +12,13 @@ import RailCategorias from "../components/RailCategorias.astro";
 import BarraOfertas from "../components/BarraOfertas.astro";
 import GrillaProductos from "../components/GrillaProductos.astro";
 import FranjaGarantias from "../components/FranjaGarantias.astro";
+import Icono from "../components/Icono.astro";
 import { elegirDestacados } from "../scripts/destacados.js";
 import productos from "../datos/productos.json";
 import categorias from "../datos/categorias.json";
+import home from "../datos/home.json";
+import config from "../datos/config.json";
+import servicios from "../datos/servicios.json";
 
 const base = import.meta.env.BASE_URL;
 const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
@@ -25,10 +29,8 @@ const enOferta = productos.filter((p) => p.descuento);
 // que requieren formula medica quedan fuera del escaparate.
 const destacadas = elegirDestacados(enOferta, 10);
 
-// Lo ya mostrado no se repite mas abajo: ver el mismo producto dos veces en
-// una pantalla hace que el catalogo parezca mas pobre de lo que es.
+// Lo ya mostrado no se repite mas abajo.
 const yaMostrados = new Set(destacadas.map((p) => p.slug));
-
 const filas = categorias
   .filter((c) => ["medicamentos", "cuidado-personal", "bebe-maternidad"].includes(c.id))
   .map((categoria) => {
@@ -40,11 +42,13 @@ const filas = categorias
     fila.forEach((p) => yaMostrados.add(p.slug));
     return { ...categoria, productos: fila };
   });
+
+const falta = (v: string) => v === "PENDIENTE";
 ---
 
 <Tienda
-  titulo="Droguería Xivica — Medicamentos a domicilio en Bogotá"
-  descripcion="407 productos con precio actualizado. Domicilio en 45 a 90 minutos en Bogotá. Pedido por WhatsApp atendido por un regente de farmacia."
+  titulo={`${config.negocio} — ${config.tagline}`}
+  descripcion={config.descripcion_corta}
   activa="inicio"
 >
   <div class="container">
@@ -54,7 +58,7 @@ const filas = categorias
 
     <section class="seccion">
       <header class="seccion-cabeza">
-        <h2>Más vendidos en oferta</h2>
+        <h2>Destacados de la semana</h2>
         <a class="seccion-enlace" href={enlace("ofertas")}>Ver las {enOferta.length} ofertas →</a>
       </header>
       <GrillaProductos productos={destacadas} prioritarias={5} />
@@ -70,6 +74,55 @@ const filas = categorias
       </section>
     ))}
 
+    <section class="seccion">
+      <header class="seccion-cabeza">
+        <h2>{home.servicios_titulo}</h2>
+        <a class="seccion-enlace" href={enlace("servicios")}>Todos los servicios →</a>
+      </header>
+      <div class="inicio-servicios">
+        {servicios.servicios.map((s) => (
+          <a class="inicio-servicio" href={enlace(`servicios#${s.id}`)}>
+            <span class="icono-circulo"><Icono nombre={s.icono} tamano={22} /></span>
+            <strong>{s.titulo}</strong>
+            <span>{s.resumen}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="seccion">
+      <header class="seccion-cabeza">
+        <div>
+          <h2>{home.sedes_titulo}</h2>
+          <p class="seccion-sub">{home.sedes_texto}</p>
+        </div>
+        <a class="seccion-enlace" href={enlace("sedes")}>Ver en el mapa →</a>
+      </header>
+      <div class="inicio-sedes">
+        {config.sedes.map((sede) => (
+          <article class="inicio-sede">
+            <span class="icono-circulo"><Icono nombre="ubicacion" tamano={20} /></span>
+            <div>
+              <h3>{sede.nombre}</h3>
+              <p>{sede.direccion}</p>
+              <p>{falta(sede.horario) ? <mark class="falta">Falta el horario</mark> : sede.horario}</p>
+              <a href={`tel:${sede.telefono}`}>{sede.telefono_visible}</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
     <FranjaGarantias />
+
+    <section class="cierre">
+      <div>
+        <h2>{home.cierre.titulo}</h2>
+        <p>{home.cierre.texto}</p>
+      </div>
+      <a class="boton boton-lima" href={`https://wa.me/${config.whatsapp}`} target="_blank" rel="noopener">
+        <Icono nombre="whatsapp" tamano={20} /> {home.cierre.boton}
+      </a>
+    </section>
   </div>
 </Tienda>

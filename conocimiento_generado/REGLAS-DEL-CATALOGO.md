@@ -66,7 +66,7 @@ protege nada, porque no hay ningún producto marcado.
 
 ## 4. Un producto no aparece dos veces en la misma pantalla
 
-Si un producto ya salió en "Más vendidos en oferta", no vuelve a salir más abajo en la
+Si un producto ya salió en "Destacados de la semana", no vuelve a salir más abajo en la
 fila de su categoría. Ver el mismo producto repetido hace que el catálogo parezca más
 pobre de lo que es.
 
@@ -144,7 +144,7 @@ dato real.
 
 | Sección | Cuántos muestra | Qué pasa si se cambia |
 |---|---|---|
-| Más vendidos en oferta | 10 | Con menos de 5 la fila se ve vacía en escritorio |
+| Destacados de la semana | 10 | Con menos de 5 la fila se ve vacía en escritorio |
 | Fila por categoría | 5 | Es una fila exacta en pantalla grande |
 | Relacionados en la ficha | 5 | Salen de la misma categoría del producto |
 | Resultados del buscador | 6 | Más no caben sin tapar la página |
@@ -162,8 +162,11 @@ Las fotos actuales vienen del sitio anterior, que las tomó de catálogos de pro
 **Antes de publicar en el dominio definitivo conviene confirmar que la droguería tiene
 derecho a usarlas.** Está anotado en `PENDIENTES.md`.
 
-Las imágenes de los banners de portada son marcadores de posición grises: dicen
-`placehold.co` porque las piezas de diseño están pendientes.
+Los banners de portada no llevan fotografías todavía: se dibujan con el círculo y la curva
+amarilla del logo, que es lo que propone el manual de marca.
+
+Las galerías traen fotos de otros productos en algunos casos, heredadas del sitio anterior.
+Está en `PENDIENTES.md`.
 
 ---
 

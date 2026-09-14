@@ -2,8 +2,10 @@
 
 ## Qué es el negocio
 
-Droguería Xivica es una droguería de barrio en el norte de Bogotá, con dos sedes: **Villa
-del Prado** (Cra 49B #171a-92) y **Tejares del Norte** (Cra 49 #185-26 Local 1). Vende
+Droguería Xivica es una droguería de barrio en el norte de Bogotá. Abrió en **2021** como
+un proyecto familiar: el nombre une los de sus propietarios. Según el manual de marca tiene
+**3 puntos de venta**; el sitio muestra dos, **Villa del Prado** (Cra 49B #171a-92) y
+**Tejares del Norte** (Cra 49 #185-26 Local 1), porque falta la dirección del tercero. Vende
 medicamentos, cuidado personal, productos de bebé y suplementos.
 
 El pedido se toma y se cierra **por WhatsApp**, al 301 366 5076, y se entrega a domicilio
@@ -36,7 +38,7 @@ conversación de WhatsApp, que es como ya trabaja la droguería.
 | **Categoría** | Una página por cada una de las 7 categorías, con todos sus productos |
 | **Producto** | Una página por cada producto: fotos, precio, ahorro y relacionados |
 | **Mundo Ofertas** | Los productos con descuento, ordenados por cuánto se ahorra |
-| **Sedes** | Las dos sedes con dirección, teléfono y mapa |
+| **Sedes** | Las sedes con dirección, teléfono y mapa |
 | **Servicios** | Domicilio, cotización de fórmulas, asesoría y recoger en tienda |
 | **Nosotros** | Quién es la droguería y sus datos legales |
 | **Contacto** | WhatsApp y teléfonos |

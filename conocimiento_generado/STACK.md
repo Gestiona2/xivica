@@ -6,6 +6,7 @@
 |---|---|---|
 | Astro | 7 | Genera las 427 páginas HTML |
 | Tailwind CSS | 4 | Sistema de estilos, usado solo para los tokens de color |
+| Manrope e Inter | variables | Tipografías oficiales del manual, guardadas en `public/fonts/` |
 | JavaScript | módulos ES | Buscador, carrito, filtros. Sin frameworks ni librerías |
 | Leaflet | 1.9.4 | Mapa de las sedes. Se descarga solo al llegar a esa sección |
 | Python | 3.12 | Herramientas locales. **No corre en el servidor** |
@@ -42,7 +43,8 @@ conocimiento_generado/  Esta documentación
 | Lo que la gente busca y no encuentra | `src/datos/sinonimos.json` |
 | Los colores o la tipografía | `src/styles/global.css` |
 | Cómo se ve una tarjeta de producto | `src/components/TarjetaProducto.astro` **y** `src/scripts/tarjeta.js` |
-| El logo | `public/img/logo-xivica.png` y `src/components/Logo.astro` |
+| El logo | `public/img/isotipo-xivica.svg` y `src/components/Logo.astro` |
+| El tagline "Cerca cuando la necesitas" | `src/datos/config.json` → `tagline` |
 | Qué productos salen destacados | `src/scripts/destacados.js` |
 
 ## Comandos

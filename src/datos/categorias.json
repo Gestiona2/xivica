@@ -1,9 +1,44 @@
 [
-  { "id": "medicamentos",        "nombre": "Medicamentos",          "icono": "💊", "orden": 1 },
-  { "id": "cuidado-personal",    "nombre": "Cuidado personal",      "icono": "🧴", "orden": 2 },
-  { "id": "bebe-maternidad",     "nombre": "Bebé y maternidad",     "icono": "🍼", "orden": 3 },
-  { "id": "bienestar-nutricion", "nombre": "Bienestar y nutrición", "icono": "🌿", "orden": 4 },
-  { "id": "dermocosmeticos",     "nombre": "Dermocosméticos",       "icono": "✨", "orden": 5 },
-  { "id": "belleza",             "nombre": "Belleza",               "icono": "💄", "orden": 6 },
-  { "id": "varios",              "nombre": "Varios",                "icono": "🧺", "orden": 7 }
+  {
+    "id": "medicamentos",
+    "nombre": "Medicamentos",
+    "icono": "pastilla",
+    "orden": 1
+  },
+  {
+    "id": "cuidado-personal",
+    "nombre": "Cuidado personal",
+    "icono": "frasco",
+    "orden": 2
+  },
+  {
+    "id": "bebe-maternidad",
+    "nombre": "Bebé y maternidad",
+    "icono": "bebe",
+    "orden": 3
+  },
+  {
+    "id": "bienestar-nutricion",
+    "nombre": "Bienestar y nutrición",
+    "icono": "hoja",
+    "orden": 4
+  },
+  {
+    "id": "dermocosmeticos",
+    "nombre": "Cuidado de la piel",
+    "icono": "gota",
+    "orden": 5
+  },
+  {
+    "id": "belleza",
+    "nombre": "Belleza",
+    "icono": "brillo",
+    "orden": 6
+  },
+  {
+    "id": "varios",
+    "nombre": "Varios",
+    "icono": "canasta",
+    "orden": 7
+  }
 ]

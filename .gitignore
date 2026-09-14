@@ -8,3 +8,7 @@ dist/
 !.env.example
 __pycache__/
 *.pyc
+
+# Insumos del cliente: manual de marca con el brief del propietario, logos
+# fuente y referencias. El repo del demo es publico y esto no debe viajar.
+insumos/

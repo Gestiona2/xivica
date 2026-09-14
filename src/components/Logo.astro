@@ -1,28 +1,55 @@
 ---
 /**
- * El logo, en un solo sitio.
+ * El logo, en un solo sitio. Todas las paginas lo usan desde aqui.
  *
- * Todas las paginas lo usan desde aqui. El dia que llegue el logo nuevo se
- * cambia el archivo y esta linea, y queda corregido en todo el sitio a la vez.
+ * Isotipo: el archivo maestro aprobado (Manual de Marca v2.0, cap. 17),
+ * copiado tal cual en public/img/isotipo-xivica.svg. No se redibuja ni se
+ * recolorea: el manual lo prohibe.
  *
- * El archivo actual es un PNG de 160x74 que viene del sitio anterior. Se ve
- * borroso en pantallas de alta densidad: reemplazarlo por un SVG esta anotado
- * en PENDIENTES.md.
+ * Nombre: el manual aprueba una "version horizontal" (isotipo + nombre) pero
+ * no entrega el archivo del logotipo. Mientras llega, el nombre se compone
+ * con la tipografia oficial (Manrope) y los colores oficiales. Esta anotado en
+ * PENDIENTES.md: cuando llegue el archivo, se reemplaza este bloque.
+ *
+ * Tamanos minimos del manual (cap. 19): isotipo 32 px, logo completo 120 px.
  */
 interface Props {
-  alto?: number;
+  alto?: number;          // alto del isotipo en px
+  soloIsotipo?: boolean;
+  negativo?: boolean;     // nombre en blanco, para fondos oscuros
   clase?: string;
 }
-const { alto = 40, clase = "" } = Astro.props;
+const { alto = 44, soloIsotipo = false, negativo = false, clase = "" } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const PROPORCION = 160 / 74;
+const tamano = Math.max(alto, 32);
 ---
 
-<img
-  src={`${base}img/logo-xivica.png`}
-  alt="Droguería Xivica"
-  height={alto}
-  width={Math.round(alto * PROPORCION)}
-  class={clase}
-  style={`height:${alto}px;width:auto`}
-/>
+<span class:list={["logo", { "logo-negativo": negativo }, clase]}>
+  <img
+    class="logo-isotipo"
+    src={`${base}img/isotipo-xivica.svg`}
+    alt={soloIsotipo ? "Droguería Xivica" : ""}
+    width={tamano}
+    height={tamano}
+  />
+  {!soloIsotipo && (
+    <span class="logo-nombre" style={`font-size:${Math.round(tamano * 0.42)}px`}>
+      <span class="logo-drogueria">Droguería</span>
+      <span class="logo-xivica">Xivica</span>
+    </span>
+  )}
+</span>
+
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 0.55em; line-height: 1; }
+  /* Area de seguridad del manual (cap. 18): el isotipo no se toca con nada. */
+  .logo-isotipo { flex: none; display: block; }
+  .logo-nombre {
+    display: flex; flex-direction: column; gap: 0.12em;
+    font-family: var(--font-display); letter-spacing: -0.01em;
+  }
+  .logo-drogueria { font-size: 0.62em; font-weight: 700; color: var(--verde); letter-spacing: 0.02em; }
+  .logo-xivica { font-size: 1.18em; font-weight: 800; color: var(--azul); }
+  .logo-negativo .logo-drogueria,
+  .logo-negativo .logo-xivica { color: #fff; }
+</style>

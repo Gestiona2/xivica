@@ -32,7 +32,7 @@ const {
 const base = import.meta.env.BASE_URL;
 const tituloCompleto = titulo.includes(config.negocio) ? titulo : `${titulo} | ${config.negocio}`;
 const urlCanonica = new URL(Astro.url.pathname, Astro.site ?? "https://example.com");
-const imagenSocial = new URL(imagen ?? `${base}img/logo-xivica.png`, urlCanonica);
+const imagenSocial = new URL(imagen ?? `${base}img/compartir-xivica.png`, urlCanonica);
 
 // Ficha del negocio para Google. Las sedes van como sucursales.
 const datosEstructurados = {
@@ -62,9 +62,10 @@ const datosEstructurados = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{tituloCompleto}</title>
     <meta name="description" content={descripcion} />
-    <meta name="theme-color" content="#0b4da2" />
+    <meta name="theme-color" content="#00aafa" />
     <link rel="canonical" href={urlCanonica.href} />
-    <link rel="icon" href={`${base}img/logo-xivica.png`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}img/isotipo-xivica.svg`} />
+    <link rel="apple-touch-icon" href={`${base}img/isotipo-xivica-180.png`} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={config.negocio} />

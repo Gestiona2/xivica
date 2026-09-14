@@ -1,20 +1,18 @@
 {
-  "_comentario": "Datos del negocio. Todo lo que diga PENDIENTE se muestra marcado en el sitio para que no se publique por descuido. Ver PENDIENTES.md.",
-
+  "_comentario": "Datos del negocio. Todo lo que diga PENDIENTE se muestra marcado en el sitio para que no se publique por descuido. Ver PENDIENTES.md. puntos_de_venta viene del Manual de Marca v2.0; solo hay direccion de dos sedes, la tercera esta en PENDIENTES.md.",
   "negocio": "Droguería Xivica",
-  "descripcion_corta": "Droguería en el norte de Bogotá con domicilio en 45 a 90 minutos.",
+  "tagline": "Cerca cuando la necesitas.",
+  "descripcion_corta": "Droguería cercana y confiable en el norte de Bogotá. Medicamentos, cuidado personal y bienestar, con domicilio en 45 a 90 minutos.",
   "whatsapp": "573013665076",
   "whatsapp_visible": "301 366 5076",
   "correo": "PENDIENTE",
   "ciudad": "Bogotá",
-
   "envio": {
     "gratis_desde": 60000,
     "minutos_min": 45,
     "minutos_max": 90,
     "cobertura": "Bogotá y alrededores"
   },
-
   "sedes": [
     {
       "id": "villa-del-prado",
@@ -37,16 +35,15 @@
       "horario": "PENDIENTE"
     }
   ],
-
   "legal": {
     "habilitacion": "PENDIENTE",
     "regente": "PENDIENTE",
     "tarjeta_profesional": "PENDIENTE",
     "nit": "PENDIENTE"
   },
-
   "redes": {
     "facebook": "",
     "instagram": ""
-  }
+  },
+  "puntos_de_venta": 3
 }

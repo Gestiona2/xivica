@@ -20,7 +20,8 @@ const falta = (valor: string) => valor === "PENDIENTE";
 <footer class="pie">
   <div class="container pie-grid">
     <div class="pie-col pie-marca">
-      <Logo alto={46} />
+      <Logo alto={48} />
+      <p class="pie-tagline">{config.tagline}</p>
       <p class="pie-descripcion">{config.descripcion_corta}</p>
       <a class="pie-wa" href={`https://wa.me/${config.whatsapp}`} target="_blank" rel="noopener">
         <Icono nombre="whatsapp" tamano={18} />

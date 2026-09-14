@@ -9,6 +9,7 @@ const falta = (v: string) => v === "PENDIENTE";
   <div class="container texto">
     <h1>{datos.titulo}</h1>
     <p class="texto-entrada">{datos.entrada}</p>
+    <p class="texto-proposito">{datos.proposito}</p>
 
     {datos.bloques.map((bloque) => (
       <section>
@@ -16,6 +17,13 @@ const falta = (v: string) => v === "PENDIENTE";
         <p>{bloque.texto}</p>
       </section>
     ))}
+
+    <section>
+      <h2>Lo que nos guía</h2>
+      <ul class="valores">
+        {datos.valores.map((v) => <li>{v}</li>)}
+      </ul>
+    </section>
 
     <section>
       <h2>Datos legales</h2>

@@ -1,21 +1,32 @@
 {
-  "_comentario": "Textos de la página Nosotros. Se pueden reescribir enteros sin tocar código.",
-
-  "titulo": "Una droguería de barrio, no una cadena",
-  "entrada": "Droguería Xivica atiende el norte de Bogotá desde dos sedes en Villa del Prado y Tejares del Norte. Vendemos medicamentos, cuidado personal, productos de bebé y suplementos, con entrega a domicilio en 45 a 90 minutos.",
-
+  "_comentario": "Textos de la página Nosotros, tomados del Manual de Marca v2.0, validado con el propietario. Se pueden reescribir sin tocar código.",
+  "titulo": "Cuidado confiable y cercano",
+  "entrada": "Droguería Xivica abrió en 2021 como un proyecto familiar: el nombre une los de sus propietarios, con la idea de construir un negocio que pase a las siguientes generaciones. Hoy atendemos el norte de Bogotá.",
+  "proposito": "Existimos para acompañar a las personas y familias en sus necesidades cotidianas de salud y bienestar, con atención cercana, confiable y profesional.",
   "bloques": [
     {
-      "titulo": "Atiende una persona, no un formulario",
-      "texto": "Cada pedido lo revisa alguien antes de despacharlo. Si algo no hay, te ofrecemos una alternativa; si la fórmula tiene algo que no cuadra, te lo decimos antes de cobrar. Esa es la diferencia con comprar en una aplicación."
+      "titulo": "Te atiende una persona",
+      "texto": "Tratamos a cada persona como una persona, no como una transacción. Cada pedido lo revisa alguien antes de despacharlo, y si algo no está, te ofrecemos una alternativa."
     },
     {
-      "titulo": "Producto original y sellado",
-      "texto": "Todo lo que vendemos viene de distribuidores autorizados, con su registro sanitario y en su empaque original. Nunca vendemos medicamentos sueltos ni fuera de su empaque."
+      "titulo": "Cercanía sin perder seriedad",
+      "texto": "La cercanía nunca debe sacrificar seriedad ni responsabilidad. Todo lo que vendemos viene de distribuidores autorizados, con registro sanitario y en su empaque original."
     },
     {
-      "titulo": "Precios que se pueden ver",
-      "texto": "Los 407 productos del catálogo tienen su precio publicado. No hay que escribir para preguntar cuánto vale algo, ni el precio cambia según quién pregunte."
+      "titulo": "Precio justo, a la vista",
+      "texto": "Los productos del catálogo tienen su precio publicado. La accesibilidad tiene que convivir con la calidad y la confianza."
     }
+  ],
+  "valores": [
+    "Confianza",
+    "Cercanía",
+    "Servicio",
+    "Profesionalismo",
+    "Calidad",
+    "Rapidez",
+    "Innovación",
+    "Precio justo",
+    "Tradición",
+    "Responsabilidad"
   ]
 }

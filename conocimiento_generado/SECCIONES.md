@@ -44,8 +44,10 @@ y cómo se agrega un elemento.
 - **Cuántos caben bien:** 3 a 5. Con más, nadie llega al último.
 - **Largo del título:** hasta 60 caracteres. Más largo se ve apretado en celular.
 - **Largo del texto:** hasta 110 caracteres.
-- **Imagen:** 520×300 px. **Hoy son marcadores grises** de placehold.co: las definitivas
-  están pendientes de diseño.
+- **Arte:** se dibuja con el círculo y la curva amarilla del logo; en la primera pieza va el
+  isotipo oficial. No hay fotografías todavía: cuando lleguen, van en `imagen`.
+- **La primera pieza es la marca** ("Cerca cuando la necesitas."), no una promoción: lo pide
+  el manual.
 - **Cómo se agrega uno:** un objeto con etiqueta, titulo, texto, boton, enlace e imagen.
 - **Se mueve solo** cada 6 segundos, y se detiene al pasar el ratón.
 
@@ -60,12 +62,12 @@ y cómo se agrega un elemento.
 
 ---
 
-## Barra de ofertas del día (portada y ofertas)
+## Barra de ofertas (portada y ofertas)
 
-- **Cómo se llama:** "la barra negra con el reloj"
-- **Dónde está:** `src/components/BarraOfertas.astro`
-- **La cuenta regresiva** va hasta la medianoche del día, y la calcula el navegador de cada
-  persona con su propia hora.
+- **Cómo se llama:** "la barra amarilla de ofertas"
+- **Dónde está:** el texto en `src/datos/home.json` → `ofertas`
+- **No lleva cuenta regresiva a propósito:** el manual de marca pide no vender con
+  urgencia. No volver a ponerla aunque se pida sin consultarlo.
 
 ---
 
@@ -117,6 +119,16 @@ y cómo se agrega un elemento.
   nota son opcionales
 - **Formas de pago:** se editan en `src/scripts/carrito.js`, buscando "Efectivo"
 - **Al enviar** abre WhatsApp con el pedido escrito. No cobra nada en línea.
+
+---
+
+## Servicios y sedes en la portada
+
+- **Dónde está:** los servicios salen de `src/datos/servicios.json` y las sedes de
+  `src/datos/config.json`; los títulos, de `src/datos/home.json`
+- **Por qué están ahí:** el manual pide que el inicio muestre qué puede resolver la
+  droguería y dónde encontrarla, antes del contacto
+- **Cierre:** la franja oscura final lleva a WhatsApp. Texto en `home.json` → `cierre`
 
 ---
 

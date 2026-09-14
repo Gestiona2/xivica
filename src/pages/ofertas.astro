@@ -26,7 +26,7 @@ const ahorroTotal = ofertas.reduce((suma, p) => suma + (p.precio_antes - p.preci
       <h1>Mundo Ofertas</h1>
       <p>{ofertas.length} productos con descuento · si te los llevas todos ahorras {pesos(ahorroTotal)}</p>
     </header>
-    <BarraOfertas cantidad={ofertas.length} />
+    <BarraOfertas cantidad={ofertas.length} enlace={false} />
     <div style="margin-top:22px">
       <GrillaProductos productos={ofertas} prioritarias={5} vacio="No hay ofertas activas en este momento." />
     </div>

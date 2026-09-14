@@ -1,89 +1,97 @@
 @import "tailwindcss";
 
 /* ============================================================
-   DROGUERÍA XIVICA — tokens de marca
-   Colores tomados con cuentagotas del logo actual (public/img/logo-xivica.png):
-   lima #a0c030 en la palabra DROGUERIA, azules #0050b0 -> #00a0e0 en el
-   brochazo y en "Xivica".
-   Para cambiar la marca entera se edita SOLO este bloque. Ningun componente
-   escribe un color directo: todos usan var(--...).
+   DROGUERIA XIVICA — tokens de marca
+   Fuente: Manual de Marca v2.0 (2026), capitulos 23 a 28.
+   Para cambiar la marca entera se edita SOLO este bloque. Ningun
+   componente escribe un color directo: todos usan var(--...).
+
+   La regla que no se puede romper: el azul, el amarillo y el verde
+   claro oficiales NO sirven como texto pequeno sobre blanco, y el
+   blanco pequeno tampoco sirve sobre el azul oficial (2.58:1). Por eso
+   hay tonos "de trabajo" derivados del mismo matiz. Ver
+   conocimiento_generado/MARCA.md.
    ============================================================ */
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/fonts/archivo-variable.woff2") format("woff2");
+  src: url("/fonts/manrope-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/inter-variable.woff2") format("woff2");
 }
 
 @theme {
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  --color-azul: #0b4da2;
-  --color-azul-hondo: #08356f;
-  --color-cian: #00a0e0;
-  --color-lima: #a0c030;
-  --color-tinta: #16202b;
+  --color-azul: #00aafa;
+  --color-amarillo: #ffd400;
+  --color-verde: #00813f;
+  --color-lima: #84cf3b;
+  --color-tinta: #17324d;
 }
 
 :root {
-  /* --- marca --- */
-  --azul: #0b4da2;
-  --azul-hondo: #08356f;
-  --azul-claro: #e8f1fb;
-  --cian: #00a0e0;
-  /* El cian de marca da 2.96:1 sobre blanco y el minimo para texto es 4.5:1.
-     Este es el mismo tono, oscurecido hasta 4.68:1. El cian original se sigue
-     usando en fondos y degradados, donde el contraste no aplica. */
-  --cian-texto: #007cad;
-  --lima: #a0c030;
-  --lima-hondo: #87a821;
-  --lima-suave: #f2f8e6;
-  /* Unico color de texto admitido SOBRE lima. El lima no alcanza contraste AA
-     como texto sobre fondo claro: va de fondo, con tinta encima. */
-  --lima-tinta: #16300a;
-  --rojo: #e23b2e;          /* exclusivo de descuentos */
-  --rojo-hondo: #c62a1e;    /* el mismo rojo, con contraste AA para texto blanco */
+  /* --- paleta oficial (manual, cap. 23) --- */
+  --azul-marca: #00aafa;      /* identidad: superficies, barra de categorias, decoracion */
+  --amarillo: #ffd400;        /* acento y llamados: siempre con --tinta encima */
+  --verde: #00813f;           /* cuidado y bienestar; sirve como texto (4.99:1) */
+  --lima: #84cf3b;            /* solo acento puntual, nunca texto */
 
-  /* Nombres en espanol, que son los que usa el CSS de la tienda. */
-  --tinta: #16202b;
-  --borde: #e6ebef;
-  --borde-fuerte: #d3dbe2;
+  /* --- neutros de apoyo (manual, cap. 26) --- */
+  --tinta: #17324d;           /* "neutro oscuro": texto, titulares, navegacion */
+  --bg-soft: #f4f7f9;         /* "gris claro": fondos y separacion de modulos */
 
-  /* --- semanticos de la plantilla, mapeados a Xivica --- */
-  --marca: #0b4da2;
-  --acento: #00a0e0;
-  --oscuro: #16202b;
+  /* --- tonos de trabajo, derivados del mismo matiz para cumplir contraste --- */
+  --azul: #0070a8;            /* botones con texto blanco, precios, enlaces: 5.41:1 */
+  --azul-hondo: #005580;      /* estados activos y hover: 8.04:1 con blanco */
+  --azul-claro: #e6f6fe;      /* fondos suaves de iconos y fichas de filtro */
+  --amarillo-hondo: #f2c500;  /* hover del amarillo, con --tinta encima: 7.98:1 */
+  --verde-texto: #006d35;     /* ahorro y "domicilio gratis": 5.78:1 sobre verde suave */
+  --verde-suave: #e8f5ee;
+  --error: #c62a1e;           /* solo validacion de formularios; no es color de marca */
+
+  /* --- nombres semanticos que usa el CSS de la tienda --- */
+  --texto-sobre-acento: #17324d;
+  --borde: #e3e9ee;
+  --borde-fuerte: #cfd9e1;
+
+  /* --- semanticos heredados de la plantilla base --- */
+  --marca: #0070a8;
+  --acento: #00aafa;
+  --oscuro: #17324d;
   --claro: #ffffff;
-  --medio: #5c6d7e;
+  --medio: #56657a;
 
-  /* --- superficies --- */
   --bg: #ffffff;
-  --bg-soft: #f2f6f9;
   --surface: #ffffff;
-  --surface-2: #fafbfc;
+  --surface-2: #f9fbfc;
   --glass: rgba(255, 255, 255, 0.72);
-  --border: #e6ebef;
-  --border-strong: #d3dbe2;
+  --border: #e3e9ee;
+  --border-strong: #cfd9e1;
   --nav-bg: rgba(255, 255, 255, 0.92);
   --glass-blur: 14px;
 
-  /* --- texto --- */
-  --text: #16202b;
-  --text-soft: #43525f;
-  /* 4.9:1 sobre el gris del pie y 5.3:1 sobre blanco: cumple en los dos
-     fondos donde se usa. El anterior (#66788a) se quedaba en 4.18 sobre
-     el pie, por debajo del minimo de 4.5. */
-  --text-muted: #5c6d7e;
+  --text: #17324d;
+  --text-soft: #3b5168;
+  /* El "gris medio" del manual (#64748B) da 4.42:1 sobre el gris claro de
+     fondo, por debajo del minimo. Este es el mismo gris, un punto mas oscuro. */
+  --text-muted: #56657a;
 
-  /* --- profundidad y medidas --- */
-  --shadow: rgba(11, 77, 162, 0.10);
-  --sombra-card: 0 10px 22px -14px rgba(11, 77, 162, 0.40);
-  --sombra-alta: 0 20px 40px -22px rgba(11, 77, 162, 0.45);
-  --radio: 10px;
-  --radio-lg: 14px;
+  /* --- forma: esquinas suaves, sombras ligeras (manual, cap. 31) --- */
+  --shadow: rgba(23, 50, 77, 0.08);
+  --sombra-card: 0 10px 22px -16px rgba(23, 50, 77, 0.35);
+  --sombra-alta: 0 20px 40px -24px rgba(23, 50, 77, 0.4);
+  --radio: 12px;
+  --radio-lg: 16px;
   --ancho: 1320px;
 }
 
@@ -101,7 +109,9 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background .5s ease, color .5s ease;
 }
-h1, h2, h3, h4, .display { font-family: var(--font-display); letter-spacing: -.02em; line-height: 1.08; }
+/* Manrope ya viene apretada de fabrica: con mas interletrado negativo las
+   palabras cortas se pegan ("Ofertasdela semana"). */
+h1, h2, h3, h4, .display { font-family: var(--font-display); letter-spacing: -.01em; line-height: 1.12; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 ::selection { background: var(--marca); color: #fff; }

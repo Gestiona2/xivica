@@ -175,5 +175,6 @@ productos.
 ## Cambiar un color de todo el sitio
 
 En `src/styles/global.css`, en el bloque de arriba. **Antes de cambiar un color, leer la
-regla de contraste en `MARCA.md`**: el lima y el cian no sirven como letra sobre fondo
-claro.
+regla de contraste en `MARCA.md`**: el azul, el amarillo y el verde lima oficiales no
+sirven como letra pequeña. Los colores vienen del Manual de Marca v2.0 y no se cambian sin
+que lo pida el dueño.

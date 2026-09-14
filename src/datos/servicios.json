@@ -1,12 +1,11 @@
 {
   "_comentario": "Los cuatro servicios de la droguería. Para agregar uno se añade un objeto a la lista y aparece solo en la página y en la portada.",
-
   "servicios": [
     {
       "id": "domicilio",
       "icono": "camion",
       "titulo": "Domicilio en 45 a 90 minutos",
-      "resumen": "Cubrimos Bogotá y alrededores desde nuestras dos sedes en el norte.",
+      "resumen": "Cubrimos el norte de Bogotá y alrededores desde nuestras sedes.",
       "detalle": "Haces el pedido por la página o por WhatsApp, confirmamos disponibilidad y sale el domiciliario. El envío es gratis a partir de $60.000; por debajo de ese monto se cobra según la zona y te lo decimos antes de despachar.",
       "puntos": [
         "Gratis desde $60.000",
@@ -48,6 +47,18 @@
         "Dos sedes en el norte de Bogotá",
         "Sin costo de envío",
         "Ideal para medicamentos que requieren fórmula"
+      ]
+    },
+    {
+      "id": "inyectologia",
+      "icono": "jeringa",
+      "titulo": "Servicio de inyectología",
+      "resumen": "Aplicación de medicamentos inyectables en sede.",
+      "detalle": "Se presta bajo las condiciones y requisitos correspondientes. Antes de venir, escríbenos por WhatsApp para confirmar disponibilidad en la sede y qué debes traer.",
+      "puntos": [
+        "Consulta disponibilidad antes de venir",
+        "Se atiende con los requisitos que exige la norma",
+        "Trae la fórmula médica cuando aplique"
       ]
     }
   ]

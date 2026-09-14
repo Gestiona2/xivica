@@ -1,23 +1,30 @@
 ---
 /**
- * Carrusel de la portada. Tres piezas que rotan solas cada seis segundos.
+ * Carrusel de la portada. Tres piezas que rotan solas cada seis segundos, y
+ * se detienen con el raton encima o al enfocar con el teclado.
  *
- * Se detiene cuando el raton esta encima y cuando alguien enfoca un boton con
- * el teclado: nada peor que un carrusel que cambia mientras lees.
+ * La primera pieza es la marca, no una promocion: el manual (cap. 50) pide que
+ * el inicio diga que es Xivica y que beneficio ofrece.
  *
- * Las imagenes salen de placehold.co porque las definitivas estan pendientes
- * de diseno. Ver PENDIENTES.md.
+ * El arte se construye con los recursos graficos del manual (cap. 30): el
+ * circulo y la curva amarilla del logo. En la primera va el isotipo oficial,
+ * sin modificar. No hay fotografias todavia: cuando lleguen, van en el campo
+ * "imagen" de src/datos/home.json. Ver PENDIENTES.md.
  */
 import home from "../datos/home.json";
+import config from "../datos/config.json";
+import Icono from "./Icono.astro";
 
 const base = import.meta.env.BASE_URL;
-const enlace = (r: string) => `${base}${r}`.replace(/\/{2,}/g, "/");
-const marcador = (texto: string) =>
-  `https://placehold.co/520x300/0b4da2/ffffff/webp?text=${encodeURIComponent(texto)}`;
+const enlace = (r: string) =>
+  r === "whatsapp"
+    ? `https://wa.me/${config.whatsapp}`
+    : `${base}${r}`.replace(/\/{2,}/g, "/");
+const ICONOS = ["", "camion", "receta"];
 ---
 
-<section class="carrusel" id="carrusel" aria-roledescription="carrusel" aria-label="Promociones">
-  <div class="carrusel-pista" id="carruselPista">
+<section class="carrusel" id="carrusel" aria-roledescription="carrusel" aria-label="Destacados">
+  <div class="carrusel-pista">
     {home.banners.map((banner, indice) => (
       <article
         class:list={["carrusel-pieza", { activa: indice === 0 }]}
@@ -28,24 +35,39 @@ const marcador = (texto: string) =>
       >
         <div class="carrusel-texto">
           <span class="carrusel-etiqueta">{banner.etiqueta}</span>
-          <h2>{banner.titulo}</h2>
+          {indice === 0 ? <h1>{banner.titulo}</h1> : <h2>{banner.titulo}</h2>}
           <p>{banner.texto}</p>
-          <a class="boton boton-lima" href={enlace(banner.enlace)}>{banner.boton}</a>
+          <a
+            class="boton boton-lima"
+            href={enlace(banner.enlace)}
+            {...(banner.enlace === "whatsapp" ? { target: "_blank", rel: "noopener" } : {})}
+          >
+            {banner.enlace === "whatsapp" && <Icono nombre="whatsapp" tamano={18} />}
+            {banner.boton}
+          </a>
         </div>
-        <img
-          class="carrusel-foto"
-          src={marcador(banner.etiqueta)}
-          alt=""
-          width="520"
-          height="300"
-          loading={indice === 0 ? "eager" : "lazy"}
-          fetchpriority={indice === 0 ? "high" : "auto"}
-        />
+
+        <div class="carrusel-arte" aria-hidden="true">
+          <span class="arte-circulo"></span>
+          <span class="arte-curva"></span>
+          {indice === 0 ? (
+            <img
+              class="arte-isotipo"
+              src={`${base}img/isotipo-xivica.svg`}
+              alt=""
+              width="210"
+              height="210"
+              fetchpriority="high"
+            />
+          ) : (
+            <span class="arte-icono"><Icono nombre={ICONOS[indice] || "escudo"} tamano={96} grosor={1.4} /></span>
+          )}
+        </div>
       </article>
     ))}
   </div>
 
-  <div class="carrusel-puntos" role="tablist" aria-label="Elegir promoción">
+  <div class="carrusel-puntos" role="tablist" aria-label="Elegir">
     {home.banners.map((banner, indice) => (
       <button
         type="button"
