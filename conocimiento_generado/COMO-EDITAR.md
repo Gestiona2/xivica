@@ -32,8 +32,10 @@ Se agrega `precio_antes` con el precio de antes y `descuento` con el porcentaje:
 "descuento": 26
 ```
 
-`precio_antes` tiene que ser **mayor** que `precio`, o el sitio no se publica. El ahorro en
-pesos lo calcula la página sola.
+`precio_antes` tiene que ser **mayor** que `precio`, y `descuento` tiene que cuadrar con
+los dos: se calcula como `(precio_antes − precio) ÷ precio_antes × 100`, redondeado. Si no
+cuadra, el validador no deja publicar y dice el número correcto. El ahorro en pesos lo
+calcula la página sola.
 
 Para quitar la oferta, poner los dos en `null`:
 
@@ -178,3 +180,19 @@ En `src/styles/global.css`, en el bloque de arriba. **Antes de cambiar un color,
 regla de contraste en `MARCA.md`**: el azul, el amarillo y el verde lima oficiales no
 sirven como letra pequeña. Los colores vienen del Manual de Marca v2.0 y no se cambian sin
 que lo pida el dueño.
+
+---
+
+## Si el validador dice que algo está mal
+
+No se publica nada hasta corregirlo, y el sitio sigue como estaba. **Leer el aviso:** dice
+qué producto, qué pasa y cómo se escribe bien. Los más comunes:
+
+| El aviso dice | Se arregla así |
+|---|---|
+| "error de escritura en la línea N" | Ir a esa línea: casi siempre sobra o falta una coma, o falta cerrar una comilla |
+| "el precio debe ser un número entero" | `62900`, sin `$`, sin puntos y sin comillas |
+| "el descuento debe ser N" | Poner exactamente ese número |
+| "'rx' debe ser true, false o null" | Quitar las comillas. **Y no cambiar el valor: lo define el regente** |
+| "la categoría no existe. ¿Querías decir…?" | Usar la que sugiere |
+| "la imagen no existe en la carpeta" | Subir la foto a `public/img/` con ese nombre exacto |

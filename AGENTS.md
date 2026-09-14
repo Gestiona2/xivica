@@ -54,7 +54,10 @@ programada. Si el dueño pide destacar uno que la requiere, explícale por qué 
 python3 tools/validar.py src/datos/productos.json public/img
 ```
 
-Si eso falla, el sitio no se publica. Arregla lo que diga antes de seguir.
+Si eso falla, el sitio no se publica. Arregla lo que diga antes de seguir: cada aviso dice
+qué producto está mal y cómo se escribe bien, incluido el número exacto cuando es un
+descuento. Si el aviso es sobre `rx`, corrige solo la forma (sin comillas), **nunca el
+valor**: ese lo decide el regente.
 
 ## Las cuatro reglas
 

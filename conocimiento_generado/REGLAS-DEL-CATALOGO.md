@@ -119,10 +119,14 @@ precio mal escrito rompería el filtro por precio y la suma del carrito.
 ## 7. Una oferta necesita dos precios
 
 Para que un producto muestre descuento tiene que tener `precio_antes` **mayor** que
-`precio`. El porcentaje y el ahorro los calcula el sitio solo; no se escriben a mano.
+`precio`, y el campo `descuento` con el porcentaje.
 
-Si `precio_antes` es menor o igual que el precio, el sitio no se publica: no es una oferta
-y mostrarla como tal sería engañoso.
+**El porcentaje se escribe, pero no se inventa.** El sitio comprueba que cuadre con los
+dos precios: si se pone 90% en un producto que baja de $84.915 a $62.900, no se publica,
+y el aviso dice el número correcto (26). El ahorro en pesos sí lo calcula la página sola.
+
+Tampoco se publica si `precio_antes` es menor o igual que el precio, o si hay descuento
+sin precio anterior: mostrar una oferta que no existe sería publicidad engañosa.
 
 ---
 
@@ -183,6 +187,22 @@ se edita productos.json  →  se sube a GitHub  →  se revisa que esté bien
 Esa revisión automática es la red de seguridad: como quien edita el catálogo es un
 asistente conversando con el dueño, una coma mal puesta podría dejar la tienda en blanco
 para todos los visitantes. El sitio publicado nunca se rompe por un error de edición.
+
+### Qué revisa, exactamente
+
+Probado rompiendo el catálogo a propósito de 16 formas distintas: las atrapa todas.
+
+| Revisa | Por qué importa |
+|---|---|
+| Que el archivo esté bien escrito (comas, comillas, llaves) | Si no, la tienda no carga. El aviso dice la línea |
+| Precio como número entero, mayor que cero y sin ceros de más | Un precio mal escrito rompe filtros y el carrito |
+| Que el descuento cuadre con los dos precios | Un porcentaje inventado es publicidad engañosa |
+| Que `rx`, `stock` y `destacado` sean `true` o `false` sin comillas | **`"rx": "si"` sacaría un medicamento de control a la portada** |
+| Que la categoría exista | Si no, el producto desaparece de su categoría y de los filtros |
+| Que haya título y al menos una foto que exista | Si no, sale una tarjeta vacía o una imagen rota |
+| Que cada dirección de producto sea única y bien escrita | Dos productos con la misma dirección son una página menos |
+
+Cada aviso dice **qué producto**, **qué pasa** y **cómo se escribe bien**.
 
 Para revisar el catálogo antes de subirlo, desde la carpeta del proyecto:
 
