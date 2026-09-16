@@ -105,7 +105,7 @@ const falta = (v: string) => v === "PENDIENTE";
             <div>
               <h3>{sede.nombre}</h3>
               <p>{sede.direccion}</p>
-              <p>{falta(sede.horario) ? <mark class="falta">Falta el horario</mark> : sede.horario}</p>
+              <p>{falta(sede.horario_semana) ? <mark class="falta">Falta el horario</mark> : <>{sede.horario_semana}</>}</p>
               <a href={`tel:${sede.telefono}`}>{sede.telefono_visible}</a>
             </div>
           </article>

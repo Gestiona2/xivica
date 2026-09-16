@@ -1,5 +1,5 @@
 {
-  "_comentario": "Datos del negocio. Todo lo que diga PENDIENTE se muestra marcado en el sitio para que no se publique por descuido. Ver PENDIENTES.md. puntos_de_venta viene del Manual de Marca v2.0; solo hay direccion de dos sedes, la tercera esta en PENDIENTES.md.",
+  "_comentario": "Datos del negocio. Todo lo que diga PENDIENTE se muestra marcado en el sitio para que no se publique por descuido. Ver PENDIENTES.md. Datos de sedes, horarios y habilitación sanitaria confirmados por el propietario (Eduardo) el 16/09/2026.",
   "negocio": "Droguería Xivica",
   "tagline": "Cerca cuando la necesitas.",
   "descripcion_corta": "Droguería cercana y confiable en el norte de Bogotá. Medicamentos, cuidado personal y bienestar, con domicilio en 45 a 90 minutos.",
@@ -8,7 +8,8 @@
   "correo": "PENDIENTE",
   "ciudad": "Bogotá",
   "envio": {
-    "gratis_desde": 60000,
+    "gratis_desde": 0,
+    "_nota_gratis_desde": "En 0 a propósito: el domicilio es gratis en la zona de cobertura cercana SIN importar el valor del pedido (decisión del propietario, 16/09/2026). Fuera de esa zona se cobra y se informa antes de despachar. Ver src/datos/legal.json -> domicilios y la página /legal/domicilios.",
     "minutos_min": 45,
     "minutos_max": 90,
     "cobertura": "Bogotá y alrededores"
@@ -18,28 +19,44 @@
       "id": "villa-del-prado",
       "nombre": "Villa del Prado",
       "direccion": "Cra 49B #171a-92",
-      "telefono": "6013747807",
-      "telefono_visible": "601 374 7807",
+      "telefono": "3013665076",
+      "telefono_visible": "301 366 5076",
       "lat": 4.765,
       "lng": -74.045,
-      "horario": "PENDIENTE"
+      "horario_semana": "Lunes a sábado: 7:30 a. m. – 9:30 p. m.",
+      "horario_festivos": "Domingos y festivos: 9:00 a. m. – 9:00 p. m.",
+      "habilitacion_sanitaria": "MS00010200"
     },
     {
       "id": "tejares-del-norte",
       "nombre": "Tejares del Norte",
       "direccion": "Cra 49 #185-26 Local 1",
-      "telefono": "3013665076",
-      "telefono_visible": "301 366 5076",
+      "telefono": "3228636654",
+      "telefono_visible": "322 863 6654",
       "lat": 4.772,
       "lng": -74.042,
-      "horario": "PENDIENTE"
+      "horario_semana": "Lunes a sábado: 7:30 a. m. – 9:30 p. m.",
+      "horario_festivos": "Domingos y festivos: 9:00 a. m. – 9:00 p. m.",
+      "habilitacion_sanitaria": "MS00017993"
+    },
+    {
+      "id": "verbenal",
+      "nombre": "Verbenal",
+      "direccion": "Cra 11 #187-01",
+      "telefono": "3124293060",
+      "telefono_visible": "312 429 3060",
+      "lat": 4.752,
+      "lng": -74.033,
+      "_nota_ubicacion": "Coordenadas aproximadas del barrio Verbenal (no confirmadas con el pin exacto). Ver PENDIENTES.md.",
+      "horario_semana": "Lunes a sábado: 7:30 a. m. – 9:30 p. m.",
+      "horario_festivos": "Domingos y festivos: 9:00 a. m. – 9:00 p. m.",
+      "habilitacion_sanitaria": "MS00001129"
     }
   ],
   "legal": {
-    "habilitacion": "PENDIENTE",
-    "regente": "PENDIENTE",
-    "tarjeta_profesional": "PENDIENTE",
-    "nit": "PENDIENTE"
+    "nit": "PENDIENTE",
+    "regente_aplica": false,
+    "regente_nota": "No aplica: Droguería Xivica no comercializa medicamentos de control especial, por lo que la normativa no exige la vinculación de un regente de farmacia. Confirmado por el propietario el 16/09/2026."
   },
   "redes": {
     "facebook": "",

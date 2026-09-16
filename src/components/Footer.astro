@@ -66,23 +66,25 @@ const falta = (valor: string) => valor === "PENDIENTE";
     <div class="container pie-legal-inner">
       <p>
         © {anio} {config.negocio}.
-        {falta(config.legal.habilitacion)
-          ? <mark class="falta">Falta el número de habilitación sanitaria</mark>
-          : <span>Habilitación sanitaria {config.legal.habilitacion}.</span>}
-        {falta(config.legal.regente)
-          ? <mark class="falta">Falta el regente de farmacia responsable</mark>
-          : <span>Regente: {config.legal.regente}.</span>}
+        {falta(config.legal.nit)
+          ? <mark class="falta">Falta el NIT</mark>
+          : <span>NIT {config.legal.nit}.</span>}
       </p>
       <nav class="pie-legales" aria-label="Enlaces legales">
         <a href={enlace("legal/privacidad")}>Privacidad</a>
         <a href={enlace("legal/datos")}>Tratamiento de datos</a>
         <a href={enlace("legal/terminos")}>Términos</a>
+        <a href={enlace("legal/domicilios")}>Domicilios</a>
       </nav>
     </div>
     <div class="container">
       <p class="pie-aviso">
-        Los medicamentos de control especial requieren fórmula médica vigente. Este sitio no
-        reemplaza la consulta con un profesional de la salud.
+        Habilitación sanitaria — {config.sedes.map((s) => `${s.nombre}: ${s.habilitacion_sanitaria}`).join(" · ")}.
+      </p>
+      <p class="pie-aviso">
+        Los medicamentos que requieren fórmula médica se entregan únicamente con la fórmula
+        vigente. Droguería Xivica no comercializa medicamentos de control especial. Este sitio
+        no reemplaza la consulta con un profesional de la salud.
       </p>
     </div>
   </div>
