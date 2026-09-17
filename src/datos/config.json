@@ -65,5 +65,11 @@
     { "id": "instagram", "nombre": "Instagram", "url": "" },
     { "id": "tiktok", "nombre": "TikTok", "url": "" }
   ],
+  "medicion": {
+    "_nota": "Códigos para conectar medición. Vacíos = no se carga nada de terceros. Cuando el propietario entregue cada código se pega aquí y el sitio lo incluye solo.",
+    "google_analytics": "",
+    "meta_pixel": "",
+    "metricool": ""
+  },
   "puntos_de_venta": 3
 }

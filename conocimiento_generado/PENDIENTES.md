@@ -31,6 +31,9 @@ llegan los datos.
       17/09/2026 con `"promo_flash": true`: Acid Mantle loción x2, Centrum Silver
       Women 60 y Cerebrit 330 g + 50 g. Si se quita la marca de todos, la ventana
       no se muestra.
+- [ ] **Códigos de medición.** Google Analytics, píxel de Meta y Metricool
+      (`config.json` → `medicion`). El sitio ya sabe incluirlos; faltan los códigos
+      del propietario. Al conectar el primero, actualizar la privacidad.
 - [x] ~~**Horarios de cada sede.**~~ Confirmados por el propietario el 16/09/2026, iguales
       en las tres sedes: Lunes a sábado 7:30 a. m. – 9:30 p. m.; domingos y festivos
       9:00 a. m. – 9:00 p. m. Se editó `config.json` → `sedes[].horario`.

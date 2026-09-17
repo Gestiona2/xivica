@@ -99,13 +99,15 @@
    BASE
    ============================================================ */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 92px; overflow-x: hidden; max-width: 100%; }
+/* overflow-x: clip (no hidden): recorta lo que se salga a los lados sin romper
+   la cabecera y el menu fijos al bajar. Con hidden, el navegador los suelta. */
+html { scroll-behavior: smooth; scroll-padding-top: 92px; overflow-x: clip; max-width: 100%; }
 body {
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   transition: background .5s ease, color .5s ease;
 }

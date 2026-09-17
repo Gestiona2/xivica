@@ -72,6 +72,18 @@ y cómo se agrega un elemento.
 
 ---
 
+## Medición (todas las páginas)
+
+- **Cómo se llama:** "los códigos de Google, el píxel y Metricool"
+- **Dónde está:** `src/datos/config.json` → `medicion` (tres campos, hoy vacíos)
+- **Cómo se conecta:** el propietario entrega cada código y se pega en su campo;
+  el sitio lo incluye solo. Con los campos vacíos no se carga nada de terceros
+- **Al conectar el primero,** hay que actualizar el texto de privacidad
+  (`src/datos/legal.json` → `privacidad`, "Servicios de terceros"), porque esos
+  servicios sí reciben visitas
+
+---
+
 ## Accesos rápidos (portada)
 
 - **Cómo se llama:** "los círculos de categorías"
