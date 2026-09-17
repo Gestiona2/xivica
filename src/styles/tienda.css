@@ -194,7 +194,7 @@ a.pie-red:hover { border-color: var(--azul); }
 .pie-sedes span { color: var(--text-muted); }
 
 .pie-legal { border-top: 1px solid var(--borde); padding: 18px 0 26px; }
-.pie-aviso { font-size: .74rem; color: var(--text-muted); margin-top: 12px; max-width: 78ch; }
+.pie-aviso { font-size: .74rem; color: var(--text-muted); margin: 12px auto 0; max-width: 78ch; text-align: center; }
 /* Última línea del pie: derechos, enlaces legales y crédito, todo centrado. */
 .pie-ultima {
   display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center;
