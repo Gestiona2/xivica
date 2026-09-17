@@ -34,6 +34,9 @@ llegan los datos.
 - [ ] **Códigos de medición.** Google Analytics, píxel de Meta y Metricool
       (`config.json` → `medicion`). El sitio ya sabe incluirlos; faltan los códigos
       del propietario. Al conectar el primero, actualizar la privacidad.
+- [ ] **Archivo `llms.txt`.** Para cuando se publique en el dominio definitivo:
+      les facilita el trabajo a las inteligencias artificiales y mejora que citen
+      a la droguería.
 - [x] ~~**Horarios de cada sede.**~~ Confirmados por el propietario el 16/09/2026, iguales
       en las tres sedes: Lunes a sábado 7:30 a. m. – 9:30 p. m.; domingos y festivos
       9:00 a. m. – 9:00 p. m. Se editó `config.json` → `sedes[].horario`.
