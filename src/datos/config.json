@@ -60,9 +60,10 @@
     "regente_aplica": false,
     "regente_nota": "No aplica: Droguería Xivica no comercializa medicamentos de control especial, por lo que la normativa no exige la vinculación de un regente de farmacia. Confirmado por el propietario el 16/09/2026."
   },
-  "redes": {
-    "facebook": "",
-    "instagram": ""
-  },
+  "redes": [
+    { "id": "facebook", "nombre": "Facebook", "url": "" },
+    { "id": "instagram", "nombre": "Instagram", "url": "" },
+    { "id": "tiktok", "nombre": "TikTok", "url": "" }
+  ],
   "puntos_de_venta": 3
 }

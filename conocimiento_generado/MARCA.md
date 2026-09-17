@@ -43,10 +43,14 @@ Todos viven en `src/styles/global.css`. **Ningún archivo escribe un color direc
 
 | Nombre en el manual | Variable | Color | Dónde se usa en el sitio |
 |---|---|---|---|
-| Azul Xivica | `--azul-marca` | `#00AAFA` | Barra de categorías, círculos decorativos |
-| Amarillo Xivica | `--amarillo` | `#FFD400` | Franja superior, botones principales, etiquetas de descuento |
-| Verde Xivica | `--verde` | `#00813F` | "Droguería" del logo, tagline, marcas de verificación |
-| Verde lima Xivica | `--lima` | `#84CF3B` | Solo acento. Nunca texto |
+| Azul Xivica | `--azul-marca` | `#00AAF9` | Barra de categorías, círculos decorativos |
+| Amarillo Xivica | `--amarillo` | `#FDD603` | Franja superior, botones principales, etiquetas de descuento |
+| Verde Xivica | `--verde` | `#03863E` | "Droguería" del logo, tagline, marcas de verificación |
+| Verde lima Xivica | `--lima` | `#8AC840` | Solo acento. Nunca texto |
+
+> Decisión del propietario (17/09/2026): los colores de la tabla del manual se
+> unificaron con los del archivo del logo (`Drogueria_Xivica_logo_final_vector_fiel.svg`),
+> que mandan. El verde sobre blanco da 4,68:1 y sigue sirviendo como texto.
 | Neutro oscuro | `--tinta` | `#17324D` | Todo el texto y los titulares |
 | Gris claro | `--bg-soft` | `#F4F7F9` | Fondos del pie, sedes y módulos |
 

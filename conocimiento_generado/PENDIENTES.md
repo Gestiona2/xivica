@@ -37,8 +37,9 @@ llegan los datos.
 - [x] ~~**Tercera sede.**~~ Confirmada: **Verbenal**, Cra 11 #187-01, teléfono
       312 429 3060. Ya está publicada en `config.json` → `sedes`.
 - [x] ~~**Redes sociales**, si existen.~~ Decidido por el propietario el 17/09/2026:
-      no existen. No se muestran iconos hasta que existan las cuentas; en ese momento
-      se agregan con su enlace. Poner iconos sin enlace confunde al que los toca.
+      no existen. Los iconos de Facebook, Instagram y TikTok se muestran apagados y
+      sin enlace (`config.json` → `redes[].url` vacío); cuando existan las cuentas se
+      pone la dirección y quedan como enlaces.
 
 ## Diseño e imágenes
 
@@ -47,8 +48,11 @@ llegan los datos.
 - [x] ~~**Manual de marca.**~~ Aplicado el v2.0: paleta, Manrope + Inter, tagline, tono,
       iconografía y orden de la portada. Ver `conocimiento_generado/MARCA.md`.
 - [ ] **Archivo del logotipo (nombre).** El manual aprueba una versión horizontal (emblema +
-      nombre) pero solo entregó el emblema. El nombre está compuesto con Manrope en
-      `src/components/Logo.astro`. Cuando llegue el archivo oficial, se reemplaza ahí.
+      nombre) pero solo entregó el emblema. Decisión del propietario el 17/09/2026:
+      el logo es solo el emblema y, al escribir el nombre, el emblema va dentro de la
+      palabra como la "o" (Dr{emblema}guería Xivica), siempre en Manrope. Así está
+      compuesto en `src/components/Logo.astro`. Cuando llegue el archivo oficial, se
+      reemplaza ahí.
 - [ ] **Fotografías para el carrusel.** Hoy las piezas se dibujan con el círculo y la curva
       del logo, sin fotos. El manual pide personas reales, luz natural y fondos simples
       (cap. 33). Cuando existan, van en `src/datos/home.json` → `banners[].imagen`.
@@ -67,10 +71,10 @@ como definitivo.
 - [x] ~~**El manual dice 3 puntos de venta; solo hay dirección de dos.**~~ Resuelto:
       la tercera sede es **Verbenal** (Cra 11 #187-01, 312 429 3060, mismos horarios),
       confirmada por el propietario el 16/09/2026. El sitio ya muestra las tres sedes.
-- [ ] **El logo maestro y la tabla de colores difieren un poco.** El SVG trae `#03863E`,
-      `#FDD603` y `#8AC840`; la tabla del manual, `#00813F`, `#FFD400` y `#84CF3B`. El logo se
-      usa tal cual (el manual prohíbe tocarlo) y la interfaz usa los de la tabla. La
-      diferencia no se nota a simple vista, pero conviene que el diseñador lo unifique.
+- [x] ~~**El logo maestro y la tabla de colores difieren un poco.**~~ Resuelto por
+      decisión del propietario el 17/09/2026: mandan los colores del archivo del logo
+      (`#00AAF9`, `#03863E`, `#FDD603`, `#8AC840`). La web ya usa esos valores y el
+      diseñador debe unificar la tabla del manual con ellos.
 - [ ] **El manual pide "texto blanco sobre azul", y sobre el azul oficial no se puede leer**
       (2,58:1). Se resolvió con un azul más oscuro del mismo matiz. Si el diseñador quiere
       sostener la regla, la solución es que el manual incluya ese azul de trabajo.

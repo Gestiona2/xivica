@@ -27,6 +27,17 @@ const falta = (valor: string) => valor === "PENDIENTE";
         <Icono nombre="whatsapp" tamano={18} />
         {config.whatsapp_visible}
       </a>
+      <p class="pie-redes">
+        {config.redes.map((red) => red.url ? (
+          <a class="pie-red" href={red.url} target="_blank" rel="noopener" aria-label={red.nombre}>
+            <Icono nombre={red.id} tamano={18} />
+          </a>
+        ) : (
+          <span class="pie-red pie-red-apagada" title={red.nombre} aria-label={red.nombre}>
+            <Icono nombre={red.id} tamano={18} />
+          </span>
+        ))}
+      </p>
     </div>
 
     <div class="pie-col">

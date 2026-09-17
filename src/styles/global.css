@@ -32,19 +32,19 @@
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  --color-azul: #00aafa;
-  --color-amarillo: #ffd400;
-  --color-verde: #00813f;
-  --color-lima: #84cf3b;
+  --color-azul: #00aaf9;
+  --color-amarillo: #fdd603;
+  --color-verde: #03863e;
+  --color-lima: #8ac840;
   --color-tinta: #17324d;
 }
 
 :root {
-  /* --- paleta oficial (manual, cap. 23) --- */
-  --azul-marca: #00aafa;      /* identidad: superficies, barra de categorias, decoracion */
-  --amarillo: #ffd400;        /* acento y llamados: siempre con --tinta encima */
-  --verde: #00813f;           /* cuidado y bienestar; sirve como texto (4.99:1) */
-  --lima: #84cf3b;            /* solo acento puntual, nunca texto */
+  /* --- paleta: colores del logo oficial (decision del propietario 17/09/2026) --- */
+  --azul-marca: #00aaf9;      /* identidad: superficies, barra de categorías, decoración */
+  --amarillo: #fdd603;        /* acento y llamados: siempre con --tinta encima */
+  --verde: #03863e;           /* cuidado y bienestar; sirve como texto (4.68:1) */
+  --lima: #8ac840;            /* solo acento puntual, nunca texto */
 
   /* --- neutros de apoyo (manual, cap. 26) --- */
   --tinta: #17324d;           /* "neutro oscuro": texto, titulares, navegacion */
