@@ -76,8 +76,16 @@ const falta = (valor: string) => valor === "PENDIENTE";
   <div class="pie-legal">
     <div class="container pie-legal-inner">
       <p>
-        © {anio} {config.negocio}.
+        © {anio} {config.negocio}. Todos los derechos reservados.
         {!falta(config.legal.nit) && <span>NIT {config.legal.nit}.</span>}
+      </p>
+      <p>
+        {config.creditos.texto}{" "}
+        {config.creditos.url ? (
+          <a href={config.creditos.url} target="_blank" rel="noopener">{config.creditos.nombre}</a>
+        ) : (
+          <span>{config.creditos.nombre}</span>
+        )}.
       </p>
       <nav class="pie-legales" aria-label="Enlaces legales">
         <a href={enlace("legal/privacidad")}>Privacidad</a>
