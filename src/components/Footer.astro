@@ -79,14 +79,6 @@ const falta = (valor: string) => valor === "PENDIENTE";
         © {anio} {config.negocio}. Todos los derechos reservados.
         {!falta(config.legal.nit) && <span>NIT {config.legal.nit}.</span>}
       </p>
-      <p>
-        {config.creditos.texto}{" "}
-        {config.creditos.url ? (
-          <a href={config.creditos.url} target="_blank" rel="noopener">{config.creditos.nombre}</a>
-        ) : (
-          <span>{config.creditos.nombre}</span>
-        )}.
-      </p>
       <nav class="pie-legales" aria-label="Enlaces legales">
         <a href={enlace("legal/privacidad")}>Privacidad</a>
         <a href={enlace("legal/datos")}>Tratamiento de datos</a>
@@ -102,6 +94,14 @@ const falta = (valor: string) => valor === "PENDIENTE";
         Los medicamentos que requieren fórmula médica se entregan únicamente con la fórmula
         vigente. Droguería Xivica no comercializa medicamentos de control especial. Este sitio
         no reemplaza la consulta con un profesional de la salud.
+      </p>
+      <p class="pie-aviso">
+        {config.creditos.texto}{" "}
+        {config.creditos.url ? (
+          <a href={config.creditos.url} target="_blank" rel="noopener">{config.creditos.nombre}</a>
+        ) : (
+          <span>{config.creditos.nombre}</span>
+        )}.
       </p>
     </div>
   </div>
