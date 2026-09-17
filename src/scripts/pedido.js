@@ -102,12 +102,17 @@ export function armarMensaje(pedido, datos) {
   if (pedido.envioGratis()) partes.push("Domicilio gratis");
   partes.push("");
   partes.push("*Datos de entrega*");
+  if (datos.sede) partes.push(`Sede: ${datos.sede}`);
   partes.push(`Nombre: ${datos.nombre}`);
   partes.push(`Teléfono: ${datos.telefono}`);
   partes.push(`Dirección: ${datos.direccion}`);
   if (datos.barrio) partes.push(`Barrio: ${datos.barrio}`);
   if (datos.ubicacion) partes.push(`Ubicación: ${datos.ubicacion}`);
-  partes.push(`Pago: ${datos.pago}`);
+  if (datos.pago === "Efectivo" && datos.vueltas) {
+    partes.push(`Pago: Efectivo (vueltas de ${datos.vueltas})`);
+  } else {
+    partes.push(`Pago: ${datos.pago}`);
+  }
   if (datos.nota) partes.push(`Nota: ${datos.nota}`);
 
   return partes.join("\n");

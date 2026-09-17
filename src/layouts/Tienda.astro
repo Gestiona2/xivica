@@ -103,6 +103,7 @@ const datosEstructurados = {
       aria-hidden="true"
       data-whatsapp={config.whatsapp}
       data-envio={config.envio.gratis_desde}
+      data-sedes={JSON.stringify(config.sedes.map((sede) => ({ id: sede.id, nombre: sede.nombre, telefono: sede.telefono })))}
       hidden
     >
       <header class="carrito-cabeza">

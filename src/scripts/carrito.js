@@ -43,6 +43,19 @@ export function montarCarrito() {
   const base = document.documentElement.dataset.base || "/";
   const whatsapp = panel.dataset.whatsapp || "";
   const envioGratisDesde = Number(panel.dataset.envio || 60000);
+  let sedes = [];
+  try {
+    sedes = JSON.parse(panel.dataset.sedes || "[]");
+  } catch {
+    sedes = [];
+  }
+  const sedeGuardada = () => {
+    try {
+      return localStorage.getItem("xivica-sede") || "";
+    } catch {
+      return "";
+    }
+  };
 
   const fondo = document.getElementById("carritoFondo");
   const barra = document.getElementById("barraPago");
@@ -75,8 +88,17 @@ export function montarCarrito() {
   }
 
   /* ---------- panel ---------- */
+  // Lo ya escrito se conserva cuando el panel se vuelve a pintar
+  // (pasa cada vez que cambia una cantidad).
+  function leerFormulario() {
+    const formulario = cuerpo.querySelector("#formPedido");
+    if (!formulario) return {};
+    return Object.fromEntries(new FormData(formulario));
+  }
+
   function pintarPanel(p) {
     const lineas = p.lineas();
+    const previos = leerFormulario();
 
     if (lineas.length === 0) {
       cuerpo.innerHTML = `
@@ -117,27 +139,36 @@ export function montarCarrito() {
         <form class="carrito-datos" id="formPedido" novalidate>
           <h3>Datos de entrega</h3>
 
+          ${sedes.length > 0 ? `
+          <label>¿De qué sede pides?
+            <select name="sede" id="campoSede">
+              ${sedes.map((sede) => `
+                <option value="${sede.id}"${(previos.sede || sedeGuardada() || sedes[0].id) === sede.id ? " selected" : ""}>${escapar(sede.nombre)}</option>`).join("")}
+            </select>
+          </label>` : ""}
           <label>Nombre y apellido
-            <input name="nombre" required autocomplete="name" placeholder="Ana Gómez">
+            <input name="nombre" required autocomplete="name" placeholder="Ana Gómez" value="${escapar(previos.nombre || "")}">
           </label>
           <label>Teléfono
-            <input name="telefono" required inputmode="tel" autocomplete="tel" placeholder="300 123 4567">
+            <input name="telefono" required inputmode="tel" autocomplete="tel" placeholder="300 123 4567" value="${escapar(previos.telefono || "")}">
           </label>
           <label>Dirección
-            <input name="direccion" required autocomplete="street-address" placeholder="Cra 49B #171a-92 apto 302">
+            <input name="direccion" required autocomplete="street-address" placeholder="Cra 49B #171a-92 apto 302" value="${escapar(previos.direccion || "")}">
           </label>
           <label>Barrio <span class="opcional">(opcional)</span>
-            <input name="barrio" autocomplete="address-level3" placeholder="Villa del Prado">
+            <input name="barrio" autocomplete="address-level3" placeholder="Villa del Prado" value="${escapar(previos.barrio || "")}">
           </label>
           <label>Forma de pago
-            <select name="pago">
-              <option>Efectivo</option>
-              <option>Transferencia (Nequi / Daviplata)</option>
-              <option>Datáfono en la entrega</option>
+            <select name="pago" id="campoPago">
+              ${["Efectivo", "Transferencia (Nequi / Daviplata)", "Datáfono en la entrega"].map((opcion) => `
+                <option${(previos.pago || "Efectivo") === opcion ? " selected" : ""}>${opcion}</option>`).join("")}
             </select>
           </label>
+          <label data-vueltas${(previos.pago || "Efectivo") === "Efectivo" ? "" : " hidden"}>¿De cuánto quieres las vueltas?
+            <input name="vueltas" inputmode="numeric" placeholder="$50.000 o exacto" value="${escapar(previos.vueltas || "")}">
+          </label>
           <label>Nota para el domiciliario <span class="opcional">(opcional)</span>
-            <textarea name="nota" rows="2" placeholder="El timbre no sirve, llamar al llegar"></textarea>
+            <textarea name="nota" rows="2" placeholder="El timbre no sirve, llamar al llegar">${escapar(previos.nota || "")}</textarea>
           </label>
 
           <div class="carrito-total">
@@ -161,7 +192,24 @@ export function montarCarrito() {
         </form>
       </div>`;
 
-    cuerpo.querySelector("#formPedido").addEventListener("submit", enviarPedido);
+    const formulario = cuerpo.querySelector("#formPedido");
+    formulario.addEventListener("submit", enviarPedido);
+
+    // Las vueltas solo se preguntan si paga en efectivo.
+    const campoPago = formulario.querySelector("#campoPago");
+    const campoVueltas = formulario.querySelector("[data-vueltas]");
+    campoPago?.addEventListener("change", () => {
+      if (campoVueltas) campoVueltas.hidden = campoPago.value !== "Efectivo";
+    });
+
+    // Se recuerda la sede elegida para la próxima vez.
+    formulario.querySelector("#campoSede")?.addEventListener("change", (evento) => {
+      try {
+        localStorage.setItem("xivica-sede", evento.target.value);
+      } catch {
+        /* sin memoria: la sede igual viaja en este pedido */
+      }
+    });
   }
 
   /* ---------- enviar ---------- */
@@ -173,16 +221,25 @@ export function montarCarrito() {
     const faltantes = ["nombre", "telefono", "direccion"].filter(
       (campo) => !String(datos[campo] || "").trim()
     );
+    if (datos.pago === "Efectivo" && !String(datos.vueltas || "").trim()) {
+      faltantes.push("vueltas");
+    }
     if (faltantes.length > 0) {
       const campo = formulario.elements[faltantes[0]];
       campo.focus();
       campo.classList.add("campo-falta");
-      avisar("Falta " + { nombre: "tu nombre", telefono: "tu teléfono", direccion: "la dirección" }[faltantes[0]]);
+      avisar("Falta " + {
+        nombre: "tu nombre",
+        telefono: "tu teléfono",
+        direccion: "la dirección",
+        vueltas: "indicar de cuánto son las vueltas",
+      }[faltantes[0]]);
       return;
     }
 
-    const mensaje = armarMensaje(pedido, datos);
-    window.open(enlaceWhatsApp(whatsapp, mensaje), "_blank", "noopener");
+    const sede = sedes.find((s) => s.id === datos.sede) || sedes[0];
+    const mensaje = armarMensaje(pedido, { ...datos, sede: sede ? sede.nombre : "" });
+    window.open(enlaceWhatsApp(sede ? sede.telefono : whatsapp, mensaje), "_blank", "noopener");
 
     guardarEnHistorial(pedido);
     avisar("Pedido enviado. Revisa WhatsApp.");

@@ -45,11 +45,23 @@ const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
       <Logo alto={42} />
     </a>
 
-    <button class="pastilla-sede" type="button" aria-label="Elegir sede de atención">
-      <Icono nombre="ubicacion" tamano={16} />
-      <span>{config.ciudad}</span>
-      <Icono nombre="chevronAbajo" tamano={14} />
-    </button>
+    <div class="pastilla-contenedor">
+      <button class="pastilla-sede" type="button" id="elegirSede" aria-haspopup="true" aria-expanded="false" aria-label="Elegir sede de atención">
+        <Icono nombre="ubicacion" tamano={16} />
+        <span id="sedeElegida">{config.ciudad}</span>
+        <Icono nombre="chevronAbajo" tamano={14} />
+      </button>
+      <ul class="pastilla-menu" id="menuSedes" hidden>
+        {config.sedes.map((sede) => (
+          <li>
+            <button type="button" data-sede-id={sede.id} data-sede-nombre={sede.nombre} data-sede-telefono={sede.telefono}>
+              <strong>{sede.nombre}</strong>
+              <small>{sede.telefono_visible}</small>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
 
     <form class="buscador" role="search" action={enlace("catalogo")} method="get" id="formBuscador">
       <label class="visualmente-oculto" for="campoBuscar">Buscar productos</label>

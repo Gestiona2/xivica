@@ -11,6 +11,7 @@ import { montarCarrusel } from "./carrusel.js";
 import { montarCatalogo } from "./filtros.js";
 import { montarPaginasGuardadas } from "./paginas-guardadas.js";
 import { montarMapaSedes } from "./mapa.js";
+import { montarSelectorSede } from "./sede.js";
 
 const listo = (fn) =>
   document.readyState === "loading"
@@ -25,6 +26,7 @@ listo(() => {
   montarCatalogo();
   montarPaginasGuardadas();
   montarMapaSedes();
+  montarSelectorSede();
 
   // Menu en pantallas pequenas
   const boton = document.getElementById("abrirMenu");

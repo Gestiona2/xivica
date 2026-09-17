@@ -93,6 +93,29 @@ publica.
 
 ---
 
+## Actualizar el catálogo con el Excel del dueño
+
+El dueño edita `Catalogo-Drogueria-Xivica.xlsx` (solo las celdas amarillas; la
+naranja es solo del regente) y devuelve el archivo. El flujo siempre es:
+
+```
+python3 tools/excel_catalogo.py revisar Catalogo-Drogueria-Xivica.xlsx
+```
+
+Si dice problemas, se le responden uno por uno **con el nombre del producto, qué
+pasa y cómo se escribe bien**; nada se aplica hasta corregirlo. Cuando sale en
+limpio:
+
+```
+python3 tools/excel_catalogo.py aplicar Catalogo-Drogueria-Xivica.xlsx
+```
+
+Eso escribe `src/datos/productos.json` y regenera la planilla. Tres reglas que no
+se negocian: no se agregan ni borran filas por Excel, la columna de fórmula la
+llena solo el regente, y el descuento siempre sale de los dos precios.
+
+---
+
 ## Destacar un producto en la portada
 
 Poner `"destacado": true`. Aparecerá primero en la portada.

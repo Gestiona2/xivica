@@ -90,6 +90,26 @@ test("el mensaje no inventa una nota que no se escribió", () => {
   assert.doesNotMatch(mensaje, /Nota/);
 });
 
+test("el mensaje lleva la sede y las vueltas en efectivo", () => {
+  const p = crearPedido();
+  p.agregar(A, 1);
+  const mensaje = armarMensaje(p, {
+    nombre: "Ana", telefono: "300", direccion: "Calle 1",
+    sede: "Villa del Prado", pago: "Efectivo", vueltas: "$50.000", nota: "",
+  });
+  assert.match(mensaje, /Sede: Villa del Prado/);
+  assert.match(mensaje, /Pago: Efectivo \(vueltas de \$50\.000\)/);
+});
+
+test("sin vueltas el pago en efectivo sale solo", () => {
+  const p = crearPedido();
+  p.agregar(A, 1);
+  const mensaje = armarMensaje(p, {
+    nombre: "Ana", telefono: "300", direccion: "Calle 1", pago: "Efectivo",
+  });
+  assert.match(mensaje, /Pago: Efectivo$/m);
+});
+
 test("un pedido vacío no se puede enviar", () => {
   const p = crearPedido();
   assert.throws(() => armarMensaje(p, { nombre: "Ana" }), /vacío/);

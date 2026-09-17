@@ -63,11 +63,9 @@ llegan los datos.
 Hay que resolverlas con el cliente. El sitio sigue el **Manual v2.0**, que es el marcado
 como definitivo.
 
-- [ ] **La lámina `identidad visual.png` no coincide con el manual v2.0.** Usa Poppins y
-      Montserrat (el manual: Manrope e Inter), otros colores (`#007CC3`, `#16A34A`,
-      `#FACC15`), otro eslogan ("Tu salud, siempre cerca"; el manual: "Cerca cuando la
-      necesitas") y **otro WhatsApp: 322 863 6554**, cuando el sitio usa el 301 366 5076.
-      Confirmar cuál es el número vigente: es lo más delicado de los cuatro.
+- [ ] **Confirmar el WhatsApp principal.** El sitio usa el 301 366 5076. El propietario
+      lo va a confirmar. (La lámina `identidad visual.png` se descarta por decisión del
+      propietario el 17/09/2026: solo vale el manual de marca.)
 - [x] ~~**El manual dice 3 puntos de venta; solo hay dirección de dos.**~~ Resuelto:
       la tercera sede es **Verbenal** (Cra 11 #187-01, 312 429 3060, mismos horarios),
       confirmada por el propietario el 16/09/2026. El sitio ya muestra las tres sedes.
@@ -100,7 +98,9 @@ como definitivo.
       revisar el catálogo, no automáticamente.
 
 - [ ] **Subcategorías del 48% restante.** Se clasificó el 52% por palabras clave; el resto
-      son genéricos que habría que revisar a mano para afinar los filtros.
+      son genéricos que habría que revisar a mano para afinar los filtros. Camino
+      acordado el 17/09/2026: el dueño las marca en `Catalogo-Drogueria-Xivica.xlsx`
+      y se aplican con `tools/excel_catalogo.py` (ver `COMO-EDITAR.md`).
 - [x] ~~**Productos destacados.**~~ Marcados 8 de ejemplo el 17/09/2026 (pañales,
       bloqueadores, vitaminas, shampoo, tinte y loción de bebé: ninguno es medicamento,
       para no empujar medicinas a la portada). Cuando la droguería decida qué empujar,
