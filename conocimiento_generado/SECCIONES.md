@@ -134,8 +134,13 @@ y cómo se agrega un elemento.
 
 - **Cómo se llama:** "el carrito"
 - **Dónde está:** `src/components/` dentro del layout, y `src/scripts/carrito.js`
-- **Formulario:** nombre, teléfono y dirección son obligatorios; barrio, forma de pago y
-  nota son opcionales
+- **Formulario:** sede, nombre, teléfono y dirección son obligatorios; barrio, forma de
+  pago y nota son opcionales. Lo escrito no se borra al cambiar cantidades
+- **Si paga en efectivo,** se pregunta de cuánto son las vueltas (obligatorio) y viaja
+  en el mensaje
+- **El pedido llega al WhatsApp de la sede elegida** (cada sede tiene el suyo en
+  `config.json` → `sedes[]`)
+- **El botón junto al logo** muestra las tres sedes y abre el WhatsApp de la elegida
 - **Formas de pago:** se editan en `src/scripts/carrito.js`, buscando "Efectivo"
 - **Al enviar** abre WhatsApp con el pedido escrito. No cobra nada en línea.
 
