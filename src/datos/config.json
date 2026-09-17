@@ -64,7 +64,7 @@
     "_nota": "Línea del pie: quién hizo el sitio. La dirección (url) la confirma el propietario; vacía sale sin enlace.",
     "texto": "Sitio web desarrollado por",
     "nombre": "emp2web",
-    "url": ""
+    "url": "https://emp2web.com/web-express/"
   },
   "redes": [
     { "id": "facebook", "nombre": "Facebook", "url": "" },
