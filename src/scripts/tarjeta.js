@@ -18,6 +18,7 @@ export function tarjetaHTML(producto, base) {
     <article class="tarjeta" data-slug="${producto.slug}">
       ${producto.descuento ? `<span class="tarjeta-descuento">-${producto.descuento}%</span>` : ""}
       ${producto.destacado ? `<span class="tarjeta-destacado">Destacado</span>` : ""}
+      ${producto.stock === false ? `<span class="tarjeta-agotado">Agotado</span>` : ""}
       <button type="button" class="tarjeta-favorito" data-favorito="${producto.slug}"
               aria-label="Guardar ${escapar(producto.titulo)} en favoritos" aria-pressed="false">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -38,9 +39,11 @@ export function tarjetaHTML(producto, base) {
           <strong>${pesos(producto.precio)}</strong>
           ${ahorro ? `<span class="tarjeta-ahorro">Ahorras ${pesos(ahorro)}</span>` : ""}
         </div>
-        <button type="button" class="boton boton-azul tarjeta-agregar"
+        ${producto.stock === false
+          ? `<button type="button" class="boton boton-azul tarjeta-agregar" disabled>Agotado</button>`
+          : `<button type="button" class="boton boton-azul tarjeta-agregar"
                 data-agregar="${producto.slug}" data-titulo="${escapar(producto.titulo)}"
-                data-precio="${producto.precio}" data-imagen="${producto.imagenes[0]}">Agregar</button>
+                data-precio="${producto.precio}" data-imagen="${producto.imagenes[0]}">Agregar</button>`}
       </div>
     </article>`;
 }

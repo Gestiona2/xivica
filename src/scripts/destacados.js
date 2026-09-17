@@ -14,6 +14,9 @@
  *
  * Los productos que requieren formula medica quedan siempre fuera del
  * escaparate. Siguen en el catalogo y en el buscador para quien los busque.
+ *
+ * Lo mismo con los agotados: no se ofrecen en la portada hasta que vuelvan
+ * a tener existencias.
  */
 
 /**
@@ -40,7 +43,7 @@ export function elegirDestacados(productos, cantidad, opciones = {}) {
   const { excluirRx = true, excluir = new Set() } = opciones;
 
   const elegibles = productos.filter(
-    (p) => !excluir.has(p.slug) && (!excluirRx || p.rx !== true)
+    (p) => !excluir.has(p.slug) && (!excluirRx || p.rx !== true) && p.stock !== false
   );
 
   const marcados = elegibles.filter((p) => p.destacado === true);

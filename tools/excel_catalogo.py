@@ -53,7 +53,6 @@ COLUMNAS = [
     ("destacado", "¿Destacado en portada? (SI/NO)", AMARILLO, 16, True),
     ("promo_flash", "¿Promoción relámpago? (SI/NO)", AMARILLO, 18, True),
     ("rx", "¿Requiere fórmula? (SI/NO/vacío, SOLO el regente)", NARANJA, 22, True),
-    ("imagenes", "Fotos (no tocar)", GRIS, 34, False),
     ("descripcion", "Descripción (sin indicaciones médicas)", AMARILLO, 60, True),
 ]
 
@@ -133,7 +132,6 @@ def generar():
             "destacado": a_si_no(p.get("destacado")),
             "promo_flash": a_si_no(p.get("promo_flash")),
             "rx": a_si_no(p.get("rx")),
-            "imagenes": ", ".join(p.get("imagenes") or []),
             "descripcion": p.get("descripcion"),
         }
         for col, (campo, _t, fondo, _a, _e) in enumerate(COLUMNAS, start=1):
@@ -178,7 +176,7 @@ def generar():
     lineas = [
         "CÓMO USAR ESTA PLANILLA",
         "",
-        "1. Edita solo las celdas en AMARILLO. Las grises (código, fotos y % descuento) no se tocan.",
+        "1. Edita solo las celdas en AMARILLO. Las grises (código y % descuento) no se tocan.",
         "2. La columna NARANJA (¿Requiere fórmula?) la llena SOLO el regente de farmacia.",
         "3. El precio se escribe como número entero, sin puntos ni signo $: 62900.",
         "4. El % descuento se calcula solo del precio anterior. Si no hay oferta, deja el precio anterior vacío.",

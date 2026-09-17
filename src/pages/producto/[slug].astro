@@ -152,16 +152,22 @@ const migas = {
         )}
 
         <div class="ficha-acciones">
-          <button
-            type="button"
-            class="boton boton-lima ficha-agregar"
-            data-agregar={producto.slug}
-            data-titulo={producto.titulo}
-            data-precio={producto.precio}
-            data-imagen={producto.imagenes[0]}
-          >
-            <Icono nombre="carrito" tamano={18} /> Agregar al carrito
-          </button>
+          {producto.stock === false ? (
+            <button type="button" class="boton boton-lima ficha-agregar" disabled>
+              Agotado
+            </button>
+          ) : (
+            <button
+              type="button"
+              class="boton boton-lima ficha-agregar"
+              data-agregar={producto.slug}
+              data-titulo={producto.titulo}
+              data-precio={producto.precio}
+              data-imagen={producto.imagenes[0]}
+            >
+              <Icono nombre="carrito" tamano={18} /> Agregar al carrito
+            </button>
+          )}
           <button
             type="button"
             class="boton boton-borde"

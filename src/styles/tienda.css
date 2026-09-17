@@ -315,13 +315,21 @@ a.pie-red:hover { border-color: var(--azul); }
 }
 /* Marca de "elegido por la droguería". Blanco sobre el verde da 4.68:1. */
 .tarjeta-destacado {
-  position: absolute; top: 8px; left: 8px; z-index: 2;
+  position: absolute; top: 8px; right: 8px; z-index: 2;
   background: var(--verde); color: #fff;
   font-size: .7rem; font-weight: 800; letter-spacing: .02em;
   padding: 4px 8px; border-radius: 6px;
 }
-/* Si lleva las dos, la verde baja para no tapar el descuento. */
-.tarjeta-descuento + .tarjeta-destacado { top: 36px; }
+/* Con la marca, el corazón baja para no taparla. */
+.tarjeta-destacado ~ .tarjeta-favorito { top: 42px; }
+/* Sin existencias: se avisa y no se puede agregar. */
+.tarjeta-agotado {
+  position: absolute; top: 8px; left: 8px; z-index: 2;
+  background: var(--text-muted); color: #fff;
+  font-size: .7rem; font-weight: 800; letter-spacing: .02em;
+  padding: 4px 8px; border-radius: 6px;
+}
+.boton[disabled] { opacity: .55; cursor: not-allowed; }
 .tarjeta-favorito {
   position: absolute; top: 6px; right: 6px; z-index: 2;
   width: 32px; height: 32px; border-radius: 99px;

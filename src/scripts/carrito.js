@@ -160,7 +160,7 @@ export function montarCarrito() {
           </label>
           <label>Forma de pago
             <select name="pago" id="campoPago">
-              ${["Efectivo", "Transferencia (Nequi / Daviplata)", "Datáfono en la entrega"].map((opcion) => `
+              ${["Efectivo", "Transferencia (Nequi / Daviplata / Bre-B)", "Datáfono en la entrega"].map((opcion) => `
                 <option${(previos.pago || "Efectivo") === opcion ? " selected" : ""}>${opcion}</option>`).join("")}
             </select>
           </label>

@@ -110,9 +110,12 @@ limpio:
 python3 tools/excel_catalogo.py aplicar Catalogo-Drogueria-Xivica.xlsx
 ```
 
-Eso escribe `src/datos/productos.json` y regenera la planilla. Tres reglas que no
+Eso escribe `src/datos/productos.json` y regenera la planilla. Cuatro reglas que no
 se negocian: no se agregan ni borran filas por Excel, la columna de fórmula la
-llena solo el regente, y el descuento siempre sale de los dos precios.
+llena solo el regente, el descuento siempre sale de los dos precios, y las fotos
+no van en el Excel. Para un producto nuevo, el dueño manda los datos y las fotos
+y lo creo yo; para quitar uno, me avisa y lo quito yo (el historial lo guarda
+todo, así que nada se pierde para siempre).
 
 ---
 

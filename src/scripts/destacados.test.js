@@ -42,6 +42,15 @@ test("un producto marcado a mano tampoco entra si requiere fórmula", () => {
   assert.deepEqual(salida.map((x) => x.slug), ["y"]);
 });
 
+test("los agotados no salen en la portada aunque estén marcados", () => {
+  const lista = [
+    p("agotado", { destacado: true, stock: false, precio: 1000, precio_antes: 90000 }),
+    p("normal"),
+  ];
+  const salida = elegirDestacados(lista, 5);
+  assert.deepEqual(salida.map((x) => x.slug), ["normal"]);
+});
+
 test("el relleno al azar es el mismo en cada compilación", () => {
   const lista = "abcdefghij".split("").map((s) => p(s));
   const una = elegirDestacados(lista, 4).map((x) => x.slug);
