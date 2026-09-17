@@ -17,6 +17,7 @@ export function tarjetaHTML(producto, base) {
   return `
     <article class="tarjeta" data-slug="${producto.slug}">
       ${producto.descuento ? `<span class="tarjeta-descuento">-${producto.descuento}%</span>` : ""}
+      ${producto.destacado ? `<span class="tarjeta-destacado">Destacado</span>` : ""}
       <button type="button" class="tarjeta-favorito" data-favorito="${producto.slug}"
               aria-label="Guardar ${escapar(producto.titulo)} en favoritos" aria-pressed="false">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"

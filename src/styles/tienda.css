@@ -313,6 +313,15 @@ a.pie-red:hover { border-color: var(--azul); }
   font-size: .7rem; font-weight: 800; letter-spacing: .02em;
   padding: 4px 8px; border-radius: 6px;
 }
+/* Marca de "elegido por la droguería". Blanco sobre el verde da 4.68:1. */
+.tarjeta-destacado {
+  position: absolute; top: 8px; left: 8px; z-index: 2;
+  background: var(--verde); color: #fff;
+  font-size: .7rem; font-weight: 800; letter-spacing: .02em;
+  padding: 4px 8px; border-radius: 6px;
+}
+/* Si lleva las dos, la verde baja para no tapar el descuento. */
+.tarjeta-descuento + .tarjeta-destacado { top: 36px; }
 .tarjeta-favorito {
   position: absolute; top: 6px; right: 6px; z-index: 2;
   width: 32px; height: 32px; border-radius: 99px;

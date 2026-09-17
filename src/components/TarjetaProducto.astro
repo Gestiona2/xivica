@@ -21,6 +21,7 @@ interface Producto {
   marca: string | null;
   imagenes: string[];
   rx: boolean | null;
+  destacado?: boolean;
 }
 
 interface Props {
@@ -37,6 +38,7 @@ const ahorro = producto.precio_antes ? producto.precio_antes - producto.precio :
 
 <article class="tarjeta" data-slug={producto.slug}>
   {producto.descuento && <span class="tarjeta-descuento">-{producto.descuento}%</span>}
+  {producto.destacado && <span class="tarjeta-destacado">Destacado</span>}
 
   <button
     type="button"

@@ -104,7 +104,8 @@ y cómo se agrega un elemento.
 
 - **Dónde está:** `src/components/TarjetaProducto.astro`
 - **Muestra:** foto, descuento, marca, nombre a dos líneas, presentación, precio, ahorro y
-  botón de agregar
+  botón de agregar. Si el producto está marcado como destacado, lleva una etiqueta
+  verde que dice "Destacado"
 - **Cuidado:** existe una copia en JavaScript, `src/scripts/tarjeta.js`, para las listas que
   se pintan al filtrar. **Si se cambia una, hay que cambiar la otra.**
 
