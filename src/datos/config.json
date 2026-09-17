@@ -5,14 +5,16 @@
   "descripcion_corta": "Droguería cercana y confiable en el norte de Bogotá. Medicamentos, cuidado personal y bienestar, con domicilio en 45 a 90 minutos.",
   "whatsapp": "573013665076",
   "whatsapp_visible": "301 366 5076",
-  "correo": "PENDIENTE",
+  "correo": "ventas@drogueriacivica.com",
   "ciudad": "Bogotá",
   "envio": {
     "gratis_desde": 0,
     "_nota_gratis_desde": "En 0 a propósito: el domicilio es gratis en la zona de cobertura cercana SIN importar el valor del pedido (decisión del propietario, 16/09/2026). Fuera de esa zona se cobra y se informa antes de despachar. Ver src/datos/legal.json -> domicilios y la página /legal/domicilios.",
     "minutos_min": 45,
     "minutos_max": 90,
-    "cobertura": "Bogotá y alrededores"
+    "cobertura": "Bogotá y alrededores",
+    "tyc": "Aplica TyC",
+    "tyc_enlace": "legal/domicilios"
   },
   "sedes": [
     {
@@ -54,7 +56,7 @@
     }
   ],
   "legal": {
-    "nit": "PENDIENTE",
+    "nit": "1019155493-3",
     "regente_aplica": false,
     "regente_nota": "No aplica: Droguería Xivica no comercializa medicamentos de control especial, por lo que la normativa no exige la vinculación de un regente de farmacia. Confirmado por el propietario el 16/09/2026."
   },

@@ -11,6 +11,7 @@ import config from "../datos/config.json";
 import Header from "../components/Header.astro";
 import SubnavCategorias from "../components/SubnavCategorias.astro";
 import Footer from "../components/Footer.astro";
+import VentanaOferta from "../components/VentanaOferta.astro";
 import Icono from "../components/Icono.astro";
 
 interface Props {
@@ -89,6 +90,9 @@ const datosEstructurados = {
     </main>
 
     <Footer />
+
+    <!-- Ventana emergente de oferta: solo aparece cuando el propietario deja una oferta activa. -->
+    <VentanaOferta />
 
     <!-- Panel del carrito. Vive en el layout para que este disponible en toda pagina. -->
     <div class="carrito-fondo" id="carritoFondo" hidden></div>

@@ -1,5 +1,5 @@
 {
-  "_comentario": "Contenido de la portada. Para cambiar un banner se edita aquí, sin tocar código. Las imágenes de banner que digan placehold.co están pendientes de diseño: ver PENDIENTES.md.",
+  "_comentario": "Contenido de la portada. Para cambiar un banner se edita aquí, sin tocar código. Las imágenes de banner que digan placehold.co están pendientes de diseño: ver PENDIENTES.md. La ventana emergente aparece al abrir la página solo si hay productos marcados con promo_flash en true.",
   "banners": [
     {
       "etiqueta": "DROGUERÍA XIVICA",
@@ -12,7 +12,7 @@
     {
       "etiqueta": "DOMICILIOS",
       "titulo": "Lo que necesitas, sin salir de casa",
-      "texto": "Cubrimos el norte de Bogotá y alrededores. Gratis desde $60.000.",
+      "texto": "Cubrimos el norte de Bogotá y alrededores. Domicilio gratis en la zona cercana.",
       "boton": "Cómo funciona",
       "enlace": "servicios#domicilio",
       "imagen": "banner-domicilio.webp"
@@ -20,7 +20,7 @@
     {
       "etiqueta": "FÓRMULA MÉDICA",
       "titulo": "Envíanos tu fórmula y te ayudamos",
-      "texto": "Un regente de farmacia revisa el listado y te confirma disponibilidad y precio por WhatsApp.",
+      "texto": "Te confirmamos disponibilidad y precio por WhatsApp.",
       "boton": "Consulta disponibilidad",
       "enlace": "servicios#formula",
       "imagen": "banner-formula.webp"
@@ -72,7 +72,9 @@
     {
       "icono": "camion",
       "titulo": "Domicilio 45–90 min",
-      "texto": "Gratis desde $60.000"
+      "texto": "Gratis en la zona cercana",
+      "nota_tyc": "Aplica TyC",
+      "nota_tyc_enlace": "legal/domicilios"
     },
     {
       "icono": "receta",
@@ -101,5 +103,15 @@
     "titulo": "Estamos a un mensaje de distancia.",
     "texto": "Escríbenos por WhatsApp: consultamos disponibilidad, cotizamos tu fórmula y te lo llevamos.",
     "boton": "Escríbenos"
+  },
+  "popup_oferta": {
+    "_nota": "Textos fijos de la ventana emergente de promoción relámpago. Los productos salen del catálogo, solo los marcados con promo_flash en true. Si ningún producto tiene la marca, la ventana no aparece.",
+    "etiqueta": "PROMOCIÓN RELÁMPAGO",
+    "ver_detalle": "Ver detalle",
+    "pedir": "Agregar",
+    "cerrar": "Cerrar la oferta",
+    "anterior": "Ver promoción anterior",
+    "siguiente": "Ver promoción siguiente",
+    "elegir": "Elegir promoción"
   }
 }

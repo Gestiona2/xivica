@@ -5,25 +5,40 @@ llegan los datos.
 
 ## Bloquean la publicación
 
-- [ ] **Número de habilitación sanitaria.** Aparece resaltado en amarillo en el pie del
-      sitio hasta que llegue. Se pone en `src/datos/config.json` → `legal.habilitacion`.
-- [ ] **Regente de farmacia responsable** (nombre y tarjeta profesional).
-      `config.json` → `legal.regente` y `legal.tarjeta_profesional`.
-- [ ] **NIT de la droguería.** `config.json` → `legal.nit`.
+- [x] ~~**Número de habilitación sanitaria.**~~ Confirmados por el propietario el
+      16/09/2026: `MS00010200`, `MS00017993` y `MS00001129` en `config.json` → `sedes[]`.
+- [x] ~~**Regente de farmacia responsable.**~~ Resuelto: no aplica. La droguería no
+      comercializa medicamentos de control especial (confirmado por el propietario el
+      16/09/2026). `config.json` → `legal.regente_aplica: false`. Los textos del sitio ya
+      no mencionan al regente.
+- [x] ~~**NIT de la droguería.**~~ Entregado por el propietario el 17/09/2026:
+      `1019155493-3` en `config.json` → `legal.nit`. Ya se muestra en el pie.
 - [ ] **Revisión de qué productos requieren fórmula médica.** Hoy los 407 están sin
       marcar. Mientras siga así, la regla que los mantiene fuera de la portada no protege
       nada. Ver `conocimiento_generado/REGLAS-DEL-CATALOGO.md`, reglas 2 y 3.
-- [ ] **Derechos de uso de las fotos.** Las 669 imágenes vienen del sitio anterior, que
-      las tomó de catálogos de proveedores. Confirmar antes de publicar.
-- [ ] **Dominio definitivo.** Está decidido que será uno nuevo, sin definir cuál.
+- [x] ~~**Derechos de uso de las fotos.**~~ Confirmado por el propietario el 17/09/2026:
+      las imágenes que vienen del sitio anterior se pueden usar.
+- [ ] **Dominio definitivo.** Decidido por el propietario el 17/09/2026:
+      **drogueriaxivica.com**. El cambio se hace cuando todo esté listo y lo hace
+      Gestiona2, no el cliente.
 
 ## Datos que faltan pero no bloquean
 
-- [ ] **Horarios de cada sede.** `config.json` → `sedes[].horario`.
-- [ ] **Correo de contacto.** `config.json` → `correo`.
-- [ ] **Tercera sede.** El sitio anterior la anunciaba como "próximamente". No se incluyó
-      porque no hay dirección real. Se agrega en `config.json` → `sedes`.
-- [ ] **Redes sociales**, si existen. `config.json` → `redes`.
+- [x] ~~**Correo de contacto.**~~ Entregado por el propietario el 17/09/2026:
+      `ventas@drogueriacivica.com` en `config.json` → `correo`. Ya se muestra en
+      la página de contacto.
+- [x] ~~**Producto de la ventana emergente.**~~ Marcados por el propietario el
+      17/09/2026 con `"promo_flash": true`: Acid Mantle loción x2, Centrum Silver
+      Women 60 y Cerebrit 330 g + 50 g. Si se quita la marca de todos, la ventana
+      no se muestra.
+- [x] ~~**Horarios de cada sede.**~~ Confirmados por el propietario el 16/09/2026, iguales
+      en las tres sedes: Lunes a sábado 7:30 a. m. – 9:30 p. m.; domingos y festivos
+      9:00 a. m. – 9:00 p. m. Se editó `config.json` → `sedes[].horario`.
+- [x] ~~**Tercera sede.**~~ Confirmada: **Verbenal**, Cra 11 #187-01, teléfono
+      312 429 3060. Ya está publicada en `config.json` → `sedes`.
+- [x] ~~**Redes sociales**, si existen.~~ Decidido por el propietario el 17/09/2026:
+      no existen. No se muestran iconos hasta que existan las cuentas; en ese momento
+      se agregan con su enlace. Poner iconos sin enlace confunde al que los toca.
 
 ## Diseño e imágenes
 
@@ -49,8 +64,9 @@ como definitivo.
       `#FACC15`), otro eslogan ("Tu salud, siempre cerca"; el manual: "Cerca cuando la
       necesitas") y **otro WhatsApp: 322 863 6554**, cuando el sitio usa el 301 366 5076.
       Confirmar cuál es el número vigente: es lo más delicado de los cuatro.
-- [ ] **El manual dice 3 puntos de venta; solo hay dirección de dos.** Los textos del sitio
-      ya no dicen "dos sedes". Falta la dirección, el teléfono y el horario del tercero.
+- [x] ~~**El manual dice 3 puntos de venta; solo hay dirección de dos.**~~ Resuelto:
+      la tercera sede es **Verbenal** (Cra 11 #187-01, 312 429 3060, mismos horarios),
+      confirmada por el propietario el 16/09/2026. El sitio ya muestra las tres sedes.
 - [ ] **El logo maestro y la tabla de colores difieren un poco.** El SVG trae `#03863E`,
       `#FDD603` y `#8AC840`; la tabla del manual, `#00813F`, `#FFD400` y `#84CF3B`. El logo se
       usa tal cual (el manual prohíbe tocarlo) y la interfaz usa los de la tabla. La
@@ -81,5 +97,7 @@ como definitivo.
 
 - [ ] **Subcategorías del 48% restante.** Se clasificó el 52% por palabras clave; el resto
       son genéricos que habría que revisar a mano para afinar los filtros.
-- [ ] **Productos destacados.** Ninguno está marcado con `"destacado": true`, así que la
-      portada se llena sola por ahorro. Cuando la droguería decida qué empujar, se marcan.
+- [x] ~~**Productos destacados.**~~ Marcados 8 de ejemplo el 17/09/2026 (pañales,
+      bloqueadores, vitaminas, shampoo, tinte y loción de bebé: ninguno es medicamento,
+      para no empujar medicinas a la portada). Cuando la droguería decida qué empujar,
+      se cambian: ver `COMO-EDITAR.md`.

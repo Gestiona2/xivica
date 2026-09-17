@@ -35,6 +35,7 @@ PRECIO_MAXIMO = 3_000_000
 SI_O_NO = {
     "stock": "true si hay existencias, false si esta agotado",
     "destacado": "true para empujarlo en la portada, false si no",
+    "promo_flash": "true para mostrarlo en la ventana emergente de promocion, false si no",
 }
 
 
@@ -183,6 +184,20 @@ def validar(productos, carpeta_imagenes=None, categorias=None):
                 f"medicamento de control podria salir en la portada. Este dato lo define "
                 f"el regente de farmacia."
             )
+
+        # --- promocion relampago: solo productos disponibles y sin formula ---
+        if producto.get("promo_flash") is True:
+            if rx is True:
+                errores.append(
+                    f"{quien}: 'promo_flash' no puede ser true porque el producto "
+                    f"requiere formula medica; la ventana emergente no promociona "
+                    f"medicamentos de control"
+                )
+            if producto.get("stock") is False:
+                errores.append(
+                    f"{quien}: 'promo_flash' no puede ser true porque el producto "
+                    f"esta agotado; la ventana emergente solo muestra productos disponibles"
+                )
 
         # --- categoria ---
         categoria = producto.get("categoria")

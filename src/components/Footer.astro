@@ -66,9 +66,7 @@ const falta = (valor: string) => valor === "PENDIENTE";
     <div class="container pie-legal-inner">
       <p>
         © {anio} {config.negocio}.
-        {falta(config.legal.nit)
-          ? <mark class="falta">Falta el NIT</mark>
-          : <span>NIT {config.legal.nit}.</span>}
+        {!falta(config.legal.nit) && <span>NIT {config.legal.nit}.</span>}
       </p>
       <nav class="pie-legales" aria-label="Enlaces legales">
         <a href={enlace("legal/privacidad")}>Privacidad</a>

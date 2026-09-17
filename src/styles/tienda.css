@@ -32,6 +32,10 @@ mark.falta {
 }
 .franja-inner { display: flex; align-items: center; gap: 22px; height: 36px; }
 .franja-item { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+@media (max-width: 360px) {
+  .franja-inner { gap: 12px; }
+  .franja-wa-texto { display: none; }
+}
 .franja-espacio { flex: 1; }
 .franja-item strong { font-weight: 800; }
 
@@ -365,7 +369,7 @@ mark.falta {
   display: flex; align-items: center; justify-content: space-between; gap: 20px;
   background: var(--azul-hondo);
   border-radius: var(--radio-lg); overflow: hidden;
-  color: #fff; padding: 0 0 0 52px;
+  color: #fff; padding: 0 0 48px 52px;
   opacity: 0; visibility: hidden;
   transition: opacity .45s ease;
 }
@@ -383,6 +387,15 @@ mark.falta {
   font-weight: 800; margin: 14px 0 10px; color: #fff;
 }
 .carrusel-pieza p { font-size: 1rem; color: #e3f3fc; margin-bottom: 20px; max-width: 46ch; }
+.franja-tyc {
+  font-size: .78rem;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.franja-tyc:hover { color: var(--tinta); }
 
 .carrusel-arte { position: relative; width: 42%; height: 100%; flex: none; }
 .arte-circulo {
@@ -475,6 +488,8 @@ mark.falta {
 }
 .garantia strong { display: block; font-size: .86rem; font-weight: 700; }
 .garantia small { font-size: .76rem; color: var(--text-muted); }
+.garantia-tyc a { font-size: .76rem; color: var(--azul); text-decoration: underline; font-weight: 600; }
+.garantia-tyc a:hover { color: var(--azul-hondo); }
 
 @media (max-width: 900px) {
   .carrusel-pista { height: 250px; }
@@ -758,6 +773,109 @@ mark.falta {
 }
 .aviso.visible { opacity: 1; transform: translate(-50%, 0); }
 
+/* ---------- ventana emergente de oferta ---------- */
+.popup-fondo {
+  display: none; position: fixed; inset: 0; z-index: 120;
+  background: rgba(10, 20, 32, .55); backdrop-filter: blur(2px);
+  align-items: center; justify-content: center; padding: 20px;
+}
+.popup-oferta {
+  position: relative; width: min(480px, 100%);
+  background: var(--surface); border-radius: var(--radio-lg);
+  padding: 30px 28px 28px; text-align: center;
+  box-shadow: 0 24px 70px rgba(10, 20, 32, .35);
+  border-top: 6px solid var(--amarillo);
+}
+.popup-oferta.popup-flash {
+  width: min(920px, 60vw);
+  max-height: calc(100vh - 80px);
+  overflow: auto;
+  padding: 30px 34px 26px;
+  text-align: left;
+}
+.popup-flash-pieza { display: none; }
+.popup-flash-pieza.activa {
+  display: grid;
+  grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+.popup-flash-foto {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-lg);
+  padding: 20px;
+  overflow: hidden;
+}
+.popup-flash-foto img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: var(--radio);
+}
+.popup-flash-datos .ficha-precio { margin: 16px 0; }
+.popup-flash-descripcion { color: var(--text-soft); font-size: .92rem; line-height: 1.6; margin-bottom: 20px; }
+.popup-flash-controles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.popup-flash-flecha {
+  width: 38px;
+  height: 38px;
+  border-radius: 99px;
+  border: 1px solid var(--borde);
+  background: var(--surface);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.popup-flash-flecha:hover { border-color: var(--azul); color: var(--azul); }
+.popup-flash-anterior svg { transform: scaleX(-1); }
+.popup-flash-puntos { display: flex; gap: 8px; }
+.popup-flash-punto {
+  width: 26px;
+  height: 26px;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.popup-flash-punto::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 99px;
+  background: var(--border-strong);
+  transition: width .25s ease, background .25s ease;
+}
+.popup-flash-punto.activo::before { width: 22px; background: var(--amarillo-hondo); }
+.popup-oferta-etiqueta {
+  display: inline-block; background: var(--amarillo); color: var(--texto-sobre-acento);
+  font-family: var(--font-display); font-size: .7rem; font-weight: 800;
+  letter-spacing: .06em; padding: 5px 12px; border-radius: 99px;
+}
+.popup-oferta h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -.012em; margin: 14px 0 8px; }
+.popup-oferta p { color: var(--text-soft); font-size: .95rem; line-height: 1.55; }
+.popup-oferta .boton { margin-top: 18px; }
+.popup-oferta-cerrar {
+  position: absolute; top: 12px; right: 14px;
+  background: none; border: 0; cursor: pointer; color: var(--text-muted);
+  padding: 6px; border-radius: 8px;
+}
+.popup-oferta-cerrar:hover { background: var(--bg-soft); color: var(--text); }
+
 @media (max-width: 860px) {
   .carrito-columnas { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; }
   .carrito-datos { border-left: 0; border-top: 1px solid var(--borde); }
@@ -922,4 +1040,20 @@ mark.falta {
   .arte-isotipo, .arte-icono { display: none; }
   .carrusel-puntos { left: 18px; }
   .cierre { padding: 24px; }
+}
+
+/* En el celular más angosto el texto ocupa más líneas: se le da más alto
+   a la pista para que el botón no alcance los puntos. */
+@media (max-width: 360px) {
+  .carrusel-pista { height: 365px; }
+}
+
+@media (max-width: 900px) {
+  .popup-oferta.popup-flash {
+    width: min(480px, calc(100vw - 40px));
+    max-height: calc(100vh - 60px);
+    padding: 26px 22px 22px;
+  }
+  .popup-flash-pieza.activa { grid-template-columns: 1fr; gap: 18px; }
+  .popup-flash-foto img { max-height: 240px; }
 }

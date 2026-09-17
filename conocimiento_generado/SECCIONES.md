@@ -9,7 +9,8 @@ y cómo se agrega un elemento.
 
 - **Cómo se llama para el cliente:** "la barra verde de arriba"
 - **Dónde está:** `src/datos/config.json` → `envio` y `whatsapp_visible`
-- **Qué muestra:** envío gratis desde, tiempo de entrega y el WhatsApp
+- **Qué muestra:** envío gratis desde, tiempo de entrega, el WhatsApp y el enlace
+  "Aplica TyC" junto al domicilio gratis (`config.json` → `envio.tyc` y `tyc_enlace`)
 - **Límite:** en celular se ocultan el tiempo de entrega y las sedes por falta de espacio.
   No agregar más textos aquí.
 
@@ -50,6 +51,24 @@ y cómo se agrega un elemento.
   el manual.
 - **Cómo se agrega uno:** un objeto con etiqueta, titulo, texto, boton, enlace e imagen.
 - **Se mueve solo** cada 6 segundos, y se detiene al pasar el ratón.
+
+---
+
+## Ventana emergente de oferta (todas las páginas)
+
+- **Cómo se llama:** "la ventanita que sale al abrir la página"
+- **Dónde está:** los productos salen del catálogo, marcados con `promo_flash: true`;
+  los textos fijos están en `src/datos/home.json` → `popup_oferta`; el diseño en
+  `src/components/VentanaOferta.astro`
+- **Cuándo aparece:** solo al abrir el sitio, una vez por hora por persona, y únicamente si al
+  menos un producto disponible y sin fórmula médica tiene `promo_flash: true`. Si
+  ninguno tiene la marca, no se dibuja nada.
+- **Cómo se ve:** volante grande (60% de pantalla en computador): foto a la izquierda,
+  descripción breve a la derecha y botones de ver detalle y agregar. Si hay varios
+  productos marcados, rotan dentro de la ventana con flechas y puntos.
+- **Para activarla:** poner `"promo_flash": true` en el producto elegido. El
+  propietario indica cuál; no inventar ofertas.
+- **Se cierra** con la X, tocando el fondo o con Escape.
 
 ---
 
@@ -160,6 +179,6 @@ y cómo se agrega un elemento.
 ## Legales
 
 - **Dónde está:** `src/datos/legal.json`
-- **Tres documentos:** privacidad, tratamiento de datos y términos
+- **Cuatro documentos:** privacidad, tratamiento de datos, términos y domicilios
 - **Cada uno** es una lista de secciones con título y texto
 - **Al cambiar algo**, actualizar también la fecha en `actualizado`

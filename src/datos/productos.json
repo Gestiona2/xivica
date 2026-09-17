@@ -387,7 +387,8 @@
   "presentacion": "120 ml · 2 Loción",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
+  "promo_flash": true,
   "imagenes": [
    "7702123010999-1-600x600.webp",
    "7702123010999-4-600x600.webp",
@@ -1893,6 +1894,7 @@
   "rx": null,
   "stock": true,
   "destacado": false,
+  "promo_flash": true,
   "imagenes": [
    "100026246_1-600x600.webp",
    "100026246_4-600x600.webp",
@@ -2020,6 +2022,7 @@
   "rx": null,
   "stock": true,
   "destacado": false,
+  "promo_flash": true,
   "imagenes": [
    "200041273_1-1-600x600.webp",
    "200041273_1-600x600.webp",
@@ -7345,7 +7348,7 @@
   "presentacion": "400 ml · Shampoo",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "CHA.SEDAL-KER.ANT_.-400MLACO-SED-340ML-UND-600x600.webp",
    "7501056330255-1-300x300.webp",
@@ -7421,7 +7424,7 @@
   "presentacion": "1200 mg · 60 unidades",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-600x1043.webp",
    "100020743_1-300x300.webp",
@@ -7446,7 +7449,7 @@
   "presentacion": "70 g · Gel",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "SUNFACE-GEL-SPF50-X-70GR-600x778.webp",
    "AZITROMICINA-500-MG-3-TAB-AG-300x300.webp",
@@ -7471,7 +7474,7 @@
   "presentacion": "80 g",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "SUNSTOP-TOTAL-CREM-SPF50-X-80GR.webp",
    "200004719_1-300x300.webp",
@@ -7744,7 +7747,7 @@
   "presentacion": "30 unidades",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "WINNY-ULTSEC-ET.5-XXG-PAQ-X-30-600x600.webp",
    "100026042_1-300x300.webp",
@@ -7898,7 +7901,7 @@
   "presentacion": "50 unidades",
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "VITAMINA-E-1000-IU-SOFTGELS-FCO-X-50-HEALTHY-AMERI-600x600.webp",
    "OMEGA-3-FISH-OIL-1200-MG-X-60-SOFGELS-HEALTHY-AMERICA-1-300x300.webp",
@@ -8642,7 +8645,7 @@
   "presentacion": null,
   "rx": null,
   "stock": true,
-  "destacado": false,
+  "destacado": true,
   "imagenes": [
    "TINTE-BIGEN-N.58-NEGR-INT-600x600.webp",
    "200041273_1-1-300x300.webp",

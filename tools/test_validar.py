@@ -75,6 +75,22 @@ class CamposQueAntesSeEscapabanTest(unittest.TestCase):
     def test_destacado_como_texto_es_error(self):
         self.assertTrue(any("destacado" in e for e in validar([dict(BUENO, destacado="true")])))
 
+    def test_promo_flash_como_texto_es_error(self):
+        self.assertTrue(any("promo_flash" in e for e in validar([dict(BUENO, promo_flash="si")])))
+
+    def test_promo_flash_acepta_true_false_y_ausente(self):
+        for valor in (True, False, None):
+            producto = dict(BUENO)
+            if valor is None:
+                producto.pop("promo_flash", None)
+            else:
+                producto["promo_flash"] = valor
+            self.assertEqual(validar([producto]), [], valor)
+
+    def test_promo_flash_con_formula_o_sin_existencias_es_error(self):
+        self.assertTrue(any("promo_flash" in e for e in validar([dict(BUENO, promo_flash=True, rx=True)])))
+        self.assertTrue(any("promo_flash" in e for e in validar([dict(BUENO, promo_flash=True, stock=False)])))
+
     def test_titulo_vacio_es_error(self):
         self.assertTrue(any("titulo" in e for e in validar([dict(BUENO, titulo="  ")])))
 

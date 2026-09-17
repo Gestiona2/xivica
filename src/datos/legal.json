@@ -45,12 +45,31 @@
         "texto": "Los precios publicados están en pesos colombianos e incluyen impuestos. Pueden cambiar sin aviso previo. Que un producto aparezca en el catálogo no garantiza que haya existencias: la droguería confirma disponibilidad antes de despachar." },
       { "titulo": "Cómo se cierra un pedido",
         "texto": "El pedido se confirma cuando la droguería responde por WhatsApp indicando disponibilidad, total y tiempo de entrega. Hasta ese momento no hay compraventa." },
+      { "titulo": "Pedido a domicilio",
+        "texto": "En la zona de cobertura cercana el domicilio es gratis sin importar el valor del pedido. Si la dirección está por fuera de esa zona, la droguería informa el costo del envío antes de despachar." },
       { "titulo": "Medicamentos que requieren fórmula",
-        "texto": "Los medicamentos de control especial solo se dispensan contra presentación de fórmula médica vigente, en original, al momento de la entrega. Sin ella no se entrega el producto, aunque se haya solicitado." },
+        "texto": "Los medicamentos que requieren fórmula médica solo se entregan contra presentación de la fórmula vigente, en original, al momento de la entrega. Sin ella no se entrega el producto, aunque se haya solicitado." },
       { "titulo": "Devoluciones",
         "texto": "Por tratarse de productos para la salud, no se aceptan devoluciones de medicamentos una vez entregados, salvo defecto de fábrica, error en el despacho o producto vencido. En esos casos se cambia o se devuelve el dinero." },
       { "titulo": "Advertencia de salud",
         "texto": "La información de este sitio es orientativa y no reemplaza la consulta con un médico. El uso de medicamentos sin prescripción es responsabilidad de quien los consume." }
+    ]
+  },
+
+  "domicilios": {
+    "titulo": "Condiciones del domicilio",
+    "entrada": "Cómo funciona el envío de tus pedidos a domicilio.",
+    "secciones": [
+      { "titulo": "Zona de cobertura",
+        "texto": "Repartimos en Bogotá y alrededores desde nuestras sedes, en 45 a 90 minutos según la zona y la hora del día." },
+      { "titulo": "Domicilio gratis",
+        "texto": "En la zona cercana de cobertura el domicilio es gratis sin importar el valor del pedido, por pequeño que sea." },
+      { "titulo": "Si pides desde más lejos",
+        "texto": "Cuando la dirección está por fuera de la zona cercana, la droguería te informa el costo del envío por WhatsApp antes de despachar. Nada sale sin que lo hayas aprobado." },
+      { "titulo": "Confirmación y pago",
+        "texto": "El pedido se confirma por WhatsApp con el total y el tiempo de entrega. Puedes pagar en efectivo, por transferencia o con datáfono al recibir." },
+      { "titulo": "Medicamentos con fórmula",
+        "texto": "Los productos que requieren fórmula médica se entregan únicamente con la fórmula vigente, en original, al recibir el domicilio." }
     ]
   }
 }

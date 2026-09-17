@@ -46,6 +46,20 @@ Para quitar la oferta, poner los dos en `null`:
 
 ---
 
+## Marcar un producto como promoción relámpago
+
+En `src/datos/productos.json`, buscar el producto por su nombre y agregar:
+
+```json
+"promo_flash": true
+```
+
+Solo se usa para la ventana grande que aparece al abrir la página. Vale únicamente
+en productos disponibles y que no requieran fórmula médica. Para apagarla, ponerlo
+en `false` o quitar la línea; si ningún producto tiene la marca, la ventana no sale.
+
+---
+
 ## Agregar un producto nuevo
 
 Copiar un producto parecido del archivo y cambiarle los datos. Los campos obligatorios son
