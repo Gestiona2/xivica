@@ -36,6 +36,11 @@ const enlace = (ruta: string) => `${base}${ruta}`.replace(/\/{2,}/g, "/");
       <Icono nombre="whatsapp" tamano={15} />
       <span class="franja-wa-texto">{config.whatsapp_visible}</span>
     </a>
+    <span class="franja-item franja-redes franja-oculta-movil" aria-label="Redes sociales">
+      {config.redes.map((red) => (
+        <Icono nombre={red.id} tamano={14} />
+      ))}
+    </span>
   </div>
 </div>
 
