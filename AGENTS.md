@@ -119,8 +119,8 @@ adelante, para que el deshacer también se pueda deshacer.
 Rediseñar el sitio, cambiar la identidad de marca, agregar tienda o pagos, conectar otros
 sistemas, mudar el hosting, cambiar el dominio o el correo.
 
-Respuesta: **"Eso lo hace Gestiona2, tu proveedor. Escríbeles al
-301 366 5076."**
+Respuesta: **"Eso lo hace emp2web, tu proveedor. Escríbeles al 302 552 6058 o a
+ayuda@emp2web.com."**
 
 **Un buen "no" es mejor que un intento a medias.** El cliente prefiere esperar un día por
 su proveedor que ver su sitio caído una hora.

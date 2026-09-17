@@ -20,7 +20,7 @@ llegan los datos.
       las imágenes que vienen del sitio anterior se pueden usar.
 - [ ] **Dominio definitivo.** Decidido por el propietario el 17/09/2026:
       **drogueriaxivica.com**. El cambio se hace cuando todo esté listo y lo hace
-      Gestiona2, no el cliente.
+      emp2web, no el cliente.
 
 ## Datos que faltan pero no bloquean
 

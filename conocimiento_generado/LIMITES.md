@@ -44,7 +44,7 @@ filtrar. Es una duplicación conocida: si se cambia una, hay que cambiar la otra
 Rediseñar el sitio, cambiar la identidad de marca, agregar pago en línea, conectar el
 inventario de la droguería, mudar el hosting o cambiar el dominio.
 
-**Eso lo hace Gestiona2. WhatsApp 301 366 5076.**
+**Eso lo hace emp2web: 302 552 6058 o ayuda@emp2web.com.**
 
 ## Detente y avisa si
 

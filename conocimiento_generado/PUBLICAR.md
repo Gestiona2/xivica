@@ -71,4 +71,4 @@ PUBLIC_BASE: /          (en vez de /xivica/)
 PUBLIC_SITE: https://el-dominio-nuevo.com
 ```
 
-Eso lo hace Gestiona2, no el cliente.
+Eso lo hace emp2web, no el cliente.

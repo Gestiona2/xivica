@@ -58,5 +58,5 @@ Ese último es el más importante y solo lo puede resolver el regente.
 
 ## Si algo se ve raro
 
-Recarga con **Ctrl+F5**. Si sigue igual, escríbele a Gestiona2 al **301 366 5076**
-contando qué esperabas ver y qué viste.
+Recarga con **Ctrl+F5**. Si sigue igual, escríbele a emp2web al **302 552 6058** o a
+**ayuda@emp2web.com** contando qué esperabas ver y qué viste.
