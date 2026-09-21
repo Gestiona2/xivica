@@ -7,13 +7,18 @@
  * el inicio diga que es Xivica y que beneficio ofrece.
  *
  * El arte se construye con los recursos graficos del manual (cap. 30): el
- * circulo y la curva amarilla del logo. En la primera va el isotipo oficial,
- * sin modificar. No hay fotografias todavia: cuando lleguen, van en el campo
- * "imagen" de src/datos/home.json. Ver PENDIENTES.md.
+ * circulo y la curva amarilla del logo. Si la pieza tiene "foto" en
+ * src/datos/home.json, la foto entra dentro de un circulo con aro amarillo (el
+ * manual permite usar el circulo como marco o mascara, cap. 30) y reemplaza al
+ * isotipo. Sin foto, la pieza muestra el isotipo o un icono.
+ *
+ * La foto va FUERA del contenedor del arte a proposito: ese contenedor se
+ * atenua en celular y no debe apagar la cara de una persona.
  */
 import home from "../datos/home.json";
 import config from "../datos/config.json";
 import Icono from "./Icono.astro";
+import Foto from "./Foto.astro";
 
 const base = import.meta.env.BASE_URL;
 const enlace = (r: string) =>
@@ -50,7 +55,7 @@ const ICONOS = ["", "camion", "receta"];
         <div class="carrusel-arte" aria-hidden="true">
           <span class="arte-circulo"></span>
           <span class="arte-curva"></span>
-          {indice === 0 ? (
+          {banner.foto ? null : indice === 0 ? (
             <img
               class="arte-isotipo"
               src={`${base}img/isotipo-xivica.svg`}
@@ -63,6 +68,17 @@ const ICONOS = ["", "camion", "receta"];
             <span class="arte-icono"><Icono nombre={ICONOS[indice] || "escudo"} tamano={96} grosor={1.4} /></span>
           )}
         </div>
+
+        {banner.foto && (
+          <div class="arte-foto">
+            <Foto
+              nombre={banner.foto}
+              alt={banner.foto_alt}
+              sizes="(max-width: 900px) 96px, 300px"
+              prioridad={indice === 0}
+            />
+          </div>
+        )}
       </article>
     ))}
   </div>

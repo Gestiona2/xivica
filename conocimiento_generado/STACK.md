@@ -6,6 +6,7 @@
 |---|---|---|
 | Astro | 7 | Genera las 427 páginas HTML |
 | Tailwind CSS | 4 | Sistema de estilos, usado solo para los tokens de color |
+| sharp | 0.35 | Lee las medidas de cada foto al compilar, para que la página no salte al cargarla |
 | Manrope e Inter | variables | Tipografías oficiales del manual, guardadas en `public/fonts/` |
 | JavaScript | módulos ES | Buscador, carrito, filtros. Sin frameworks ni librerías |
 | Leaflet | 1.9.4 | Mapa de las sedes. Se descarga solo al llegar a esa sección |
@@ -44,6 +45,7 @@ conocimiento_generado/  Esta documentación
 | Los colores o la tipografía | `src/styles/global.css` |
 | Cómo se ve una tarjeta de producto | `src/components/TarjetaProducto.astro` **y** `src/scripts/tarjeta.js` |
 | El logo | `public/img/isotipo-xivica.svg` y `src/components/Logo.astro` |
+| Una foto de sede, portada o Nosotros | `public/img/fotos/` y el campo `foto` del JSON. Se dibuja con `src/components/Foto.astro` |
 | El tagline "Cerca cuando la necesitas" | `src/datos/config.json` → `tagline` |
 | Qué productos salen destacados | `src/scripts/destacados.js` |
 
@@ -67,7 +69,8 @@ publicado no necesita Python.
 | `revisar-css.py` | Comprueba que no se use un color que no existe |
 | `normalizar.py` | Convirtió el catálogo viejo al formato nuevo. Ya se usó |
 | `enriquecer.py` | Dedujo presentación, marca y tipo de cada producto. Ya se usó |
-| `preparar-imagenes.py` | Copió y optimizó las fotos. Ya se usó |
+| `preparar-imagenes.py` | Copió y optimizó las fotos de los productos. Ya se usó |
+| `preparar_fotos.py` | **Se sigue usando.** Recorta y optimiza las fotos de sedes, portada y Nosotros |
 
 ## Rendimiento medido
 

@@ -13,6 +13,7 @@ import BarraOfertas from "../components/BarraOfertas.astro";
 import GrillaProductos from "../components/GrillaProductos.astro";
 import FranjaGarantias from "../components/FranjaGarantias.astro";
 import Icono from "../components/Icono.astro";
+import Foto from "../components/Foto.astro";
 import { elegirDestacados } from "../scripts/destacados.js";
 import productos from "../datos/productos.json";
 import categorias from "../datos/categorias.json";
@@ -101,7 +102,11 @@ const falta = (v: string) => v === "PENDIENTE";
       <div class="inicio-sedes">
         {config.sedes.map((sede) => (
           <article class="inicio-sede">
-            <span class="icono-circulo"><Icono nombre="ubicacion" tamano={20} /></span>
+            {sede.foto ? (
+              <Foto nombre={sede.foto} alt={sede.foto_alt} sizes="88px" clase="inicio-sede-foto" />
+            ) : (
+              <span class="icono-circulo"><Icono nombre="ubicacion" tamano={20} /></span>
+            )}
             <div>
               <h3>{sede.nombre}</h3>
               <p>{sede.direccion}</p>

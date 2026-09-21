@@ -1076,7 +1076,8 @@ a.pie-red:hover { border-color: var(--azul); }
 .cierre p { color: #d6e2ec; margin-top: 6px; max-width: 56ch; }
 
 .pie-tagline {
-  font-family: var(--font-display); font-weight: 700; color: var(--verde);
+  /* --verde da 4.35:1 sobre el gris del pie; el tono de texto llega a 6.03:1. */
+  font-family: var(--font-display); font-weight: 700; color: var(--verde-texto);
   font-size: .95rem; margin-top: 12px;
 }
 .valores { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; list-style: none; }
@@ -1113,4 +1114,64 @@ a.pie-red:hover { border-color: var(--azul); }
   }
   .popup-flash-pieza.activa { grid-template-columns: 1fr; gap: 18px; }
   .popup-flash-foto img { max-height: 240px; }
+}
+
+
+/* ============================================================
+   FOTOGRAFIAS: portada, sedes y nosotros
+   El manual pide personas reales y puntos de venta (cap. 33 y 52),
+   sin filtros ni sombras pesadas (cap. 31): solo recorte y aro.
+   ============================================================ */
+
+/* Portada: la foto entra en el circulo de marca, con el aro amarillo del logo. */
+.arte-foto {
+  position: absolute; right: 46px; top: 50%; transform: translateY(-50%);
+  width: 300px; height: 300px; border-radius: 50%; overflow: hidden;
+  border: 8px solid var(--amarillo); background: var(--azul-marca);
+}
+.arte-foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Sedes: la foto sangra hasta el borde de la tarjeta. */
+.sede-foto {
+  margin: -22px -22px 18px; aspect-ratio: 4 / 3; overflow: hidden;
+  border-radius: calc(var(--radio-lg) - 1px) calc(var(--radio-lg) - 1px) 0 0;
+  background: var(--bg-soft);
+}
+.sede-foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.sede-foto-vacia {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: var(--azul-claro); color: var(--azul); font-size: .82rem; font-weight: 600;
+}
+
+/* Portada, seccion de sedes: miniatura en lugar del icono. */
+.inicio-sede-foto {
+  width: 88px; height: 88px; flex: none; object-fit: cover; border-radius: 14px;
+}
+
+/* Nosotros */
+.foto-principal { margin: 22px 0 8px; }
+.foto-principal img, .galeria img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--radio-lg); background: var(--bg-soft);
+}
+.foto-principal figcaption, .galeria figcaption {
+  font-size: .8rem; color: var(--text-muted); margin-top: 8px;
+}
+.galeria { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 12px; }
+.galeria figure { margin: 0; }
+
+@media (max-width: 900px) {
+  /* En celular la foto pasa a ser un circulo chico junto al boton: no tapa el
+     texto y la cara sigue viendose (el contenedor de arte se atenua, esta no). */
+  .arte-foto {
+    right: 16px; top: auto; bottom: 36px; transform: none;
+    width: 80px; height: 80px; border-width: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .galeria { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  /* Una tarjeta debajo de otra: el marcador de foto no necesita tanto alto. */
+  .sede-foto-vacia { aspect-ratio: 16 / 6; }
 }

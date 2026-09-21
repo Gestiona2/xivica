@@ -6,7 +6,7 @@ import json
 import tempfile
 from pathlib import Path
 
-from validar import validar, leer_catalogo
+from validar import validar, leer_catalogo, validar_fotos
 
 BUENO = {
     "slug": "abc", "titulo": "ABC", "precio": 1000, "precio_antes": None,
@@ -126,6 +126,79 @@ class PrecioSospechosoTest(unittest.TestCase):
 
     def test_el_producto_mas_caro_del_catalogo_pasa(self):
         self.assertEqual(validar([dict(BUENO, precio=240000)]), [])
+
+
+class FotosDelSitioTest(unittest.TestCase):
+    """Las fotos que se eligen en config.json, home.json y nosotros.json.
+    Una foto mal escrita dejaria una imagen rota en la web publicada."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        raiz = Path(self._tmp.name)
+        self.datos = raiz / "datos"
+        self.img = raiz / "img"
+        (self.img / "fotos").mkdir(parents=True)
+        self.datos.mkdir()
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def _foto(self, nombre, ancho=600):
+        (self.img / "fotos" / f"{nombre}-{ancho}.webp").write_bytes(b"x")
+
+    def _datos(self, archivo, contenido):
+        (self.datos / archivo).write_text(json.dumps(contenido), encoding="utf-8")
+
+    def test_foto_que_existe_con_texto_alternativo_pasa(self):
+        self._foto("fachada")
+        self._datos("config.json", {"sedes": [{"foto": "fotos/fachada", "foto_alt": "Fachada"}]})
+        self.assertEqual(validar_fotos(self.datos, self.img), [])
+
+    def test_foto_que_no_existe_es_error_y_dice_como_prepararla(self):
+        self._datos("config.json", {"sedes": [{"foto": "fotos/nada", "foto_alt": "x"}]})
+        errores = validar_fotos(self.datos, self.img)
+        self.assertEqual(len(errores), 1)
+        self.assertIn("fotos/nada", errores[0])
+        self.assertIn("preparar_fotos.py", errores[0])
+
+    def test_dice_en_que_archivo_y_lugar_esta_el_error(self):
+        self._datos("home.json", {"banners": [{"foto": "fotos/nada", "foto_alt": "x"}]})
+        self.assertIn("home.json", validar_fotos(self.datos, self.img)[0])
+
+    def test_foto_sin_texto_alternativo_es_error(self):
+        # Sin foto_alt, un lector de pantalla no puede describirla.
+        self._foto("fachada")
+        self._datos("config.json", {"sedes": [{"foto": "fotos/fachada"}]})
+        self.assertTrue(any("foto_alt" in e for e in validar_fotos(self.datos, self.img)))
+
+    def test_texto_alternativo_vacio_es_error(self):
+        self._foto("fachada")
+        self._datos("config.json", {"sedes": [{"foto": "fotos/fachada", "foto_alt": "  "}]})
+        self.assertTrue(any("foto_alt" in e for e in validar_fotos(self.datos, self.img)))
+
+    def test_encuentra_fotos_anidadas_a_cualquier_profundidad(self):
+        self._datos("nosotros.json", {"galeria": {"fila": [{"foto": "fotos/oculta", "foto_alt": "x"}]}})
+        self.assertEqual(len(validar_fotos(self.datos, self.img)), 1)
+
+    def test_foto_vacia_es_error(self):
+        self._datos("config.json", {"sedes": [{"foto": "", "foto_alt": "x"}]})
+        self.assertEqual(len(validar_fotos(self.datos, self.img)), 1)
+
+    def test_sede_sin_foto_es_valido(self):
+        # No todas las sedes tienen foto todavia; es un estado normal.
+        self._datos("config.json", {"sedes": [{"nombre": "Verbenal"}]})
+        self.assertEqual(validar_fotos(self.datos, self.img), [])
+
+    def test_cualquier_tamano_cuenta_como_existente(self):
+        self._foto("redonda", ancho=620)   # una foto pequena solo tiene un tamano
+        self._datos("home.json", {"banners": [{"foto": "fotos/redonda", "foto_alt": "x"}]})
+        self.assertEqual(validar_fotos(self.datos, self.img), [])
+
+    def test_no_confunde_dos_fotos_con_nombre_parecido(self):
+        # "fachada-calle-600.webp" no es una version de "fachada"
+        self._foto("fachada-calle")
+        self._datos("config.json", {"sedes": [{"foto": "fotos/fachada", "foto_alt": "x"}]})
+        self.assertEqual(len(validar_fotos(self.datos, self.img)), 1)
 
 
 class SintaxisTest(unittest.TestCase):

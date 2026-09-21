@@ -221,6 +221,67 @@ def validar(productos, carpeta_imagenes=None, categorias=None):
     return errores
 
 
+def _objetos_con_foto(dato, donde):
+    """Recorre un JSON entero y devuelve (donde, objeto) por cada objeto con la clave 'foto'.
+
+    Busca a cualquier profundidad, asi una foto nueva en una seccion nueva queda
+    cubierta sin tocar el validador.
+    """
+    if isinstance(dato, dict):
+        if "foto" in dato:
+            yield donde, dato
+        for clave, valor in dato.items():
+            yield from _objetos_con_foto(valor, f"{donde} → {clave}")
+    elif isinstance(dato, list):
+        for indice, valor in enumerate(dato):
+            yield from _objetos_con_foto(valor, f"{donde}[{indice}]")
+
+
+def _existe_alguna_version(carpeta_imagenes, foto):
+    """La foto 'fotos/fachada' existe si hay 'fotos/fachada-<ancho>.webp'.
+
+    El ancho tiene que ser un numero: asi 'fachada-calle-600.webp' no se toma
+    por una version de 'fachada'.
+    """
+    ruta = Path(carpeta_imagenes) / foto
+    patron = re.compile(rf"^{re.escape(ruta.name)}-\d+\.webp$")
+    return ruta.parent.is_dir() and any(patron.match(a.name) for a in ruta.parent.iterdir())
+
+
+def validar_fotos(carpeta_datos, carpeta_imagenes):
+    """Revisa las fotos que se eligen en los JSON del sitio (sedes, portada, nosotros).
+
+    Una foto que no existe deja una imagen rota en la web publicada, y sin
+    texto alternativo un lector de pantalla no puede describirla.
+    """
+    errores = []
+    for archivo in sorted(Path(carpeta_datos).glob("*.json")):
+        if archivo.name == "productos.json":   # sus imagenes ya las revisa validar()
+            continue
+        try:
+            datos = json.loads(archivo.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue   # un JSON roto ya lo detiene la compilacion
+
+        for donde, objeto in _objetos_con_foto(datos, archivo.name):
+            foto = objeto["foto"]
+            if not isinstance(foto, str) or not foto.strip():
+                errores.append(f"{donde}: 'foto' esta vacia. Pon el nombre de la foto o quita el campo.")
+                continue
+            if not _existe_alguna_version(carpeta_imagenes, foto):
+                errores.append(
+                    f"{donde}: la foto '{foto}' no existe en public/img. Se prepara con: "
+                    f"python3 tools/preparar_fotos.py ORIGEN {foto}"
+                )
+            alt = objeto.get("foto_alt")
+            if not isinstance(alt, str) or not alt.strip():
+                errores.append(
+                    f"{donde}: la foto '{foto}' necesita 'foto_alt', una frase que la describa "
+                    f"para quien usa lector de pantalla."
+                )
+    return errores
+
+
 def cargar_categorias(ruta_catalogo):
     """Las categorias validas, leidas de categorias.json junto al catalogo."""
     ruta = Path(ruta_catalogo).parent / "categorias.json"
@@ -236,6 +297,8 @@ def main(ruta, carpeta_imagenes=None):
         return 1
 
     errores = validar(productos, carpeta_imagenes, cargar_categorias(ruta))
+    if carpeta_imagenes:
+        errores += validar_fotos(Path(ruta).parent, carpeta_imagenes)
 
     if errores:
         print(f"{len(errores)} problema(s) en {ruta}:\n")

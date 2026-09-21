@@ -126,3 +126,18 @@ competir con mensajes de urgencia.
 
 Llamados a la acción aprobados: *Escríbenos · Consulta disponibilidad · Pide el tuyo ·
 Encuéntranos cerca · Habla con nuestro equipo · Estamos para ayudarte.*
+
+## Fotografía
+
+Del manual, capítulos 33 y 34: personas reales, puntos de venta, luz natural, fondos simples.
+**Sin filtros que tiñan la foto de azul o verde**; la marca entra por el aro, los colores y la
+tipografía, no por un filtro.
+
+En el sitio, la foto de una persona entra dentro del círculo con el aro amarillo del logo
+(el manual permite usar el círculo como marco, cap. 30). Solo se recorta: no se retoca.
+
+**Cuidado con lo que sale de fondo.** Una droguería tiene paredes llenas de publicidad de
+laboratorios con promesas de salud. Al recortar, dejar fuera el letrero o reducirlo a un
+detalle: el manual (cap. 56) pide no hacer promesas de salud, y un letrero grande en nuestra
+portada parece que las hacemos nosotros.
+

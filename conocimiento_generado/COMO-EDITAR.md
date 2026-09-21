@@ -236,3 +236,52 @@ qué producto, qué pasa y cómo se escribe bien. Los más comunes:
 | "'rx' debe ser true, false o null" | Quitar las comillas. **Y no cambiar el valor: lo define el regente** |
 | "la categoría no existe. ¿Querías decir…?" | Usar la que sugiere |
 | "la imagen no existe en la carpeta" | Subir la foto a `public/img/` con ese nombre exacto |
+
+---
+
+## Agregar o cambiar la foto de una sede, de la portada o de Nosotros
+
+Una foto de celular pesa medio mega y mide más de 1.500 px. **Nunca se copia tal cual a
+`public/img/`**: haría lenta la página en un teléfono con datos. Se prepara primero.
+
+**1. Prepararla** (recorta, reduce, guarda en WebP y borra los datos ocultos de la foto):
+
+```
+python3 tools/preparar_fotos.py RUTA/DE/LA/FOTO.jpg fotos/nombre-de-la-foto --relacion 4:3
+```
+
+| Dónde va | `--relacion` |
+|---|---|
+| Tarjeta de una sede (página Sedes) | `4:3` |
+| Foto grande de Nosotros | `3:2` |
+| Fotos del interior (galería de Nosotros) | `16:9` |
+| Círculo de la portada | `--recorte x0,y0,x1,y1` (caja en píxeles, cuadrada) |
+
+Si en el recorte se corta algo importante, `--centro 0.5,0` conserva la parte de arriba
+(`0.5,0.5` es el centro; el segundo número sube o baja el recorte).
+
+**2. Ponerla**, con su descripción. **La descripción (`foto_alt`) es obligatoria**: es lo que
+lee en voz alta un lector de pantalla, y sin ella el sitio no se publica.
+
+- **Sede** → en `src/datos/config.json`, dentro de la sede:
+  ```json
+  "foto": "fotos/nombre-de-la-foto",
+  "foto_alt": "Fachada de la sede Tejares del Norte, con el aviso azul sobre la puerta"
+  ```
+- **Portada** → en `src/datos/home.json`, dentro de `banners[0]` (o cualquier banner).
+- **Nosotros** → en `src/datos/nosotros.json`: `foto_principal` es la grande y `galeria` es
+  la lista de fotos del interior.
+
+**3. Revisar**: `python3 tools/validar.py src/datos/productos.json public/img`. Avisa si la
+foto no existe o si falta la descripción.
+
+**Antes de usar una foto, tres preguntas:**
+- **¿Sale una persona reconocible?** Hace falta su autorización por escrito (Ley 1581 de
+  2012: una imagen es un dato personal). Preguntar al dueño, no suponer.
+- **¿Se ve un letrero de otra marca con una promesa de salud?** (por ejemplo "les pone fin a
+  los síntomas de…"). Recortar para que no domine la imagen: el manual de marca pide no hacer
+  promesas de salud.
+- **¿La foto es de esa sede?** Si no se sabe, preguntar. Una fachada equivocada en una sede
+  confunde a quien viene a buscarla.
+
+**Sin filtros ni retoques** (el manual de marca, cap. 34): solo recorte.

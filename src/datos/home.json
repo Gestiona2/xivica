@@ -1,5 +1,5 @@
 {
-  "_comentario": "Contenido de la portada. Para cambiar un banner se edita aquí, sin tocar código. Las imágenes de banner que digan placehold.co están pendientes de diseño: ver PENDIENTES.md. La ventana emergente aparece al abrir la página solo si hay productos marcados con promo_flash en true.",
+  "_comentario": "Contenido de la portada. Para cambiar un banner se edita aquí, sin tocar código. Un banner puede llevar una foto con los campos foto y foto_alt: ver conocimiento_generado/COMO-EDITAR.md.",
   "banners": [
     {
       "etiqueta": "DROGUERÍA XIVICA",
@@ -7,7 +7,8 @@
       "texto": "Medicamentos, cuidado personal y bienestar con atención humana. Te lo llevamos en 45 a 90 minutos.",
       "boton": "Escríbenos",
       "enlace": "whatsapp",
-      "imagen": "banner-marca.webp"
+      "foto": "fotos/atencion-mostrador",
+      "foto_alt": "Integrante del equipo de Droguería Xivica atendiendo una llamada en el mostrador"
     },
     {
       "etiqueta": "DOMICILIOS",

@@ -33,7 +33,7 @@ const falta = (valor: string) => valor === "PENDIENTE";
             <Icono nombre={red.id} tamano={18} />
           </a>
         ) : (
-          <span class="pie-red pie-red-apagada" title={red.nombre} aria-label={red.nombre}>
+          <span class="pie-red pie-red-apagada" role="img" title={red.nombre} aria-label={red.nombre}>
             <Icono nombre={red.id} tamano={18} />
           </span>
         ))}

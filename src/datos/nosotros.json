@@ -3,6 +3,11 @@
   "titulo": "Cuidado confiable y cercano",
   "entrada": "Droguería Xivica abrió en 2021 como un proyecto familiar: el nombre une los de sus propietarios, con la idea de construir un negocio que pase a las siguientes generaciones. Hoy atendemos el norte de Bogotá.",
   "proposito": "Existimos para acompañar a las personas y familias en sus necesidades cotidianas de salud y bienestar, con atención cercana, confiable y profesional.",
+  "foto_principal": {
+    "foto": "fotos/fachada-villa-del-prado-calle",
+    "foto_alt": "Droguería Xivica en Villa del Prado vista desde la calle, con el aviso azul sobre la puerta",
+    "pie": "Sede Villa del Prado · Cra 49B #171a-92"
+  },
   "bloques": [
     {
       "titulo": "Te atiende una persona",
@@ -28,5 +33,18 @@
     "Precio justo",
     "Tradición",
     "Responsabilidad"
+  ],
+  "galeria_titulo": "Así es por dentro",
+  "galeria": [
+    {
+      "foto": "fotos/interior-mostrador",
+      "foto_alt": "Interior de la droguería: vitrina de vidrio del mostrador y pared amarilla con productos para bebés y niños",
+      "pie": "El mostrador"
+    },
+    {
+      "foto": "fotos/interior-anaqueles",
+      "foto_alt": "Anaqueles de la droguería con medicamentos y productos de cuidado personal, vistos desde el mostrador",
+      "pie": "Los anaqueles"
+    }
   ]
 }

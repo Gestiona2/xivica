@@ -1,5 +1,6 @@
 ---
 import Tienda from "../layouts/Tienda.astro";
+import Foto from "../components/Foto.astro";
 import datos from "../datos/nosotros.json";
 import config from "../datos/config.json";
 
@@ -11,12 +12,38 @@ const falta = (v: string) => v === "PENDIENTE";
     <p class="texto-entrada">{datos.entrada}</p>
     <p class="texto-proposito">{datos.proposito}</p>
 
+    {datos.foto_principal && (
+      <figure class="foto-principal">
+        <Foto
+          nombre={datos.foto_principal.foto}
+          alt={datos.foto_principal.foto_alt}
+          sizes="(max-width: 800px) 92vw, 720px"
+          prioridad
+        />
+        {datos.foto_principal.pie && <figcaption>{datos.foto_principal.pie}</figcaption>}
+      </figure>
+    )}
+
     {datos.bloques.map((bloque) => (
       <section>
         <h2>{bloque.titulo}</h2>
         <p>{bloque.texto}</p>
       </section>
     ))}
+
+    {datos.galeria && (
+      <section>
+        <h2>{datos.galeria_titulo}</h2>
+        <div class="galeria">
+          {datos.galeria.map((item) => (
+            <figure>
+              <Foto nombre={item.foto} alt={item.foto_alt} sizes="(max-width: 700px) 92vw, 350px" />
+              {item.pie && <figcaption>{item.pie}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section>
       <h2>Lo que nos guía</h2>

@@ -1,6 +1,7 @@
 ---
 import Tienda from "../layouts/Tienda.astro";
 import Icono from "../components/Icono.astro";
+import Foto from "../components/Foto.astro";
 import config from "../datos/config.json";
 
 const falta = (v: string) => v === "PENDIENTE";
@@ -19,6 +20,17 @@ const falta = (v: string) => v === "PENDIENTE";
     <div class="sedes">
       {config.sedes.map((sede) => (
         <article class="sede">
+          {sede.foto ? (
+            <figure class="sede-foto">
+              <Foto nombre={sede.foto} alt={sede.foto_alt} sizes="(max-width: 700px) 92vw, 420px" />
+            </figure>
+          ) : (
+            // Marcador honesto: esta sede aun no tiene foto. Ver PENDIENTES.md.
+            <div class="sede-foto sede-foto-vacia" role="img" aria-label={`Foto de la sede ${sede.nombre} pendiente`}>
+              <Icono nombre="tienda" tamano={30} grosor={1.5} />
+              <span>Foto de la sede próximamente</span>
+            </div>
+          )}
           <h2>{sede.nombre}</h2>
           <p class="sede-dato"><Icono nombre="ubicacion" tamano={17} /> {sede.direccion}</p>
           <p class="sede-dato"><Icono nombre="telefono" tamano={17} /> <a href={`tel:${sede.telefono}`}>{sede.telefono_visible}</a></p>
