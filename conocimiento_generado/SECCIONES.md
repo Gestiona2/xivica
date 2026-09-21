@@ -211,12 +211,12 @@ y cómo se agrega un elemento.
   - Tarjeta de cada sede y su miniatura en la portada → `config.json` → `sedes[].foto`
   - Nosotros: la grande → `nosotros.json` → `foto_principal`; las de adentro → `galeria`
 - **Cómo se preparan:** `tools/preparar_fotos.py`. Ver la receta en `COMO-EDITAR.md`.
-- **Cuántas caben bien:** galería de Nosotros, 2 a 4 (con más se vuelve un álbum). Un solo
+- **Cuántas caben bien:** galería de Nosotros, 2 a 4 (con más se vuelve un álbum; hoy son 4, dos por sede). Cada leyenda dice de qué sede es. Un solo
   banner de portada con foto; los otros funcionan mejor con el icono.
 - **Descripción:** cada foto lleva `foto_alt`, una frase corta y concreta. Es obligatoria.
 - **Una sede sin foto** muestra un marcador azul que dice "Foto de la sede próximamente". Es a
   propósito: mantiene las tarjetas alineadas y se ve qué falta. Desaparece solo al poner la foto.
 - **Peso:** cada foto se genera en tres tamaños (600, 900 y 1200 px) y el celular baja el que
-  necesita. Las cinco fotos actuales suman 1,2 MB entre todas sus versiones.
+  necesita. Las ocho fotos actuales suman 2,1 MB entre todas sus versiones.
 - **En celular** la foto de la portada se reduce a un círculo pequeño junto al botón, para no
   tapar el texto.

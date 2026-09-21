@@ -13,9 +13,12 @@ tachado ya está resuelto y queda como registro de cómo se resolvió.
 - [x] ~~Horarios y tercera sede (Verbenal)~~ — cargados. Las coordenadas de las tres siguen
       por confirmar (ver "Confirmar").
 - [x] ~~Manual de marca y logo en vector~~ — aplicado el v2.0.
-- [x] ~~"Otro número de WhatsApp" de la lámina de identidad~~ — era el de Tejares del Norte.
-- [x] ~~Fotos de una sede~~ — llegaron 7 fotos de **Villa del Prado** (21/09). Usadas 5 en la
-      portada, Sedes y Nosotros. Las otras dos son repetidas de la fachada.
+- [x] ~~"Otro número de WhatsApp" de la lámina de identidad~~ — era el de Tejares del Norte, y
+      **la fachada de Tejares lo confirma**: el aviso dice `322 863 66 54`. El número que traía
+      la lámina hecha con IA (`…65 54`) estaba mal; el sitio usa el correcto.
+- [x] ~~Fotos de Villa del Prado y de Tejares del Norte~~ — llegaron 7 y 8 fotos (21/09). Usadas
+      8 en portada, Sedes y Nosotros; las demás son repetidas de la fachada. El dueño confirmó
+      de qué sede es cada carpeta.
 
 ## Bloquean la publicación en el dominio definitivo
 
@@ -40,26 +43,31 @@ tachado ya está resuelto y queda como registro de cómo se resolvió.
 
 - **Correo: `ventas@drogueria`*c*`ivica.com`**, con C, no con X. Puede ser el dominio real o
   un error de digitación. Está en el pie y en Contacto.
-- **Teléfono de Tejares del Norte.** El mensaje del cliente dice 322 863 66**5**4 y la lámina
-  hecha con IA dice 322 863 65**5**4: cambia un dígito. Se cargó el del mensaje.
+- **Dos teléfonos fijos en las fotos de Tejares, y el sitio no muestra ninguno.** La fachada dice
+  `DOMICILIOS 601 805 52 84` y un rótulo del interior dice `Dom: 359 21 22`. El sitio muestra
+  solo celulares, porque así lo pidió el dueño. Confirmar cuál fijo sigue vigente para que el
+  local físico y la web digan lo mismo, y cambiar el rótulo que ya no sirva.
 - **Ubicación exacta de las tres sedes.** Las coordenadas son estimadas (las de Verbenal
   aproximadas por barrio). El botón "Cómo llegar" abre Google Maps **en esas coordenadas**:
   podría mandar al cliente a una cuadra equivocada. Pedir a cada sede la ubicación compartida
   desde WhatsApp o Google Maps.
-- **Que las fotos del interior son de Villa del Prado.** Se asumió porque se tomaron en 100
-  segundos, junto a la fachada, y se ve la misma pared. Confirmar.
-- **Autorización de la persona de la foto de portada.** Es un empleado, reconocible. Una imagen
-  es un dato personal (Ley 1581): hace falta su autorización, idealmente por escrito.
+- **Autorización de la persona de la foto de portada.** Es un empleado de Villa del Prado,
+  reconocible. Una imagen es un dato personal (Ley 1581): hace falta su autorización,
+  idealmente por escrito. Lo mismo aplica a la empleada que sale en una foto del mostrador de
+  Tejares, que **no se usó** por esa razón.
 - **Los 8 productos destacados** son de ejemplo (así lo dice el commit que los marcó). El
   dueño debe elegir cuáles quiere empujar.
 - **Servicios que se ven en las fotos y el sitio no menciona:** "Corresponsal bancario
-  Bancolombia" y "Afiliada a Coopidrogas". Si son servicios vigentes, son un motivo más para
-  visitar la sede. Confirmar antes de publicarlos.
+  Bancolombia" (fachada de Villa del Prado) y "Afiliada a Coopidrogas" (las dos fachadas). Si
+  son servicios vigentes, son un motivo más para visitar la sede. Confirmar antes de publicarlos.
+- **Los rótulos de los anaqueles de Tejares** llevan un logo pequeño que dice "Droguexpress".
+  Aparece en las dos fotos de interior de Tejares que se usaron (se lee al ampliar). Confirmar
+  que es la red a la que están afiliados y que no hay problema en que se vea en la web.
 
 ## Falta material
 
-- [ ] **Fotos de Tejares del Norte y Verbenal** (fachada e interior). En Sedes salen como
-      "Foto de la sede próximamente". Se preparan con `tools/preparar_fotos.py`.
+- [ ] **Fotos de Verbenal** (fachada e interior). En Sedes sale como "Foto de la sede
+      próximamente". Se preparan con `tools/preparar_fotos.py`.
 - [ ] **Fotos del equipo**, con autorización. El manual pide personas reales (cap. 33).
 - [ ] **Fotos para los banners 2 y 3 del carrusel** (domicilio y fórmula médica). Hoy llevan
       icono. Una foto del domiciliario en moto serviría para el primero.

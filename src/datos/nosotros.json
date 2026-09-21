@@ -38,13 +38,23 @@
   "galeria": [
     {
       "foto": "fotos/interior-mostrador",
-      "foto_alt": "Interior de la droguería: vitrina de vidrio del mostrador y pared amarilla con productos para bebés y niños",
-      "pie": "El mostrador"
+      "foto_alt": "Interior de la sede Villa del Prado: vitrina de vidrio del mostrador y pared amarilla con productos para bebés y niños",
+      "pie": "Villa del Prado · El mostrador"
     },
     {
       "foto": "fotos/interior-anaqueles",
-      "foto_alt": "Anaqueles de la droguería con medicamentos y productos de cuidado personal, vistos desde el mostrador",
-      "pie": "Los anaqueles"
+      "foto_alt": "Anaqueles de la sede Villa del Prado con medicamentos y productos de cuidado personal, vistos desde el mostrador",
+      "pie": "Villa del Prado · Los anaqueles"
+    },
+    {
+      "foto": "fotos/interior-tejares-pasillo",
+      "foto_alt": "Pasillo de la sede Tejares del Norte con anaqueles de cuidado personal y analgésicos, y gabinetes blancos al frente",
+      "pie": "Tejares del Norte · Cuidado personal"
+    },
+    {
+      "foto": "fotos/interior-tejares-anaqueles",
+      "foto_alt": "Anaqueles de la sede Tejares del Norte con productos de venta libre y fitoterapéuticos, sobre gabinetes blancos",
+      "pie": "Tejares del Norte · Productos de venta libre"
     }
   ]
 }

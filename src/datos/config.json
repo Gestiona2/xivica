@@ -41,7 +41,9 @@
       "lng": -74.042,
       "horario_semana": "Lunes a sábado: 7:30 a. m. – 9:30 p. m.",
       "horario_festivos": "Domingos y festivos: 9:00 a. m. – 9:00 p. m.",
-      "habilitacion_sanitaria": "MS00017993"
+      "habilitacion_sanitaria": "MS00017993",
+      "foto": "fotos/fachada-tejares-del-norte",
+      "foto_alt": "Fachada de la sede Tejares del Norte: aviso azul con la palabra Droguería Xivica en verde sobre la entrada, en un local de ladrillo con vitrinas a los lados"
     },
     {
       "id": "verbenal",
