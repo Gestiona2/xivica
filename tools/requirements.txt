@@ -1,0 +1,4 @@
+# Lo único que las herramientas de Python necesitan instalado además de Python.
+# Solo lo usa preparar_fotos.py (y sus pruebas); el resto usa la biblioteca estándar.
+#   pip install -r tools/requirements.txt
+Pillow>=10.2,<13

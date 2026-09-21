@@ -24,7 +24,13 @@ import argparse
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageOps
+try:
+    from PIL import Image, ImageOps
+except ModuleNotFoundError:
+    sys.exit(
+        "Falta instalar Pillow, la librería que recorta las fotos.\n"
+        "Se instala una sola vez con:   pip install -r tools/requirements.txt"
+    )
 
 # El sitio muestra tarjetas de ~330 px y fotos anchas de ~760 px, y un celular
 # de alta densidad necesita ~1,75 veces eso. El escalon de 900 evita que el

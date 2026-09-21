@@ -10,7 +10,7 @@
 | Manrope e Inter | variables | Tipografías oficiales del manual, guardadas en `public/fonts/` |
 | JavaScript | módulos ES | Buscador, carrito, filtros. Sin frameworks ni librerías |
 | Leaflet | 1.9.4 | Mapa de las sedes. Se descarga solo al llegar a esa sección |
-| Python | 3.12 | Herramientas locales. **No corre en el servidor** |
+| Python | 3.12 | Herramientas locales. **No corre en el servidor.** Solo `preparar_fotos.py` necesita instalar algo: `pip install -r tools/requirements.txt` (Pillow) |
 
 No hay React, ni Vue, ni jQuery. El sitio publicado es HTML, CSS, JavaScript e imágenes.
 
