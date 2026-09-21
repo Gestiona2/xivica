@@ -51,10 +51,10 @@ tachado ya está resuelto y queda como registro de cómo se resolvió.
   aproximadas por barrio). El botón "Cómo llegar" abre Google Maps **en esas coordenadas**:
   podría mandar al cliente a una cuadra equivocada. Pedir a cada sede la ubicación compartida
   desde WhatsApp o Google Maps.
-- **Autorización de la persona de la foto de portada.** Es un empleado de Villa del Prado,
-  reconocible. Una imagen es un dato personal (Ley 1581): hace falta su autorización,
-  idealmente por escrito. Lo mismo aplica a la empleada que sale en una foto del mostrador de
-  Tejares, que **no se usó** por esa razón.
+- **Autorización de la empleada de la foto del mostrador de Tejares**, que **no se usó** porque
+  sale reconocible. Una imagen es un dato personal (Ley 1581): hace falta su autorización,
+  idealmente por escrito. (La persona de la foto de portada es el propio dueño, que la
+  autorizó el 21/09.)
 - **Los 8 productos destacados** son de ejemplo (así lo dice el commit que los marcó). El
   dueño debe elegir cuáles quiere empujar.
 - **Servicios que se ven en las fotos y el sitio no menciona:** "Corresponsal bancario
