@@ -271,7 +271,7 @@ def validar_fotos(carpeta_datos, carpeta_imagenes):
             if not _existe_alguna_version(carpeta_imagenes, foto):
                 errores.append(
                     f"{donde}: la foto '{foto}' no existe en public/img. Se prepara con: "
-                    f"python3 tools/preparar_fotos.py ORIGEN {foto}"
+                    f"node tools/preparar-fotos.mjs ORIGEN {foto}"
                 )
             alt = objeto.get("foto_alt")
             if not isinstance(alt, str) or not alt.strip():

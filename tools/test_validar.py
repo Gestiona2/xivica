@@ -159,7 +159,7 @@ class FotosDelSitioTest(unittest.TestCase):
         errores = validar_fotos(self.datos, self.img)
         self.assertEqual(len(errores), 1)
         self.assertIn("fotos/nada", errores[0])
-        self.assertIn("preparar_fotos.py", errores[0])
+        self.assertIn("preparar-fotos.mjs", errores[0])
 
     def test_dice_en_que_archivo_y_lugar_esta_el_error(self):
         self._datos("home.json", {"banners": [{"foto": "fotos/nada", "foto_alt": "x"}]})

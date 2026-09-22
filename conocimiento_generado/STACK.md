@@ -6,11 +6,11 @@
 |---|---|---|
 | Astro | 7 | Genera las 427 páginas HTML |
 | Tailwind CSS | 4 | Sistema de estilos, usado solo para los tokens de color |
-| sharp | 0.35 | Lee las medidas de cada foto al compilar, para que la página no salte al cargarla |
+| sharp | 0.35 | Lee las medidas de cada foto al compilar (Foto.astro), y recorta y optimiza las que se agregan (tools/preparar-fotos.mjs) |
 | Manrope e Inter | variables | Tipografías oficiales del manual, guardadas en `public/fonts/` |
 | JavaScript | módulos ES | Buscador, carrito, filtros. Sin frameworks ni librerías |
 | Leaflet | 1.9.4 | Mapa de las sedes. Se descarga solo al llegar a esa sección |
-| Python | 3.12 | Herramientas locales. **No corre en el servidor.** Solo `preparar_fotos.py` necesita instalar algo: `pip install -r tools/requirements.txt` (Pillow) |
+| Python | 3.12 | Solo `validar.py` (nada que instalar) y `excel_catalogo.py`, que necesita `pip install -r tools/requirements.txt` (openpyxl). **No corre en el servidor** |
 
 No hay React, ni Vue, ni jQuery. El sitio publicado es HTML, CSS, JavaScript e imágenes.
 
@@ -70,7 +70,7 @@ publicado no necesita Python.
 | `normalizar.py` | Convirtió el catálogo viejo al formato nuevo. Ya se usó |
 | `enriquecer.py` | Dedujo presentación, marca y tipo de cada producto. Ya se usó |
 | `preparar-imagenes.py` | Copió y optimizó las fotos de los productos. Ya se usó |
-| `preparar_fotos.py` | **Se sigue usando.** Recorta y optimiza las fotos de sedes, portada y Nosotros |
+| `preparar-fotos.mjs` | **Se sigue usando.** Recorta y optimiza las fotos de sedes, portada y Nosotros. En Node, no en Python: funciona igual en Windows |
 
 ## Rendimiento medido
 

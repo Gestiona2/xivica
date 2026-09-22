@@ -26,13 +26,13 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      # Las pruebas de tools/preparar_fotos.py necesitan Pillow. Con el Python del
-      # sistema pip se niega a instalar, por eso se usa el de setup-python.
+      # excel_catalogo.py necesita openpyxl. Con el Python del sistema pip se
+      # niega a instalar, por eso se usa el de setup-python.
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Instalar Pillow (herramientas de fotos)
+      - name: Instalar dependencias de Python (catálogo en Excel)
         run: python3 -m pip install -r tools/requirements.txt
 
       - name: Revisar el catálogo

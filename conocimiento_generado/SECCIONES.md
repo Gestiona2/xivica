@@ -210,7 +210,7 @@ y cómo se agrega un elemento.
   - Portada, primer banner (la persona en el círculo) → `home.json` → `banners[0].foto`
   - Tarjeta de cada sede y su miniatura en la portada → `config.json` → `sedes[].foto`
   - Nosotros: la grande → `nosotros.json` → `foto_principal`; las de adentro → `galeria`
-- **Cómo se preparan:** `tools/preparar_fotos.py`. Ver la receta en `COMO-EDITAR.md`.
+- **Cómo se preparan:** `tools/preparar-fotos.mjs` (Node, funciona igual en Windows). Ver la receta en `COMO-EDITAR.md`.
 - **Cuántas caben bien:** galería de Nosotros, 2 a 4 (con más se vuelve un álbum; hoy son 4, dos por sede). Cada leyenda dice de qué sede es. Un solo
   banner de portada con foto; los otros funcionan mejor con el icono.
 - **Descripción:** cada foto lleva `foto_alt`, una frase corta y concreta. Es obligatoria.

@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "node --test \"src/scripts/*.test.js\" && python3 -m unittest discover tools"
+    "test": "node --test \"src/scripts/*.test.js\" \"tools/*.test.mjs\" && python3 -m unittest discover tools"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",

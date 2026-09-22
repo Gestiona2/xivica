@@ -247,8 +247,11 @@ Una foto de celular pesa medio mega y mide más de 1.500 px. **Nunca se copia ta
 **1. Prepararla** (recorta, reduce, guarda en WebP y borra los datos ocultos de la foto):
 
 ```
-python3 tools/preparar_fotos.py RUTA/DE/LA/FOTO.jpg fotos/nombre-de-la-foto --relacion 4:3
+node tools/preparar-fotos.mjs RUTA/DE/LA/FOTO.jpg fotos/nombre-de-la-foto --relacion 4:3
 ```
+
+Funciona igual en Windows y en Linux/macOS: usa Node, que ya está instalado para
+poder ver la vista previa del sitio. No hace falta instalar nada aparte.
 
 | Dónde va | `--relacion` |
 |---|---|
