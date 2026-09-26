@@ -13,3 +13,7 @@ __pycache__/
 # Insumos del cliente: manual de marca con el brief del propietario, logos
 # fuente y referencias. El repo del demo es publico y esto no debe viajar.
 insumos/
+
+# Planilla de edición del catálogo: se maneja en local con el dueño/agente,
+# no se sube. tools/excel_catalogo.py la lee de la raíz del proyecto.
+Catalogo-Drogueria-Xivica.xlsx

@@ -32,11 +32,10 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Compilar para el demo
-        # El demo vive en una subcarpeta; en el dominio propio esto se quita.
+      - name: Compilar para el dominio propio
         env:
-          PUBLIC_BASE: /xivica/
-          PUBLIC_SITE: https://gestiona2.github.io
+          PUBLIC_BASE: /
+          PUBLIC_SITE: https://drogueriaxivica.com
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
