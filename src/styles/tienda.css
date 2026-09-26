@@ -931,8 +931,14 @@ a.pie-red:hover { border-color: var(--azul); }
 .popup-oferta-cerrar:hover { background: var(--bg-soft); color: var(--text); }
 
 @media (max-width: 860px) {
-  .carrito-columnas { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; }
-  .carrito-datos { border-left: 0; border-top: 1px solid var(--borde); }
+  /* En celular no caben la lista y el formulario en pantallas separadas: el
+     formulario es más alto que la pantalla, así que si se reparten el alto
+     entre los dos (como en escritorio), la lista queda aplastada a 0 y no se
+     ve ni se puede tocar. Se apilan uno debajo del otro y todo el panel se
+     desplaza junto. */
+  .carrito-columnas { display: block; height: auto; }
+  .carrito-lista { overflow-y: visible; }
+  .carrito-datos { overflow-y: visible; border-left: 0; border-top: 1px solid var(--borde); }
   .carrito-linea { grid-template-columns: 52px minmax(0, 1fr) auto; grid-template-areas: "img datos quitar" "img cant total"; gap: 8px 11px; }
   .carrito-linea img { grid-area: img; width: 52px; height: 52px; }
   .carrito-linea-datos { grid-area: datos; }
